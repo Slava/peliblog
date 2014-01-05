@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Slava Kim'
 TAGLINE = u'Learning to code since 2008'
 SITENAME = u'Yet Another Dev Blog'
-SITEURL = ''
+SITEURL = 'http://devblog.me'
 
 TIMEZONE = 'America/San_Francisco'
 
