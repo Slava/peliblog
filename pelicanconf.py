@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Slava Kim'
-AUTHOR_BIO = u'Learning to code since 2008'
+TAGLINE = u'Learning to code since 2008'
 SITENAME = u'Yet Another Dev Blog'
 SITEURL = ''
 
@@ -29,8 +29,7 @@ LINKS =  (('My GitHub', 'https://github.com/slava'),
           ('More about me', 'http://slv.io/'),)
 
 # Social widget
-SOCIAL = (('twitter', 'https://twitter.com/imslavko'),
-          ('github', 'https://github.com/slava'),)
+SOCIAL = ()
 
 DEFAULT_PAGINATION = 10
 

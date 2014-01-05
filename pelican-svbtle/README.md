@@ -1,79 +1,54 @@
-# SVBTLE
+# SVBHACK
 
-Svbtle theme is a close copy of [Svbtle.com](http://www.svbtle.com) with
-a few minor changes for use with [Pelican](http://pelican.notmyidea.org).
+pelican-svbhack is a responsive theme for [Pelican](http://getpelican.com), it is my hack of a svbtle-like theme.
 
 ## DEMO
 
-You can see the [theme in
-action](http://williamting.com/drafts/this-is-a-theme-testing-post.html), or
-the site code [here](https://github.com/wting/williamting.com).
-
-![theme screenshot](https://raw.github.com/wting/pelican-svbtle/master/screenshot.png)
+You can see the [theme in action](http://www.giuliofidente.com/).
 
 ## FEATURES
 
-- syntax highlighting for code blocks
-- Google Analytics
-- Disqus commenting
+- responsive
+- syntax highlighting for pre blocks
+- supports google analytics
 - custom list of links
-- support for this LaTeX [plugin][latex]
 
 ## KNOWN ISSUES
 
 - no IE testing
 - no custom menu
-- header date format is hardcoded in `./templates/header.html` with the
-  exception of articles.
-- Svbtle uses Freight-Sans-Pro for article titles and Proxima Nova for body.
-  While they are great fonts, neither are free. I've linked to them in case
-  the client has them installed, but most users will browse the site with Open
-  Sans.
 
 ## INSTALL
 
-### FROM SOURCE
+Clone the [repository](https://github.com/giulivo/pelican-svbhack), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
 
-Download the [repository](https://github.com/wting/pelican-svbtle) and save
-it somewhere accessible. Edit `settings.py` and modify the `THEME` variable
-to point to the downloaded theme location.
+## PELICANCONF.PY
 
-### FROM OFFICIAL REPO
+Supports a number of common global variables but patches are welcomed if you need better support.
 
-Please refer to Pelican theme [install
-instructions](http://pelican.notmyidea.org/en/latest/pelican-themes.html).
+- `GOOGLE_ANALYTICS` your UA-XYZ code
 
-## SETTINGS.PY
+- `USER_LOGO_URL` you don't need to replace the logo placeholder, instead put your logo in content/images/your_logo.png and make this point to `SITEURL + '/static/images/your_logo.png'`
 
-These are the Pelican global variables currently supported by the theme:
+- `DISQUS_SITENAME` set this to enable disqus comments in articles
 
-- `GOOGLE_ANALYTICS`
-- `DISQUS_SITENAME`
-- `LINKS(('name1', 'url1'), ('name2', 'url2'))`
-- `DEFAULT_DATE_FORMAT = ('%b %d, %Y')`: suggested date format
-- `FEED_DOMAIN = SITEURL`
-- `AUTHOR_BIO`, providing a short bio that appears on the side bar.
+- `COLLAPSE_COMMENTS` set to `True` to have article comments hidden by default. Clicking on the `comments` link will toggle visibility.
 
-When developing locally, set the following variable:
+- `TAGLINE` some text rendered right below the logo
 
-`SITEURL = http://localhost:8000`
+- `INTERNET_DEFENSE_LEAGUE` set this to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
 
-If you want to enable LaTeX support, additional settings must be
-[configured][latex].
+When developing locally, you may want to set the following variable: `SITEURL = http://localhost:8000`
 
-## MODIFICATION
+## MODIFICATIONS
 
 - Accent color can be changed by editing `@accent` in `./static/css/style.less`.
-
-- A different Pygmentize theme can be used by editing `./Makefile` and
-  running `make pygments`.
+- A different Pygmentize theme can be used by editing `./Makefile` and running `make pygments`.
 
 ## AUTHOR
 
-William Ting
+pelican-svbhack is authored by Giulio Fidente.
 
 ## LICENSE
 
 Released under MIT License, full details in `LICENSE` file.
-
-[latex]: https://github.com/barrysteyn/pelican_plugin-latex
