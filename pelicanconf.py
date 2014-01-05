@@ -17,6 +17,7 @@ PLUGINS = ['latex']
 GOOGLE_ANALYTICS = 'UA-37747647-1'
 DISQUS_SITENAME = 'zdeslavablog'
 TWITTER_USERNAME = 'imslavko'
+COLLAPSE_COMMENTS = True
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
