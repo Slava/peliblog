@@ -132,7 +132,7 @@ blog</a>.</p>
 are sorted lexicographically) or just to be consistent across your code base.</p>
 <p>Another workaround would be to use a different selector, specifying certain
 key-paths rather than comparing to an object literal:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="n">db</span><span class="p">.</span><span class="n">books</span><span class="p">.</span><span class="n">find</span><span class="p">({</span> <span class="err">&#39;</span><span class="n">meta</span><span class="p">.</span><span class="n">year</span><span class="err">&#39;</span><span class="o">:</span> <span class="mi">1823</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">meta</span><span class="p">.</span><span class="n">author</span><span class="err">&#39;</span><span class="o">:</span> <span class="err">&#39;</span><span class="n">A</span><span class="p">.</span> <span class="n">Griboyedov</span><span class="err">&#39;</span> <span class="p">});</span>
+<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">books</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="s1">&#39;meta.year&#39;</span><span class="o">:</span> <span class="mi">1823</span><span class="p">,</span> <span class="s1">&#39;meta.author&#39;</span><span class="o">:</span> <span class="s1">&#39;A. Griboyedov&#39;</span> <span class="p">});</span>
 </pre></div>
 
 
