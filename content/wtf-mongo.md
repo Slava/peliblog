@@ -17,7 +17,7 @@ Disclaimer: I try hard not to hate on MongoDB. In fact I work with MongoDB every
 work day as part of my full-time job. I also take part in the development of
 [Minimongo](https://github.com/meteor/meteor/tree/devel/packages/minimongo),
 pure-JavaScript clone of MongoDB API to work with in-memory caches. There is no
-reason for me to bully Mongo other than warning everyone about its sharp edges.
+reason for me to mock Mongo other than warning everyone about its sharp edges.
 Most of these gotchas are found by [David Glasser](https://twitter.com/glasser).
 This article assumes you are familiar with MongoDB's API.
 
@@ -161,7 +161,7 @@ doesn't match the `null` from our selector.
 match `null` from the selectors, first two match both `undefined` and `null`.
 The absence of value also matches both.
 
-Read the original GitHub issue: https://github.com/meteor/meteor/issues/1646#issuecomment-29682964
+Read the original [GitHub issue](https://github.com/meteor/meteor/issues/1646#issuecomment-29682964).
 
 
 ***
@@ -407,5 +407,6 @@ mostly by [David Glasser](https://twitter.com/glasser).
 
 This article will be updated as new weirdnesses come to mind.
 
-[Discuss on Hacker News](XXX)
+Since Hacker News is down I couldn't post it there, but once posted you
+will be able to discuss it there.
 
