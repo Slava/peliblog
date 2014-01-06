@@ -126,7 +126,8 @@ Notice, in JSON an object is an unordered set of key/value pairs.</p>
 (usually old ones) the order of pairs is not preserved meaning they can be
 anything. Thankfully most modern browsers' JavaScript engines preserve the order
 (sometimes even in arrays), so we can actually control it from node.js code.</p>
-<p>Read more about it: http://ejohn.org/blog/javascript-in-chrome/</p>
+<p>Read more about it at <a href="http://ejohn.org/blog/javascript-in-chrome/">John Resig's
+blog</a>.</p>
 <p>The answer to this is to either always specify pairs in the canonical form (keys
 are sorted lexicographically) or just to be consistent across your code base.</p>
 <p><strong>The gotcha</strong>: this behavior can be dangerous whenever you want to build a
@@ -137,7 +138,7 @@ multi-key index.</p>
 
 <p>In such command the priority of <code>title</code> would be higher than the priority of
 <code>meta.year</code> field. This is important to the way MongoDB will lay out your data:
-http://docs.mongodb.org/manual/core/index-multikey/.</p>
+<a href="http://docs.mongodb.org/manual/core/index-multikey/">Read more in docs</a>.</p>
 <hr />
 <h1>2. undefined, null and undefined</h1>
 <p>Anyone remembers those times when the behavior of <code>undefined</code>, <code>null</code> and the
