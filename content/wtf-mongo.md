@@ -1,4 +1,4 @@
-Title: Top 5 syntactic weirdnesses to aware of in MongoDB
+Title: Top 5 syntactic weirdnesses to be aware of in MongoDB
 Slug: wtf-mongo
 Date: 2014-01-05
 
