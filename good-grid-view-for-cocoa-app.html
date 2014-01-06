@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <link rel="stylesheet/less" type="text/css" href="http://devblog.me/theme/css/style.less"> -->
+  <!-- <script src="http://devblog.me/theme/js/less-1.5.0.min.js" type="text/javascript"></script> -->
+  <link rel="stylesheet" type="text/css" href="http://devblog.me/theme/css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="http://devblog.me/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Slava Kim">
+  <meta name="description" content="Posts and writings by Slava Kim">
+
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript">
+       MathJax.Hub.Config({
+           config: ["MMLorHTML.js"],
+           jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+           TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
+           extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+           tex2jax: { 
+               inlineMath: [ ['$','$'] ],
+               displayMath: [ ['$$','$$'] ],
+               processEscapes: true },
+           "HTML-CSS": {
+               styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+           }
+       });
+    </script>
+
+
+<meta name="keywords" content="">
+
+  <title>
+Good grid view for Cocoa app  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37747647-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="http://devblog.me">
+        <img src="http://devblog.me/theme/images/logo.png" alt="logo">
+      </a>
+      <h2><a href="http://devblog.me">Slava Kim</a></h2>
+      <p>Learning to code since 2008</p>
+      <ul>
+        <li><a href="https://github.com/slava" target="_blank">My GitHub</a></li>
+        <li><a href="https://twitter.com/imslavko" target="_blank">Me on Twitter</a></li>
+        <li><a href="http://slv.io/" target="_blank">More about me</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+<p>Posted on Tue 19 March 2013</p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h3><a href="http://devblog.me/good-grid-view-for-cocoa-app.html">Good grid view for Cocoa app</a></h3>
+  </div>
+  <div class="article_text">
+    <p>There are different styles of presenting data but there is one that is used whenever you need to present lots of data and each piece has its own visual representation. I am talking about grid with big icons representing the data. Sometimes working on Cocoa application, built-in <code>IKImageBrowser</code> does not satisfy our needs. <code>OEGridView</code> comes to help.</p>
+<p><code>OEGridView</code> is part of <a href="http://openemu.org/">OpenEmu</a> project which is awesome by itself. There are a lot of things you can learn just reading <a href="https://github.com/OpenEmu/OpenEmu">code of the project</a>. Grid view representing collections of games with cool covers is one of them.</p>
+<p>Similary to <code>IKImageBrowser</code> custom grid is based on layers. There is a sublayer of main layer for each cell. Layers are chosen over views due to performance reasons. Another optimization is reusing all cells, which are not visible at the moment.</p>
+<p><code>OEGridView</code> has two protocols as any other Cocoa control: delegate and data source.</p>
+<p>Data source is identical to <code>NSTableView</code> with slightly changed API. Same situation is with delegate by the way.</p>
+<p>The only worry is custom <code>OEGridViewCell</code> subclass, which is subclass of <code>CALayer</code>. Visual representation can be achieved with bunch of sublayers arranged in correct order.</p>
+<p>Issue you can meet after implementing fency cell layer: renaming of title in <code>OEGridView</code> is hoping that title is actually a subclass of <code>CATextLayer</code> and is easily accessible with mouse double click. So placing title layer in unusual place can block the renaming feature.</p>
+<p>Another issue I ran into was the fact that grid view reuses cell instances. <code>- (OEGridViewCell *)gridView:cellForItemAtIndex:</code> should be implemented in the way similar to this:</p>
+<div class="highlight"><pre><span class="k">-</span> <span class="p">(</span><span class="n">OEGridViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">gridView:</span><span class="p">(</span><span class="n">OEGridView</span> <span class="o">*</span><span class="p">)</span><span class="nv">gridView</span> <span class="nf">cellForItemAtIndex:</span><span class="p">(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">index</span>
+<span class="p">{</span>
+    <span class="c1">// Maybe cell on such position already exists?</span>
+    <span class="n">MYCustomGridViewCell</span> <span class="o">*</span><span class="n">item</span> <span class="o">=</span> <span class="p">(</span><span class="n">MYCustomGridViewCell</span> <span class="o">*</span><span class="p">)[</span><span class="n">gridView</span> <span class="n">cellForItemAtIndex</span><span class="o">:</span><span class="n">index</span> <span class="n">makeIfNecessary</span><span class="o">:</span><span class="nb">NO</span><span class="p">];</span>
+
+    <span class="c1">// If not, maybe there are cell instance we can reuse</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">item</span><span class="p">)</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="p">(</span><span class="n">MYCustomGridViewCell</span> <span class="o">*</span><span class="p">)[</span><span class="n">gridView</span> <span class="n">dequeueReusableCell</span><span class="p">];</span>
+
+    <span class="c1">// OK, create new one</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">item</span><span class="p">)</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="p">[[</span><span class="n">MYCustomGridViewCell</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+
+    <span class="c1">// Set the binding</span>
+    <span class="kt">id</span> <span class="n">object</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">contents</span> <span class="n">objectAtIndex</span><span class="o">:</span><span class="n">index</span><span class="p">];</span>
+    <span class="n">item</span><span class="p">.</span><span class="n">objectBinding</span> <span class="o">=</span> <span class="n">object</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="n">item</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>So you reuse maximum of cells you can. And do not forget to override the <code>- (void)prepareForReuse</code> method. The issue I had with this method was quite funny. In this preparation method I was preparing the cell in very hard way: clearing all layers and properties. But did not update the layers if the new binding object was the same object it was binded to before.</p>
+<p><a href="https://github.com/indragiek">Indragiek</a> has done a great job and extracted <code>OEGridView</code> classes. Check out <a href="https://github.com/indragiek/OEGridView">the repo on github</a>.</p>
+  </div>
+  <div class="article_meta">
+    <p>Category: <a href="http://devblog.me/category/misc.html">misc</a></p>
+    <p>Comments: <a href="#" onclick="javascript:toggleComments();return false;">toggle</a></p>
+  </div>
+
+    <div id="article_comments" style="display:none">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+           var disqus_identifier = "good-grid-view-for-cocoa-app.html";
+           (function() {
+           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+           dsq.src = 'http://zdeslavablog.disqus.com/embed.js';
+           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+    </div>
+
+</article>
+
+    <footer>
+<p><a href="http://devblog.me/" class="button_accent">&larr; Back to Index</a></p>
+<script language="javascript">
+    function toggleComments() {
+        var commentDiv = document.getElementById("article_comments");
+        (commentDiv.style.display == "none") ? commentDiv.style.display = "block" : commentDiv.style.display = "none";
+        return false;
+    }
+</script>
+    </footer>
+
+    <div id="ending_message">
+      <p>&copy; Slava Kim. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/giulivo/pelican-svbhack" target="_blank">github</a>. .</p>
+    </div>
+  </main>
+</body>
+</html>
