@@ -3,11 +3,11 @@ Slug: wtf-mongo
 Date: 2014-01-05
 
 Rage posts about MongoDB are quite popular these days. Most of them are about
-poor performance on their data sets, reliability and sharding issues. Some of
-them might be right, other are just saying it the most popular NoSQL solution
-didn't fit their needs.
+poor performance on specific data sets, reliability and sharding issues. Some of
+those blog posts might be right, other are just saying that the most popular
+NoSQL solution didn't fit their needs.
 
-This article is not one of them. While most of the posts focus on operations
+This article is not one of those. While most of the posts focus on operations
 part, benchmarks and performance characteristics, I want to talk a little bit
 about MongoDB query interfaces. That's right - programming interfaces,
 specifically about node.js native driver but those are nearly identical across
@@ -58,7 +58,8 @@ What about JavaScript? ECMA-262 left it as 'undefined'. In some browsers
 anything. Thankfully most modern browsers' JavaScript engines preserve the order
 (sometimes even in arrays), so we can actually control it from node.js code.
 
-Read more about it: http://ejohn.org/blog/javascript-in-chrome/
+Read more about it at [John Resig's
+blog](http://ejohn.org/blog/javascript-in-chrome/).
 
 The answer to this is to either always specify pairs in the canonical form (keys
 are sorted lexicographically) or just to be consistent across your code base.
@@ -72,7 +73,7 @@ multi-key index.
 
 In such command the priority of `title` would be higher than the priority of
 `meta.year` field. This is important to the way MongoDB will lay out your data:
-http://docs.mongodb.org/manual/core/index-multikey/.
+[Read more in docs](http://docs.mongodb.org/manual/core/index-multikey/).
 
 
 ***
@@ -392,6 +393,12 @@ Same point is returned twice as both points from the array match the selector.
 
 
 ***
+
+All these gotchas remind me the days when I first started coding in JavaScript.
+There are several corner cases, some of them work inconsistently across browsers,
+some of the features you never want to use, somewhere you want to be extra
+careful. All of those are well known in JavaScript land, but not so well in
+MongoDB land.
 
 Almost every weird behavior listed here was found in the process of simulating
 MongoDB in the project called
