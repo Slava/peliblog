@@ -2,6 +2,8 @@ Title: Top 5 syntactic weirdnesses to be aware of in MongoDB
 Slug: wtf-mongo
 Date: 2014-01-05
 
+![mongodb logo](http://fc01.deviantart.net/fs70/f/2010/168/e/1/Icon_MongoDB_by_xkneo.png)
+
 Rage posts about MongoDB are quite popular these days. Most of them are about
 poor performance on specific data sets, reliability and sharding issues. Some of
 those blog posts might be right, other are just saying that the most popular
