@@ -66,6 +66,14 @@ blog](http://ejohn.org/blog/javascript-in-chrome/).
 The answer to this is to either always specify pairs in the canonical form (keys
 are sorted lexicographically) or just to be consistent across your code base.
 
+Another workaround would be to use a different selector, specifying certain
+key-paths rather than comparing to an object literal:
+
+    > db.books.find({ 'meta.year': 1823, 'meta.author': 'A. Griboyedov' });
+
+It would work in this particular case but note that the meaning of this selector
+is different.
+
 **The gotcha**: this behavior can be dangerous whenever you want to build a
 multi-key index.
 
@@ -159,9 +167,10 @@ It is still there, `a` field is holding something looking like `null` but
 doesn't match the `null` from our selector.
 
 **The gotcha**: there are more than 2 values looking like `null` in MongoDB:
-`null`, `undefined` and `null` inserted from mongo-shell. The last one doesn't
-match `null` from the selectors, first two match both `undefined` and `null`.
-The absence of value also matches both.
+`null`, `undefined` and `undefined` inserted from mongo-shell that looks like
+`null` in the shell but in reality matches the deprecated `undefined` in BSON
+(type number six). The last one doesn't match `null` from the selectors, first
+two match both `undefined` and `null`. The absence of value also matches both.
 
 Read the original [GitHub issue](https://github.com/meteor/meteor/issues/1646#issuecomment-29682964).
 
