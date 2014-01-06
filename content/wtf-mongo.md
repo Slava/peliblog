@@ -69,7 +69,9 @@ are sorted lexicographically) or just to be consistent across your code base.
 Another workaround would be to use a different selector, specifying certain
 key-paths rather than comparing to an object literal:
 
-    > db.books.find({ 'meta.year': 1823, 'meta.author': 'A. Griboyedov' });
+```javascript
+> db.books.find({ 'meta.year': 1823, 'meta.author': 'A. Griboyedov' });
+```
 
 It would work in this particular case but note that the meaning of this selector
 is different.
