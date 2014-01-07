@@ -420,6 +420,5 @@ mostly by [David Glasser](https://twitter.com/glasser).
 
 This article will be updated as new weirdnesses come to mind.
 
-Since Hacker News is down I couldn't post it there, but once posted you
-will be able to discuss it there.
+[Discuss on Hacker News](https://news.ycombinator.com/item?id=7020300).
 
