@@ -12,6 +12,7 @@ TIMEZONE = 'America/San_Francisco'
 DEFAULT_LANG = u'en'
 
 PLUGINS = ['latex']
+STATIC = ['images']
 
 # More settings
 GOOGLE_ANALYTICS = 'UA-37747647-1'
