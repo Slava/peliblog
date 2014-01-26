@@ -3,6 +3,8 @@ Slug: meteor-intro-ru
 Date: 2014-01-25
 Tags: Meteor, Метеор, русский, веб-разработка, платформа, фреймворк
 
+![Meteor splash image](/images/meteor-splash.png)
+
 С тех пор как я начал работать в [Meteor Development
 Group](https://www.meteor.com) в мае 2013 года, друзья и знакомые, которые
 программируют, но не читают [Hacker News](http://news.ycombinator.com)
