@@ -420,5 +420,13 @@ mostly by [David Glasser](https://twitter.com/glasser).
 
 This article will be updated as new weirdnesses come to mind.
 
+***
+
+Update of 1 April 2014: I talked about some of these issues and some new gotchas
+on SF Meteor Devshop, the recording of the talk is below. "Don't get bitten by
+Mungos (or Mongos)":
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/amaR4Aqe0s0" frameborder="0" allowfullscreen></iframe>
+
 [Discuss on Hacker News](https://news.ycombinator.com/item?id=7020300).
 
