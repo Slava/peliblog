@@ -1,6 +1,6 @@
 Title: XP: RPG vs Real Life
 Slug: xp
-Date: 2013-04-17
+Date: 2014-04-17
 
 ![Level Up!](/images/level-up.jpg)
 
@@ -28,7 +28,7 @@ advanced. This system is very common and can be met in the RPGs like Diablo or
 King's Bounty. Usually there is a skill tree and some skills are discoverable
 only after "learning" the required skills.
 
-![Skill tree in Diablo](/images/diable-skill-tree.jpg)
+![Skill tree in Diablo](/images/diablo-skill-tree.jpg)
 
 Sometimes, once you've chosen one development branch of the skill tree, there is
 no way back. So once you've become a druid, chances you will relearn as a
