@@ -2,6 +2,8 @@ Title: Callbacks, Promises, Generators and Fibers
 Slug: solve-cb-hell
 Date: 2014-04-27
 
+![Promises](/images/promise.jpg)
+
 The topic of the use of callbacks vs the use of promises has been rocking
 through JavaScript community for several years now. Some people don't like
 callbacks, other people think that promises are even worse and since generators
@@ -185,9 +187,76 @@ they can solve the callbacks hell, reading
 and [this](https://medium.com/code-adventures/174f1fe66127) pieces might be
 enough for you to recover your faith into ECMA-262 committee.
 
-XXX example
+If you decide to use the generators approach, then you wouldn't use raw
+generator functions and yielding. Rather then that, you would either write a
+set of helper functions or one of the written ones. After converting all async
+methods to support awaiting on, you would use the `yield` keyword to mark the
+awaiting.
+
+```javascript
+// Presumably you have converted your HTTP.get and database.insert functions to
+// generators. Use a helper library Q.
+var saveBookAuthorDescription = function(bookId, cb) {
+  Q.spawn(function *() {
+    try {
+      // get the book in the http request
+      var bookResponse =
+        yield HTTP.get("https://api.site.com/book/" + bookId);
+      var book = JSON.parse(bookResponse.content);
+
+      // get the author in http request
+      var authorResponse =
+        yield HTTP.get("https://anothersite.com/api/v1/store/author/" + book.author);
+      var author = JSON.parse(authorResponse.content);
+
+      book.author = author;
+
+      // insert into the database and wait for the result of the write
+      yield database.insert(book);
+
+      cb(null);
+    } catch(err) {
+      // failure handling
+      cb(err);
+    }
+  });
+};
+```
+
+We have a clear improvement: the indentation doesn't change as we use async
+methods. We now can put everything into a native try-catch block. The
+readability of code improved as we can keep the same scope w/o passing all
+necessary variables down the async operation, i.e. the stack is preserved.
+
+There are some disadvantages for someone who is not super-familiar with
+coroutines or generators:
+
+- the `function*` and `yield` syntax might be confusing
+- since `yield` doesn't suspend the whole stack, programmer needs to manually
+  `yield` on every level or use a callbacks and generators mixed approach as
+  shown above
+- there is a big chance that almost every function will be a generator in your
+  code-base as everything uses the async methods in your app's business logic
+  (on the bright side: it is very easy to tell which method yields)
+
+From the distribution standpoint there are these issues you would need to face:
+
+- isn't implemented by browsers, only available in node behind a flag
+- you can transpile the generators code to a regular es5 code but then there is
+  a need to support compilation, source-maps and long stack-traces correctly
+- even if you use native generators, there is a possibility they are not
+  optimized by the V8 engine or are not as optimized as a regular
+  generators-free code
+- tooling such as autocompletion plugins (ex.: tern.js) or IDEs didn't catch up
+  on new ES6 features yet
+
+Finally, from the code-base scalability point of view:
+
+- you would need to convert all 3rd party code to generators or use the mixed
+  approach which may require some discipline
 
 Fibers
 ---
 
-XXX
+TODO
+
