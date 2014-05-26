@@ -153,6 +153,11 @@ across the file will only grow, making reading and following the code harder</li
 <p>Promise is an object that represents a "promised result" of an async
 computation. Promises can be deferred, combined into series of consecutive or
 parallel computations.</p>
+<p>There exist a wild variety of the Promises libraries. Some libraries even
+based all their async APIs on Promises (ex.: jQuery, Ember.js). Unfortunately,
+not all Promises implementations are fully compatible with each other, but most
+of them implement the community defined spec
+<a href="http://promises-aplus.github.io/promises-spec/">Promises/A+</a>.</p>
 <p>Our simple example will now look something like this:</p>
 <div class="highlight"><pre><span class="c1">// Presumably you have converted your HTTP.get and database.insert functions to</span>
 <span class="c1">// promises as well</span>
@@ -205,7 +210,28 @@ libraries are used (or find an equivalent already converted to Promises)</li>
 callback for promises</li>
 </ul>
 <h2>Generators</h2>
-<p>XXX</p>
+<p>You might have heard of them already. Generators is a concept successfully
+implemented and used in many programming languages (Generators in Python 3, lazy
+sequences in Clojure, etc). ES6 standard defines Generators as a part of the
+standard but it is yet to be implemented and fully supported in major JS
+engines.</p>
+<p>From the name, you can guess, that Generators are somehow related to the process
+of generating some values. You can read more about their syntax and primary use
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">here on MDN</a>.</p>
+<p>Generators are interesting in the context of the callbacks because using them in
+an interesting way we can recreate the concept of
+<a href="http://en.wikipedia.org/wiki/Coroutine">coroutines</a> or rather
+<a href="http://en.wikipedia.org/wiki/Coroutine#Comparison_with_generators">semicoroutines</a>.</p>
+<p>Coroutines aren't new either. They were used sucessfully in a lot of popular
+programming languages and frameworks. I first met them in Python
+<a href="http://tornado.readthedocs.org/en/latest/gen.html">Tornado</a> and Python
+<a href="http://greenlet.readthedocs.org/en/latest/">Greenlets</a>.</p>
+<p>There has been enough excitement in the node community about generators and how
+they can solve the callbacks hell, reading
+<a href="http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators">this</a>
+and <a href="https://medium.com/code-adventures/174f1fe66127">this</a> pieces might be
+enough for you to recover your faith into ECMA-262 committee.</p>
+<p>XXX example</p>
 <h2>Fibers</h2>
 <p>XXX</p>
   </div>
