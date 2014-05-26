@@ -96,6 +96,12 @@ Promise is an object that represents a "promised result" of an async
 computation. Promises can be deferred, combined into series of consecutive or
 parallel computations.
 
+There exist a wild variety of the Promises libraries. Some libraries even
+based all their async APIs on Promises (ex.: jQuery, Ember.js). Unfortunately,
+not all Promises implementations are fully compatible with each other, but most
+of them implement the community defined spec
+[Promises/A+](http://promises-aplus.github.io/promises-spec/).
+
 Our simple example will now look something like this:
 
 ```javascript
@@ -153,7 +159,33 @@ callback for promises
 Generators
 ---
 
-XXX
+You might have heard of them already. Generators is a concept successfully
+implemented and used in many programming languages (Generators in Python 3, lazy
+sequences in Clojure, etc). ES6 standard defines Generators as a part of the
+standard but it is yet to be implemented and fully supported in major JS
+engines.
+
+From the name, you can guess, that Generators are somehow related to the process
+of generating some values. You can read more about their syntax and primary use
+[here on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*).
+
+Generators are interesting in the context of the callbacks because using them in
+an interesting way we can recreate the concept of
+[coroutines](http://en.wikipedia.org/wiki/Coroutine) or rather
+[semicoroutines](http://en.wikipedia.org/wiki/Coroutine#Comparison_with_generators).
+
+Coroutines aren't new either. They were used sucessfully in a lot of popular
+programming languages and frameworks. I first met them in Python
+[Tornado](http://tornado.readthedocs.org/en/latest/gen.html) and Python
+[Greenlets](http://greenlet.readthedocs.org/en/latest/).
+
+There has been enough excitement in the node community about generators and how
+they can solve the callbacks hell, reading
+[this](http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators)
+and [this](https://medium.com/code-adventures/174f1fe66127) pieces might be
+enough for you to recover your faith into ECMA-262 committee.
+
+XXX example
 
 Fibers
 ---
