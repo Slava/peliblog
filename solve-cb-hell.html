@@ -76,7 +76,8 @@ Callbacks, Promises, Generators and Fibers  </title>
     <h1><a href="http://devblog.me/solve-cb-hell.html">Callbacks, Promises, Generators and Fibers</a></h1>
   </div>
   <div class="article_text">
-    <p>The topic of the use of callbacks vs the use of promises has been rocking
+    <p><img alt="Promises" src="/images/promise.jpg" /></p>
+<p>The topic of the use of callbacks vs the use of promises has been rocking
 through JavaScript community for several years now. Some people don't like
 callbacks, other people think that promises are even worse and since generators
 (a new feature of ES6) became available on Google Chrome and node.js (behind
@@ -231,9 +232,74 @@ they can solve the callbacks hell, reading
 <a href="http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators">this</a>
 and <a href="https://medium.com/code-adventures/174f1fe66127">this</a> pieces might be
 enough for you to recover your faith into ECMA-262 committee.</p>
-<p>XXX example</p>
+<p>If you decide to use the generators approach, then you wouldn't use raw
+generator functions and yielding. Rather then that, you would either write a
+set of helper functions or one of the written ones. After converting all async
+methods to support awaiting on, you would use the <code>yield</code> keyword to mark the
+awaiting.</p>
+<div class="highlight"><pre><span class="c1">// Presumably you have converted your HTTP.get and database.insert functions to</span>
+<span class="c1">// generators. Use a helper library Q.</span>
+<span class="kd">var</span> <span class="nx">saveBookAuthorDescription</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">bookId</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">Q</span><span class="p">.</span><span class="nx">spawn</span><span class="p">(</span><span class="kd">function</span> <span class="o">*</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="c1">// get the book in the http request</span>
+      <span class="kd">var</span> <span class="nx">bookResponse</span> <span class="o">=</span>
+        <span class="nx">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">bookResponse</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+
+      <span class="c1">// get the author in http request</span>
+      <span class="kd">var</span> <span class="nx">authorResponse</span> <span class="o">=</span>
+        <span class="nx">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://anothersite.com/api/v1/store/author/&quot;</span> <span class="o">+</span> <span class="nx">book</span><span class="p">.</span><span class="nx">author</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">author</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">authorResponse</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+
+      <span class="nx">book</span><span class="p">.</span><span class="nx">author</span> <span class="o">=</span> <span class="nx">author</span><span class="p">;</span>
+
+      <span class="c1">// insert into the database and wait for the result of the write</span>
+      <span class="nx">yield</span> <span class="nx">database</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">book</span><span class="p">);</span>
+
+      <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// failure handling</span>
+      <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+
+
+<p>We have a clear improvement: the indentation doesn't change as we use async
+methods. We now can put everything into a native try-catch block. The
+readability of code improved as we can keep the same scope w/o passing all
+necessary variables down the async operation, i.e. the stack is preserved.</p>
+<p>There are some disadvantages for someone who is not super-familiar with
+coroutines or generators:</p>
+<ul>
+<li>the <code>function*</code> and <code>yield</code> syntax might be confusing</li>
+<li>since <code>yield</code> doesn't suspend the whole stack, programmer needs to manually
+  <code>yield</code> on every level or use a callbacks and generators mixed approach as
+  shown above</li>
+<li>there is a big chance that almost every function will be a generator in your
+  code-base as everything uses the async methods in your app's business logic
+  (on the bright side: it is very easy to tell which method yields)</li>
+</ul>
+<p>From the distribution standpoint there are these issues you would need to face:</p>
+<ul>
+<li>isn't implemented by browsers, only available in node behind a flag</li>
+<li>you can transpile the generators code to a regular es5 code but then there is
+  a need to support compilation, source-maps and long stack-traces correctly</li>
+<li>even if you use native generators, there is a possibility they are not
+  optimized by the V8 engine or are not as optimized as a regular
+  generators-free code</li>
+<li>tooling such as autocompletion plugins (ex.: tern.js) or IDEs didn't catch up
+  on new ES6 features yet</li>
+</ul>
+<p>Finally, from the code-base scalability point of view:</p>
+<ul>
+<li>you would need to convert all 3rd party code to generators or use the mixed
+  approach which may require some discipline</li>
+</ul>
 <h2>Fibers</h2>
-<p>XXX</p>
+<p>TODO</p>
   </div>
   <div class="article_meta">
     <p>Category: <a href="http://devblog.me/category/misc.html">misc</a></p>
