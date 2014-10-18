@@ -2,6 +2,9 @@ Title: 6.033 - An Introduction to Everything
 Slug: systems-class
 Date: 2014-10-18
 
+![a pixelated screenshot of the page I stared at the
+most](/images/systems-logo.png)
+
 6.033 is an MIT class that teaches basics of “Systems Engineering” and is available online on MIT OCW for everyone. Recently I have finished watching the lectures and doing the assignments and I can certainly say that I learnt a big bunch from it.
 
 ## “The Class”
