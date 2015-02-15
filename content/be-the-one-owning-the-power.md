@@ -2,7 +2,7 @@ Title: Be the one owning the power
 Slug: be-the-one
 Date: 2013-09-03
 
-![The guy reading CLRS](https://d262ilb51hltx0.cloudfront.net/proxy/0*bHmjV5zv7u8DzQQm.jpeg)
+![The guy reading CLRS](/images/clrs.jpg)
 
 I am an example of a self-taught software engineer. ‘Self-taught’ doesn't really mean I learnt everything on my own. Having had so many teachers, I just forgot about college. It doesn't mean there is nothing to learn, I am learning a lot everyday. And this piece of writing is directed towards those who are in the beginning of their learning cycle.
 
