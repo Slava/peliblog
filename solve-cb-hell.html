@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <link rel="stylesheet/less" type="text/css" href="http://devblog.me/theme/css/style.less"> -->
+  <!-- <script src="http://devblog.me/theme/js/less-1.5.0.min.js" type="text/javascript"></script> -->
+  <link rel="stylesheet" type="text/css" href="http://devblog.me/theme/css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="http://devblog.me/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Slava Kim">
+  <meta name="description" content="Posts and writings by Slava Kim">
+
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript">
+       MathJax.Hub.Config({
+           config: ["MMLorHTML.js"],
+           jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+           TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
+           extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+           tex2jax: { 
+               inlineMath: [ ['$','$'] ],
+               displayMath: [ ['$$','$$'] ],
+               processEscapes: true },
+           "HTML-CSS": {
+               styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+           }
+       });
+    </script>
+
+
+<meta name="keywords" content="">
+
+  <title>
+Callbacks, Promises, Generators and Fibers  </title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)
+  },i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37747647-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="http://devblog.me">
+        <img src="http://devblog.me/theme/images/logo.png" alt="logo">
+      </a>
+      <h2><a href="http://devblog.me">Slava Kim</a></h2>
+      <p>Learning to code since 2008</p>
+      <ul>
+        <li><a href="https://github.com/slava" target="_blank">My GitHub</a></li>
+        <li><a href="https://twitter.com/imslavko" target="_blank">Me on Twitter</a></li>
+        <li><a href="http://slv.io/" target="_blank">More about me</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+<p>Posted on Sun 27 April 2014</p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="http://devblog.me/solve-cb-hell.html">Callbacks, Promises, Generators and Fibers</a></h1>
+  </div>
+  <div class="article_text">
+    <p><img alt="Promises" src="/images/promise.jpg" /></p>
+<p>The topic of the use of callbacks vs the use of promises has been rocking
+through JavaScript community for several years now. Some people don't like
+callbacks, other people think that promises are even worse and since generators
+(a new feature of ES6) became available on Google Chrome and node.js (behind
+experimental features flags) the battle became 3-sided: callbacks vs promises vs
+promises via generators.</p>
+<p>There is another approach to the "callbacks hell" problem available on all major
+versions of node.js - the fibers npm package.</p>
+<p>Each approach to the problem (if you accept the "callbacks hell" as a legitimate
+problem) has multiple drawbacks. In this post I want to list several concerns I
+have learnt about in the order of decreasing importance to me:</p>
+<ul>
+<li>JS novice friendliness (how quickly a person coming from Java or Python can
+  learn it?)</li>
+<li>Platform availability and the distribution (Will your solution work on all
+  browsers? Do you need to ship a library with your code or recompile your
+  code?)</li>
+<li>Development scalability (in a project bigger than 5 files and 2 layers of
+  abstractions/indirection will this approach bring more harm than good?)</li>
+</ul>
+<h2>Callbacks</h2>
+<p>Callbacks - provide an anonymous function for every async call or pass a
+function that was defined somewhere else as the callback argument.</p>
+<p>Here is a fictional example of a very common task: make two sequential http
+requests, insert a computed result to the database and move on with some other
+action.</p>
+<p>In a simplest example we would not have a complex error handling logic and
+sometimes we would prefer having anonymous functions to predefined functions.
+We would surely balance between the two so our code doesn't become 10 layers
+indented.</p>
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">saveBookAuthorDescription</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">bookId</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+    <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://anothersite.com/api/v1/store/author/&quot;</span> <span class="o">+</span> <span class="nx">book</span><span class="p">.</span><span class="nx">author</span><span class="p">,</span>
+      <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">author</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+        <span class="nx">book</span><span class="p">.</span><span class="nx">author</span> <span class="o">=</span> <span class="nx">author</span><span class="p">;</span>
+        <span class="nx">database</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">book</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+          <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">book</span><span class="p">);</span>
+        <span class="p">});</span>
+      <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+
+
+<p>Even omiting complex error handling and avoiding a more complicated concurrent
+examples - it still would look weird and alien to someone who is used to a
+different imperative language.</p>
+<p>Although code like this might look familiar to someone who worked with C# and
+.NET framework where you can make an http request in a background thread from a
+thread-pool or to someone who worked with Cocoa framework in Objective-C - there
+is often a need to pass a block function (a slightly different anonymous
+function) to the Grand Central Dispatcher (GCD).</p>
+<p>It can definitely become one of the many JS/node confusions to a complete newbie
+who just wants to build websites in the same fashion he was taught to add
+numbers together.</p>
+<p>From the availability prospective it is raw-perfect: you can write something
+similar on node.js talking to other services or databases or reading files and
+in your browser handling user actions, driving animations and making network
+requests. No compilation, no problems in distribution.</p>
+<p>From the middle to bigger projects prospective it can become hairy over time:</p>
+<ul>
+<li>indentation levels will become deeper, the number of named functions scattered
+across the file will only grow, making reading and following the code harder</li>
+<li>error handling will be tricker as usual try-catch blocks will be worthless,
+  stacktraces shorter, uninformative</li>
+<li>handling parallel async operations will require a non-trivial amount of
+  additional variables, counters and confusion</li>
+</ul>
+<h2>Promises</h2>
+<p>Promise is an object that represents a "promised result" of an async
+computation. Promises can be deferred, combined into series of consecutive or
+parallel computations.</p>
+<p>There exist a wild variety of the Promises libraries. Some libraries even
+based all their async APIs on Promises (ex.: jQuery, Ember.js). Unfortunately,
+not all Promises implementations are fully compatible with each other, but most
+of them implement the community defined spec
+<a href="http://promises-aplus.github.io/promises-spec/">Promises/A+</a>.</p>
+<p>Our simple example will now look something like this:</p>
+<div class="highlight"><pre><span class="c1">// Presumably you have converted your HTTP.get and database.insert functions to</span>
+<span class="c1">// promises as well</span>
+<span class="kd">var</span> <span class="nx">saveBookAuthorDescription</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">bookId</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+    <span class="c1">// cannot chain this call as it depends on the result of previous operation</span>
+    <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://anothersite.com/api/v1/store/author/&quot;</span> <span class="o">+</span> <span class="nx">book</span><span class="p">.</span><span class="nx">author</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">author</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+      <span class="nx">book</span><span class="p">.</span><span class="nx">author</span> <span class="o">=</span> <span class="nx">author</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nx">database</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">book</span><span class="p">);</span>
+    <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">book</span><span class="p">);</span> <span class="c1">// success</span>
+    <span class="p">},</span> <span class="nx">cb</span><span class="p">);</span> <span class="c1">// failure</span>
+  <span class="p">},</span> <span class="nx">cb</span><span class="p">);</span> <span class="c1">// failure</span>
+<span class="p">};</span>
+</pre></div>
+
+
+<p>We have converted our example to a function with the same interface but all
+computations are based on Promises. It looks a bit cleaner, the level of
+indentation clearly can be reduced.</p>
+<p>But it still does look different to someone who has never used a promises
+library before:</p>
+<ul>
+<li>code still has a lot of anonymous functions</li>
+<li>since closures don't share the scope, some of the calls are still required to
+  be nested (or other library APIs need to be learnt and used)</li>
+<li>now you need to learn a new syntax of Promises, learn how to transform
+existing methods to promises-based methods</li>
+<li>need to learn another way of error handling: usual try/catch/finally wouldn't
+work</li>
+</ul>
+<p>From the availability and distribution point of view:</p>
+<ul>
+<li>there are a lot of libraries to pick from</li>
+<li>some libraries use Promises with slightly different behavior (like jQuery) you
+would need to interoperate with</li>
+<li>if your application depends on other libraries those use different promises
+  libraries, you would need to load all of them even though they implement the
+  same functionality. Probably not a big problem considering their code sizes.</li>
+</ul>
+<p>Lastly, complex parallel or racy operations are probably easier as a lot of
+common functionality is already baked into the libraries. With time and practice
+these tasks would be trivial to write. However:</p>
+<ul>
+<li>you would need to convert all callbacks-based APIs to Promises when external
+libraries are used (or find an equivalent already converted to Promises)</li>
+<li>the code still can be difficult to read as every other line is wrapped into a
+callback for promises</li>
+</ul>
+<h2>Generators</h2>
+<p>You might have heard of them already. Generators is a concept successfully
+implemented and used in many programming languages (Generators in Python 3, lazy
+sequences in Clojure, etc). ES6 standard defines Generators as a part of the
+standard but it is yet to be implemented and fully supported in major JS
+engines.</p>
+<p>From the name, you can guess, that Generators are somehow related to the process
+of generating some values. You can read more about their syntax and primary use
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">here on MDN</a>.</p>
+<p>Generators are interesting in the context of the callbacks because using them in
+an interesting way we can recreate the concept of
+<a href="http://en.wikipedia.org/wiki/Coroutine">coroutines</a> or rather
+<a href="http://en.wikipedia.org/wiki/Coroutine#Comparison_with_generators">semicoroutines</a>.</p>
+<p>Coroutines aren't new either. They were used sucessfully in a lot of popular
+programming languages and frameworks. I first met them in Python
+<a href="http://tornado.readthedocs.org/en/latest/gen.html">Tornado</a> and Python
+<a href="http://greenlet.readthedocs.org/en/latest/">Greenlets</a>.</p>
+<p>There has been enough excitement in the node community about generators and how
+they can solve the callbacks hell, reading
+<a href="http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators">this</a>
+and <a href="https://medium.com/code-adventures/174f1fe66127">this</a> pieces might be
+enough for you to recover your faith into ECMA-262 committee.</p>
+<p>If you decide to use the generators approach, then you wouldn't use raw
+generator functions and yielding. Rather then that, you would either write a
+set of helper functions or one of the written ones. After converting all async
+methods to support awaiting on, you would use the <code>yield</code> keyword to mark the
+awaiting.</p>
+<div class="highlight"><pre><span class="c1">// Presumably you have converted your HTTP.get and database.insert functions to</span>
+<span class="c1">// generators. Use a helper library Q.</span>
+<span class="kd">var</span> <span class="nx">saveBookAuthorDescription</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">bookId</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">Q</span><span class="p">.</span><span class="nx">spawn</span><span class="p">(</span><span class="kd">function</span> <span class="o">*</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="c1">// get the book in the http request</span>
+      <span class="kd">var</span> <span class="nx">bookResponse</span> <span class="o">=</span>
+        <span class="k">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">bookResponse</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+
+      <span class="c1">// get the author in http request</span>
+      <span class="kd">var</span> <span class="nx">authorResponse</span> <span class="o">=</span>
+        <span class="k">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://anothersite.com/api/v1/store/author/&quot;</span> <span class="o">+</span> <span class="nx">book</span><span class="p">.</span><span class="nx">author</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">author</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">authorResponse</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+
+      <span class="nx">book</span><span class="p">.</span><span class="nx">author</span> <span class="o">=</span> <span class="nx">author</span><span class="p">;</span>
+
+      <span class="c1">// insert into the database and wait for the result of the write</span>
+      <span class="k">yield</span> <span class="nx">database</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">book</span><span class="p">);</span>
+
+      <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// failure handling</span>
+      <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+
+
+<p>We have a clear improvement: the indentation doesn't change as we use async
+methods. We now can put everything into a native try-catch block. The
+readability of code improved as we can keep the same scope w/o passing all
+necessary variables down the async operation, i.e. the stack is preserved.</p>
+<p>There are some disadvantages for someone who is not super-familiar with
+coroutines or generators:</p>
+<ul>
+<li>the <code>function*</code> and <code>yield</code> syntax might be confusing</li>
+<li>since <code>yield</code> doesn't suspend the whole stack, programmer needs to manually
+  <code>yield</code> on every level or use a callbacks and generators mixed approach as
+  shown above</li>
+<li>there is a big chance that almost every function will be a generator in your
+  code-base as everything uses the async methods in your app's business logic
+  (on the bright side: it is very easy to tell which method yields)</li>
+</ul>
+<p>From the distribution standpoint there are these issues you would need to face:</p>
+<ul>
+<li>isn't implemented by browsers, only available in node behind a flag</li>
+<li>you can transpile the generators code to a regular es5 code but then there is
+  a need to support compilation, source-maps and long stack-traces correctly</li>
+<li>even if you use native generators, there is a possibility they are not
+  optimized by the V8 engine or are not as optimized as a regular
+  generators-free code</li>
+<li>tooling such as autocompletion plugins (ex.: tern.js) or IDEs didn't catch up
+  on new ES6 features yet</li>
+</ul>
+<p>Finally, from the code-base scalability point of view:</p>
+<ul>
+<li>you would need to convert all 3rd party code to generators or use the mixed
+  approach which may require some discipline</li>
+</ul>
+<h2>Fibers</h2>
+<p>TODO</p>
+  </div>
+  <div class="article_meta">
+    <p>Category: <a href="http://devblog.me/category/misc.html">misc</a></p>
+    <p>Comments: <a href="#" onclick="javascript:toggleComments();return false;">toggle</a></p>
+  </div>
+
+    <div id="article_comments" style="display:block">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+           var disqus_identifier = "solve-cb-hell.html";
+           (function() {
+           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+           dsq.src = 'http://zdeslavablog.disqus.com/embed.js';
+           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+    </div>
+
+</article>
+
+    <footer>
+<p><a href="http://devblog.me/" class="button_accent">&larr; Back to Index</a></p>
+<script language="javascript">
+    function toggleComments() {
+        var commentDiv = document.getElementById("article_comments");
+        (commentDiv.style.display == "none") ? commentDiv.style.display = "block" : commentDiv.style.display = "none";
+        return false;
+    }
+</script>
+    </footer>
+
+    <div id="ending_message">
+      <p>&copy; Slava Kim. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/giulivo/pelican-svbhack" target="_blank">github</a>. .</p>
+    </div>
+  </main>
+</body>
+</html>

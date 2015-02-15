@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <link rel="stylesheet/less" type="text/css" href="http://devblog.me/theme/css/style.less"> -->
+  <!-- <script src="http://devblog.me/theme/js/less-1.5.0.min.js" type="text/javascript"></script> -->
+  <link rel="stylesheet" type="text/css" href="http://devblog.me/theme/css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="http://devblog.me/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Slava Kim">
+  <meta name="description" content="Posts and writings by Slava Kim">
+
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript">
+       MathJax.Hub.Config({
+           config: ["MMLorHTML.js"],
+           jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+           TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
+           extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+           tex2jax: { 
+               inlineMath: [ ['$','$'] ],
+               displayMath: [ ['$$','$$'] ],
+               processEscapes: true },
+           "HTML-CSS": {
+               styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+           }
+       });
+    </script>
+
+
+<meta name="keywords" content="">
+
+  <title>
+Meteor meets your text editor  </title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)
+  },i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37747647-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="http://devblog.me">
+        <img src="http://devblog.me/theme/images/logo.png" alt="logo">
+      </a>
+      <h2><a href="http://devblog.me">Slava Kim</a></h2>
+      <p>Learning to code since 2008</p>
+      <ul>
+        <li><a href="https://github.com/slava" target="_blank">My GitHub</a></li>
+        <li><a href="https://twitter.com/imslavko" target="_blank">Me on Twitter</a></li>
+        <li><a href="http://slv.io/" target="_blank">More about me</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+<p>Posted on Tue 04 February 2014</p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="http://devblog.me/meteor-plus-text-editor.html">Meteor meets your text editor</a></h1>
+  </div>
+  <div class="article_text">
+    <iframe width="640" height="360" src="//www.youtube.com/embed/CcPZ56t8x4I" frameborder="0" allowfullscreen></iframe>
+
+<p>More than a month ago I started working on JavaScript IntelliSense for
+<a href="https://www.meteor.com">Meteor</a>. Several days ago I presented it in my
+lightning talk on <a href="https://www.youtube.com/watch?v=CcPZ56t8x4I">Meteor Devshop
+11</a>. After getting lots of positive
+responses on Twitter and the meteor-talk mailing list I continue on improving
+it. <a href="https://github.com/Slava/tern-meteor">My work brings</a> more intelligent
+tooling to Sublime Text 2/3, Vim and Emacs when you work on a Meteor app in
+JavaScript.</p>
+<p>There is a simple problem with web development these days: the tooling is
+lacking a lot of features people had for years: static analysis tools, runtime
+dynamic analysers, code editors support and others.</p>
+<p>Code editor support is especially important as we spend most of our time there:
+writing and, more commonly, reading and exploring code. Modern IDEs like
+WebStorm and Visual Studio have accomplished big results in bringing such
+intelligent support to their costly products. For light-weight editors lovers
+there is open-source project working on that - <a href="http://ternjs.net">TernJS</a>.</p>
+<p><img alt="Initial email" src="/images/tern-meteor-email.png" /></p>
+<p>One day I opened an <a href="https://groups.google.com/forum/#!topic/meteor-talk/b_yGWIqXl7Y">interesting email from Bondi
+French</a> to
+meteor-talk. In his email Bondi asked if anyone tried to integrate TernJS,
+code-analysis engine for JavaScript, with Meteor. It looked like a good idea to
+me and I decided to give it a try.</p>
+<p>Fortunately, I was on my vacation hanging out on sunny warm San Diego beaches
+with my good friends, so I had a lot of time to "background process" these
+thoughts.</p>
+<p>Nothing made me so enthusiastic to work on such project like a good time spent
+outdoors in a good company of friends. It probably was the first time in last 6
+month when I got so much sun and spent less than 10 hours a day in front of a
+computer.</p>
+<p><img alt="Photo credits to @armansu on Instagram" src="/images/sd-beach.jpg" /></p>
+<p>One day I refused to go to a movie theater with others and sat down for a solid
+couple of hours implementing an MVP for Meteor + Tern integration: convert type
+definitions of Meteor public API (using existing work of
+<a href="https://github.com/borisyankov/DefinitelyTyped/blob/master/meteor/meteor.d.ts"><code>meteor.ts.d</code></a>)
+and teaching Tern basic scoping rules of Meteor.</p>
+<p>After my vacation week I found another weekend to finish and test my work. After
+testing it on a simple app with Sublime Text first, I <a href="https://www.youtube.com/watch?v=5cAHxpNEHTc">recorded a simple
+screencast</a> to show my work to
+people. The next day I <a href="https://www.youtube.com/watch?v=TIE9ZOqlvFo">recorded the
+sequel</a> walking through the
+installation process for Vim. The same day happy users reported this plugin to
+work on Emacs as well. I was happy. The MVP worked for people. It worked for me.</p>
+<p><img alt="Type-based auto-completion with Meteor app" src="/images/tern-vim-completion.gif" /></p>
+<p>Smart types-based auto-completion, "jump to definition", "find references",
+documentation look up in Meteor apps worked out of the box, thanks to Tern's
+flexible plugin system.</p>
+<p>To reach the wider audience I proposed my lightning talk and showed off to
+everyone on the Internet.</p>
+<p>I consider it to be pretty successful for a weekend for fun project:</p>
+<ul>
+<li>It works for my work</li>
+<li>Everyone on the mailing list thread was excited and supportive</li>
+<li>The <a href="https://github.com/Slava/tern-meteor">GitHub repo</a> got more than 350
+  unique views in over the first week</li>
+</ul>
+<p>It also got covered by all Meteoric knowledge sources: <a href="https://groups.google.com/forum/#!topic/meteor-talk/b_yGWIqXl7Y">meteor-talk mailing
+list</a>,
+<a href="https://twitter.com/imslavko/status/429111204762509313">Meteor's twitter</a>,
+<a href="http://www.reddit.com/r/Meteor/comments/1wctij/meteor_autocompletion_plugin_for_sublime/">/r/Meteor</a>,
+<a href="http://www.meteorpedia.com/read/TernJS">Meteorpedia</a>, <a href="http://meteorhacks.com/meteor-weekly-ralph-chat-jade-for-meteor-ui.html">Meteor Hacks
+weekly</a>,
+<a href="http://www.meteorpodcast.com/2014/01/24/episode-3-january-24th-2014/">Meteor
+Podcast</a>,
+<a href="https://www.youtube.com/watch?v=CcPZ56t8x4I">Meteor Devshop SF</a>, Meteor's
+Youtube channel. That's hard to miss :).</p>
+<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p><a href="https://twitter.com/search?q=%23MeteorDevshop&amp;src=hash">#MeteorDevshop</a>: Meteor autocompletion for Vim, Emacs and Sublime Text: <a href="https://t.co/Zkperjba9C">https://t.co/Zkperjba9C</a>; Slides: <a href="http://t.co/hTNJTDIaJb">http://t.co/hTNJTDIaJb</a></p>&mdash; Slava Kim (@imslavko) <a href="https://twitter.com/imslavko/statuses/429111204762509313">January 31, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>But it is not over yet! There is a big room for improvements in my plugin! I am
+already in the process of bringing Meteor smart-packages analysis support,
+documentation support and bringing the tooling for definitions generation for
+newer Meteor versions and Atmosphere packages.</p>
+<p>Hopefully, this little side project will make a lot more people happier working
+with Meteor. Alright, folks, I going back to oplog work. Will work on this
+during next weekend!</p>
+  </div>
+  <div class="article_meta">
+    <p>Category: <a href="http://devblog.me/category/misc.html">misc</a></p>
+    <p>Comments: <a href="#" onclick="javascript:toggleComments();return false;">toggle</a></p>
+  </div>
+
+    <div id="article_comments" style="display:block">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+           var disqus_identifier = "meteor-plus-text-editor.html";
+           (function() {
+           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+           dsq.src = 'http://zdeslavablog.disqus.com/embed.js';
+           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+    </div>
+
+</article>
+
+    <footer>
+<p><a href="http://devblog.me/" class="button_accent">&larr; Back to Index</a></p>
+<script language="javascript">
+    function toggleComments() {
+        var commentDiv = document.getElementById("article_comments");
+        (commentDiv.style.display == "none") ? commentDiv.style.display = "block" : commentDiv.style.display = "none";
+        return false;
+    }
+</script>
+    </footer>
+
+    <div id="ending_message">
+      <p>&copy; Slava Kim. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/giulivo/pelican-svbhack" target="_blank">github</a>. .</p>
+    </div>
+  </main>
+</body>
+</html>
