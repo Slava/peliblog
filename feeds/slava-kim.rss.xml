@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yet Another Dev Blog</title><link>http://devblog.me/</link><description></description><atom:link href="http://devblog.me/feeds/slava-kim.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 14 Feb 2015 00:00:00 -0800</lastBuildDate><item><title>Handlebars without data context</title><link>http://devblog.me/no-data-context.html</link><description>&lt;p&gt;In this post I am proposing a better way to write your Meteor templates. The
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yet Another Dev Blog</title><link>http://devblog.me/</link><description></description><atom:link href="http://devblog.me/feeds/slava-kim.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 14 Feb 2015 00:00:00 -0800</lastBuildDate><item><title>Handlebars without data context</title><link>http://devblog.me/no-data-context.html</link><description>&lt;p&gt;&lt;img alt="Handlebars" src="/images/handlebars.png" /&gt;&lt;/p&gt;
+&lt;p&gt;In this post I am proposing a better way to write your Meteor templates. The
 goal is to have more explicit variables and a scope similar to what you can see
 in a regular JavaScript code.&lt;/p&gt;
 &lt;h2&gt;A short history lesson&lt;/h2&gt;
