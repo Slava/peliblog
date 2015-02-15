@@ -2,6 +2,8 @@ Title: Handlebars without data context
 Slug: no-data-context
 Date: 2015-02-14
 
+![Handlebars](/images/handlebars.png)
+
 In this post I am proposing a better way to write your Meteor templates. The
 goal is to have more explicit variables and a scope similar to what you can see
 in a regular JavaScript code.
