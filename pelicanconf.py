@@ -7,7 +7,7 @@ TAGLINE = u'Learning to code since 2008'
 SITENAME = u'Yet Another Dev Blog'
 SITEURL = 'http://devblog.me'
 
-TIMEZONE = 'America/San_Francisco'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = u'en'
 
