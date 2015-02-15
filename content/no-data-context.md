@@ -6,7 +6,8 @@ Date: 2015-02-14
 
 In this post I am proposing a better way to write your Meteor templates. The
 goal is to have more explicit variables and a scope similar to what you can see
-in a regular JavaScript code.
+in a regular JavaScript code. We are going to talk about data contexts, dynamic
+variables and lexical scope in your templating language.
 
 ## A short history lesson
 
