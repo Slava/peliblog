@@ -23,6 +23,10 @@ that people were debating about "logicless templates" and good
 syntax from Mustache templates and introduced more syntax: constructs like `#if`
 and `#each`, template helpers, compiled templates.
 
+**Update**: It appears that Mustache got its inspiration from a Google project
+called `CTemplate`, a C++ templating libarary from 2006-2008 that is still
+available on [Google Code](https://code.google.com/p/ctemplate/).
+
 The success of curly braces (`{{`, `}}`) propagated to the client-side
 templating. Multiple projects has adapted the syntax and structure while
 bringing some "life" to the braced expressions.
