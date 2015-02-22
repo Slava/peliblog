@@ -15,6 +15,9 @@ that people were debating about "logicless templates" and good
 "presentation/logic" separation. At the time, Handlebars have borrowed the
 syntax from Mustache templates and introduced more syntax: constructs like &lt;code&gt;#if&lt;/code&gt;
 and &lt;code&gt;#each&lt;/code&gt;, template helpers, compiled templates.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: It appears that Mustache got its inspiration from a Google project
+called &lt;code&gt;CTemplate&lt;/code&gt;, a C++ templating libarary from 2006-2008 that is still
+available on &lt;a href="https://code.google.com/p/ctemplate/"&gt;Google Code&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The success of curly braces (&lt;code&gt;{{&lt;/code&gt;, &lt;code&gt;}}&lt;/code&gt;) propagated to the client-side
 templating. Multiple projects has adapted the syntax and structure while
 bringing some "life" to the braced expressions.&lt;/p&gt;
