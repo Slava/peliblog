@@ -113,10 +113,10 @@ Checkout <a href="https://github.com/laverdet/node-fibers">the repo on Github</a
 <div class="highlight"><pre><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
-    <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
+    <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
     <span class="nx">n</span><span class="o">++</span><span class="p">;</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
-    <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
+    <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
     <span class="nx">n</span><span class="o">++</span><span class="p">;</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
 <span class="p">});</span>
@@ -129,16 +129,16 @@ Checkout <a href="https://github.com/laverdet/node-fibers">the repo on Github</a
 
 
 <p>Running this code will give you following output:</p>
-<div class="highlight"><pre>Will run the fiber: 0
-0
-Will run the fiber: 1
-1
-Will run the fiber: 2
-2
-Will run the fiber: 3
-0
-Will run the fiber: 4
-1
+<div class="highlight"><pre><span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">0</span>
+<span class="mi">0</span>
+<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">1</span>
+<span class="mi">1</span>
+<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">2</span>
+<span class="mi">2</span>
+<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">3</span>
+<span class="mi">0</span>
+<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">4</span>
+<span class="mi">1</span>
 </pre></div>
 
 
@@ -148,13 +148,13 @@ Will run the fiber: 4
     <span class="kd">var</span> <span class="nx">ff</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
         <span class="kd">var</span> <span class="nx">m</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="nx">m</span><span class="p">);</span>
-        <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
+        <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
         <span class="nx">m</span><span class="o">--</span><span class="p">;</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="nx">m</span><span class="p">);</span>
     <span class="p">};</span>
 
     <span class="nx">ff</span><span class="p">();</span>
-    <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
+    <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
     <span class="nx">n</span><span class="o">++</span><span class="p">;</span>
     <span class="nx">ff</span><span class="p">();</span>
 <span class="p">});</span>
@@ -166,23 +166,23 @@ Will run the fiber: 4
 </pre></div>
 
 
-<div class="highlight"><pre>Will run the fiber: 0
-0 0
-Will run the fiber: 1
-0 -1
-Will run the fiber: 2
-1 0
-Will run the fiber: 3
-1 -1
-Will run the fiber: 4
-0 0
+<div class="highlight"><pre><span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">0</span>
+<span class="mi">0</span> <span class="mi">0</span>
+<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">1</span>
+<span class="mi">0</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">2</span>
+<span class="mi">1</span> <span class="mi">0</span>
+<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">3</span>
+<span class="mi">1</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">4</span>
+<span class="mi">0</span> <span class="mi">0</span>
 </pre></div>
 
 
 <p>The next thing to learn is how to pass new values inside fiber: you can invoke the <code>run</code> method with an argument. This argument will be returned by <code>yield</code>.</p>
 <div class="highlight"><pre><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;passed %s, get something new&#39;</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
-    <span class="nx">s</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
+    <span class="nx">s</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;now it is %s!&#39;</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
 <span class="p">});</span>
 
@@ -192,11 +192,11 @@ Will run the fiber: 4
 </pre></div>
 
 
-<div class="highlight"><pre>passed string number 0, get something new
-now it is string number 1!
-passed string number 2, get something new
-now it is string number 3!
-passed string number 4, get something new
+<div class="highlight"><pre><span class="n">passed</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">0</span><span class="p">,</span> <span class="n">get</span> <span class="n">something</span> <span class="n">new</span>
+<span class="n">now</span> <span class="n">it</span> <span class="n">is</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">1</span><span class="o">!</span>
+<span class="n">passed</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">2</span><span class="p">,</span> <span class="n">get</span> <span class="n">something</span> <span class="n">new</span>
+<span class="n">now</span> <span class="n">it</span> <span class="n">is</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">3</span><span class="o">!</span>
+<span class="n">passed</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">4</span><span class="p">,</span> <span class="n">get</span> <span class="n">something</span> <span class="n">new</span>
 </pre></div>
 
 
@@ -213,7 +213,7 @@ passed string number 4, get something new
             <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
         <span class="p">}</span>
 
-        <span class="nx">next</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">(</span><span class="nx">factorial</span><span class="p">);</span>
+        <span class="nx">next</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">(</span><span class="nx">factorial</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">});</span>
 
@@ -224,7 +224,7 @@ passed string number 4, get something new
 </pre></div>
 
 
-<div class="highlight"><pre>6 5040
+<div class="highlight"><pre><span class="mi">6</span> <span class="mi">5040</span>
 </pre></div>
 
 

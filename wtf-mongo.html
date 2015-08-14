@@ -96,7 +96,7 @@ This article assumes you are familiar with MongoDB's API.</p>
 <hr />
 <h1>1. Keys order in a hash object</h1>
 <p>Let's say you want to store a simple object literal:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nt">db</span><span class="nc">.books.insert</span><span class="o">(</span><span class="p">{</span> <span class="n">title</span><span class="o">:</span> <span class="s2">&quot;Woe from Wit&quot;</span><span class="o">,</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span><span class="o">,</span> <span class="n">year</span><span class="o">:</span> <span class="m">1823</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
+<div class="highlight"><pre><span class="o">&gt;</span> <span class="n">db</span><span class="p">.</span><span class="n">books</span><span class="p">.</span><span class="n">insert</span><span class="p">({</span> <span class="n">title</span><span class="o">:</span> <span class="s">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="p">{</span> <span class="n">author</span><span class="o">:</span> <span class="s">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="p">});</span>
 </pre></div>
 
 
@@ -104,15 +104,15 @@ This article assumes you are familiar with MongoDB's API.</p>
 books published in 1823, written by this author ("A. Griboyedov"). It is
 unlikely to return more than one result but at least it should return the "Woe
 from Wit" book as we just inserted it, right?</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nt">db</span><span class="nc">.books.find</span><span class="o">(</span><span class="p">{</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="n">year</span><span class="o">:</span> <span class="m">1823</span><span class="o">,</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
-<span class="o">&lt;</span> <span class="nt">No</span> <span class="nt">results</span> <span class="nt">returned</span>
+<div class="highlight"><pre><span class="o">&gt;</span> <span class="n">db</span><span class="p">.</span><span class="n">books</span><span class="p">.</span><span class="n">find</span><span class="p">({</span> <span class="n">meta</span><span class="o">:</span> <span class="p">{</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span><span class="p">,</span> <span class="n">author</span><span class="o">:</span> <span class="s">&quot;A. Griboyedov&quot;</span> <span class="p">}</span> <span class="p">});</span>
+<span class="o">&lt;</span> <span class="n">No</span> <span class="n">results</span> <span class="n">returned</span>
 </pre></div>
 
 
 <p>What happened? Didn't we just insert a book with such meta-data? Let's try
 flipping the order of keys in the meta object:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nt">db</span><span class="nc">.books.find</span><span class="o">(</span><span class="p">{</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span><span class="o">,</span> <span class="n">year</span><span class="o">:</span> <span class="m">1823</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
-<span class="o">&lt;</span> <span class="p">{</span> <span class="n">_id</span><span class="o">:</span> <span class="o">...,</span> <span class="n">title</span><span class="o">:</span> <span class="s2">&quot;Woe from Wit&quot;</span><span class="o">,</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="o">...</span> <span class="p">}</span> <span class="err">}</span>
+<div class="highlight"><pre><span class="o">&gt;</span> <span class="n">db</span><span class="p">.</span><span class="n">books</span><span class="p">.</span><span class="n">find</span><span class="p">({</span> <span class="n">meta</span><span class="o">:</span> <span class="p">{</span> <span class="n">author</span><span class="o">:</span> <span class="s">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="p">});</span>
+<span class="o">&lt;</span> <span class="p">{</span> <span class="n">_id</span><span class="o">:</span> <span class="p">...,</span> <span class="n">title</span><span class="o">:</span> <span class="s">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span> <span class="p">}</span>
 </pre></div>
 
 
@@ -224,7 +224,7 @@ two match both <code>undefined</code> and <code>null</code>. The absence of valu
 <h1>3. Soft limits, hard limits and no limits</h1>
 <p>Let's say you have a feed of items and you allow user to specify the number
 items to return. You would return the result of a query looking like this:</p>
-<div class="highlight"><pre>db.items.find({ ... }).limit(N);
+<div class="highlight"><pre><span class="n">db</span><span class="p">.</span><span class="n">items</span><span class="p">.</span><span class="n">find</span><span class="p">({</span> <span class="p">...</span> <span class="p">}).</span><span class="n">limit</span><span class="p">(</span><span class="n">N</span><span class="p">);</span>
 </pre></div>
 
 

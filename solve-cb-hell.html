@@ -244,18 +244,18 @@ awaiting.</p>
     <span class="k">try</span> <span class="p">{</span>
       <span class="c1">// get the book in the http request</span>
       <span class="kd">var</span> <span class="nx">bookResponse</span> <span class="o">=</span>
-        <span class="k">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">);</span>
+        <span class="nx">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">);</span>
       <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">bookResponse</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
 
       <span class="c1">// get the author in http request</span>
       <span class="kd">var</span> <span class="nx">authorResponse</span> <span class="o">=</span>
-        <span class="k">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://anothersite.com/api/v1/store/author/&quot;</span> <span class="o">+</span> <span class="nx">book</span><span class="p">.</span><span class="nx">author</span><span class="p">);</span>
+        <span class="nx">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://anothersite.com/api/v1/store/author/&quot;</span> <span class="o">+</span> <span class="nx">book</span><span class="p">.</span><span class="nx">author</span><span class="p">);</span>
       <span class="kd">var</span> <span class="nx">author</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">authorResponse</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
 
       <span class="nx">book</span><span class="p">.</span><span class="nx">author</span> <span class="o">=</span> <span class="nx">author</span><span class="p">;</span>
 
       <span class="c1">// insert into the database and wait for the result of the write</span>
-      <span class="k">yield</span> <span class="nx">database</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">book</span><span class="p">);</span>
+      <span class="nx">yield</span> <span class="nx">database</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">book</span><span class="p">);</span>
 
       <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>

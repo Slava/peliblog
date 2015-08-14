@@ -80,18 +80,18 @@ How JavaScript Hoisting can be dangerous  </title>
 into these pitfalls. My thinking was, hoisting is so innocuous, it can't be
 tricky once you know it exists. Today I randomly came up with this example:</p>
 <div class="highlight"><pre><span class="c1">// Global object, window in browser or global in node</span>
-<span class="nx">G</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
-<span class="kd">function</span> <span class="nx">hoistingExample</span><span class="p">()</span> <span class="p">{</span>
+<span class="no">G</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+<span class="k">function</span> <span class="n">hoistingExample</span><span class="p">()</span> <span class="p">{</span>
   <span class="c1">// this is global for sure</span>
-  <span class="nx">G</span><span class="p">.</span><span class="nx">answer</span> <span class="o">=</span> <span class="s2">&quot;global answer&quot;</span><span class="p">;</span>
+  <span class="no">G</span><span class="p">.</span><span class="n">answer</span> <span class="o">=</span> <span class="s">&quot;global answer&quot;</span><span class="p">;</span>
   <span class="c1">// looks like we are modifying global var</span>
-  <span class="nx">answer</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+  <span class="n">answer</span> <span class="o">=</span> <span class="mh">42</span><span class="p">;</span>
   <span class="c1">// create new local var</span>
-  <span class="kd">var</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">33</span><span class="p">;</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">answer</span><span class="p">,</span> <span class="nx">G</span><span class="p">.</span><span class="nx">answer</span><span class="p">);</span>
+  <span class="k">var</span> <span class="n">answer</span> <span class="o">=</span> <span class="mh">33</span><span class="p">;</span>
+  <span class="n">console</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">answer</span><span class="p">,</span> <span class="no">G</span><span class="p">.</span><span class="n">answer</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="nx">hoistingExample</span><span class="p">();</span>
+<span class="n">hoistingExample</span><span class="p">();</span>
 </pre></div>
 
 

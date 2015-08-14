@@ -136,25 +136,25 @@ Cocoa learning  </title>
 <h3>Controls</h3>
 <h4><code>NSButton</code></h4>
 <p>Can be oval, square, checkbox. Most common messages sent to buttons:</p>
-<div class="highlight"><pre><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setEnabled:</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">yn</span>
-<span class="p">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">state</span>
-<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setState:</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">aState</span>
+<div class="highlight"><pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setEnabled:</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">yn</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">state</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setState:</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">aState</span>
 </pre></div>
 
 
 <h4><code>NSSlider</code></h4>
 <p>Used to select values in ranges. Can be vertical, horizontal and circular. Can send messages continiously while dragging and can send once on mouse button release. Can have markers and prevent selecting values between markers. Two most used messages:</p>
-<div class="highlight"><pre><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setFloatValue:</span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="nv">x</span>
-<span class="p">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="nf">floatValue</span>
+<div class="highlight"><pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setFloatValue:</span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="nv">x</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="nf">floatValue</span>
 </pre></div>
 
 
 <h4><code>NSField</code></h4>
 <p>Single line input field. Uneditable fields are used as labels.  <code>NSSecureTextField</code> is subclass which is used for passwords. </p>
-<div class="highlight"><pre><span class="p">-</span> <span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">stringValue</span>
-<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setStringValue:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">aString</span>
-<span class="p">-</span> <span class="p">(</span><span class="bp">NSObject</span> <span class="o">*</span><span class="p">)</span><span class="nf">objectValue</span>
-<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setObjectValue:</span><span class="p">(</span><span class="bp">NSObject</span> <span class="o">*</span><span class="p">)</span><span class="nv">obj</span>
+<div class="highlight"><pre><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">stringValue</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setStringValue:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">aString</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSObject</span> <span class="o">*</span><span class="p">)</span><span class="nf">objectValue</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setObjectValue:</span><span class="p">(</span><span class="n">NSObject</span> <span class="o">*</span><span class="p">)</span><span class="nv">obj</span>
 </pre></div>
 
 
@@ -187,16 +187,16 @@ BTW syntax of implementing protocol:</p>
 
 <h3>Key-Value Coding</h3>
 <p>Similarly to to JS, we can refer to objects instance property by string key.</p>
-<div class="highlight"><pre><span class="k">@interface</span> <span class="nc">Student</span> : <span class="bp">NSObject</span>
+<div class="highlight"><pre><span class="k">@interface</span> <span class="nc">Student</span> : <span class="nc">NSObject</span>
 <span class="p">{</span>
-    <span class="bp">NSString</span> <span class="o">*</span><span class="n">firstName</span><span class="p">;</span>
+    <span class="n">NSString</span> <span class="o">*</span><span class="n">firstName</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="p">...</span>
-<span class="p">@</span><span class="n">ends</span>
+<span class="err">@</span><span class="n">ends</span>
 <span class="p">...</span>
 <span class="n">Student</span> <span class="o">*</span><span class="n">s</span> <span class="o">=</span> <span class="p">[[</span><span class="n">Student</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
-<span class="p">[</span><span class="n">s</span> <span class="nl">setValue</span><span class="p">:</span><span class="s">@&quot;Larry&quot;</span> <span class="nl">forKey</span><span class="p">:</span><span class="s">@&quot;firstName&quot;</span><span class="p">];</span>
-<span class="bp">NSString</span> <span class="o">*</span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="nl">valueForKey</span><span class="p">:</span><span class="s">@&quot;firstName&quot;</span><span class="p">];</span>
+<span class="p">[</span><span class="n">s</span> <span class="n">setValue</span><span class="o">:</span><span class="s">@&quot;Larry&quot;</span> <span class="n">forKey</span><span class="o">:</span><span class="s">@&quot;firstName&quot;</span><span class="p">];</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="n">valueForKey</span><span class="o">:</span><span class="s">@&quot;firstName&quot;</span><span class="p">];</span>
 </pre></div>
 
 
@@ -216,40 +216,40 @@ BTW syntax of implementing protocol:</p>
 <p>There is also <code>nonatomic</code> which is self-explanatory, by default getters and setters are atomic.</p>
 <h3>Key pathes</h3>
 <p>If you look better, objects create directed graph. So to any object we can find several pathes, including that starts in itself. You can use it to access variable:</p>
-<div class="highlight"><pre><span class="bp">NSString</span> <span class="o">*</span><span class="n">mn</span> <span class="o">=</span> <span class="p">[</span><span class="n">selectedPerson</span> <span class="nl">valueForKeyPath</span><span class="p">:</span><span class="s">@&quot;spouse.scooter.modelName&quot;</span><span class="p">];</span>
+<div class="highlight"><pre><span class="n">NSString</span> <span class="o">*</span><span class="n">mn</span> <span class="o">=</span> <span class="p">[</span><span class="n">selectedPerson</span> <span class="n">valueForKeyPath</span><span class="o">:</span><span class="s">@&quot;spouse.scooter.modelName&quot;</span><span class="p">];</span>
 </pre></div>
 
 
 <p>You even can use operators in pathes such as <code>@avg</code>, <code>@count</code>, <code>@max</code>, <code>@min</code>, <code>@sum</code>:</p>
-<div class="highlight"><pre><span class="bp">NSNumber</span> <span class="o">*</span><span class="n">theAverage</span> <span class="o">=</span> <span class="p">[</span><span class="n">employees</span> <span class="nl">valueForKeyPath</span><span class="p">:</span><span class="s">@&quot;@avg.expectedRaise&quot;</span><span class="p">];</span>
+<div class="highlight"><pre><span class="n">NSNumber</span> <span class="o">*</span><span class="n">theAverage</span> <span class="o">=</span> <span class="p">[</span><span class="n">employees</span> <span class="n">valueForKeyPath</span><span class="o">:</span><span class="s">@&quot;@avg.expectedRaise&quot;</span><span class="p">];</span>
 </pre></div>
 
 
 <h3>Programmatical binding</h3>
 <p>You can bind programmatically one object to another using pathes:</p>
-<div class="highlight"><pre><span class="p">[</span><span class="n">textField</span> <span class="nl">bind</span><span class="p">:</span><span class="s">@&quot;value&quot;</span> <span class="nl">toObject</span><span class="p">:</span><span class="n">employeeController</span> <span class="nl">withKeyPath</span><span class="p">:</span><span class="s">@&quot;arrangedObjects.@avg.expectedRaise&quot;</span> <span class="nl">options</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
+<div class="highlight"><pre><span class="p">[</span><span class="n">textField</span> <span class="n">bind</span><span class="o">:</span><span class="s">@&quot;value&quot;</span> <span class="n">toObject</span><span class="o">:</span><span class="n">employeeController</span> <span class="n">withKeyPath</span><span class="o">:</span><span class="s">@&quot;arrangedObjects.@avg.expectedRaise&quot;</span> <span class="n">options</span><span class="o">:</span><span class="nb">nil</span><span class="p">];</span>
 </pre></div>
 
 
 <p>And unbind:</p>
-<div class="highlight"><pre><span class="p">[</span><span class="n">textField</span> <span class="nl">unbind</span><span class="p">:</span><span class="s">@&quot;value&quot;</span><span class="p">];</span>
+<div class="highlight"><pre><span class="p">[</span><span class="n">textField</span> <span class="n">unbind</span><span class="o">:</span><span class="s">@&quot;value&quot;</span><span class="p">];</span>
 </pre></div>
 
 
 <h3>Programmatically add observer</h3>
 <p>Similarly to C#'s <code>+=</code> and <code>-=</code> event operators(but less functionally reach) you can add observer for value:</p>
-<div class="highlight"><pre><span class="p">[</span><span class="n">theAppDelegate</span> <span class="nl">addObserver</span><span class="p">:</span><span class="nb">self</span>
-                 <span class="nl">forKeyPath</span><span class="p">:</span><span class="s">@&quot;fido&quot;</span>
-                    <span class="nl">options</span><span class="p">:</span><span class="n">NSKeyValueChangeOldKey</span>
-                    <span class="nl">context</span><span class="p">:</span><span class="n">somePointer</span><span class="p">];</span>
+<div class="highlight"><pre><span class="p">[</span><span class="n">theAppDelegate</span> <span class="n">addObserver</span><span class="o">:</span><span class="n">self</span>
+                 <span class="nl">forKeyPath:</span><span class="s">@&quot;fido&quot;</span>
+                    <span class="nl">options:</span><span class="n">NSKeyValueChangeOldKey</span>
+                    <span class="nl">context:</span><span class="n">somePointer</span><span class="p">];</span>
 </pre></div>
 
 
 <p>The method that is triggered looks like this:</p>
-<div class="highlight"><pre><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">observeValueForKeyPath:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">keyPath</span>
-                      <span class="nf">ofObject:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">object</span>
-                        <span class="nf">change:</span><span class="p">(</span><span class="bp">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">change</span>
-                       <span class="nf">context:</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span><span class="nv">context</span>
+<div class="highlight"><pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">observeValueForKeyPath:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">keyPath</span>
+                      <span class="nl">ofObject:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">object</span>
+                        <span class="nl">change:</span><span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">change</span>
+                       <span class="nl">context:</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span><span class="nv">context</span>
 <span class="p">{</span>
 <span class="p">...</span>
 <span class="p">}</span>
