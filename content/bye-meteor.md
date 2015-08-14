@@ -5,7 +5,7 @@ Date: 2015-08-13
 ![pre new logo](/images/meteor-crew.png)
 
 Next week is going to be my last week at Meteor! I am leaving the job
-I love so my much, the company and community I have been living every
+I love so much, the company and community I have been living every
 day for the past two and half years. The next years of my life will be
 an exciting journey through American university life at MIT, the
 culture of hacking and engineering. Here is my goodbye post.
@@ -25,7 +25,7 @@ That's truly have been an inspiration for my self-learnings.
 Overall, I worked on almost every part of the Meteor framework:
 real-time connectors for all kind of databases, Blaze, Isobuild,
 Minimongo, Tern-Meteor, Windows and Apache Cordova support. There is a
-handful of files in the entire Meteor framework codebase that I am
+handful of files in the entire Meteor framework code-base that I am
 unfamiliar with.
 
 I tried to do my best to engage with the community of the Meteor
@@ -34,10 +34,10 @@ friends of mine. Besides hanging out with people on SF Devshops, I've
 visited the meetup groups in Boston, Singapore, Oakland and Palo
 Alto. I called into meetup groups in Ukraine, Russia and Brazil.  Have
 travelled and talked to Meteor developers in Florida and Texas. I
-won't even tell you how many times people came up to me in the gym, on
+won't even tell you how many times people came up to me in a gym, on
 a street, or in a restaurant once they saw a Meteor logo on my
 bag. One lad even bought me a beer without knowing I don't drink
-(sorry to dissappoint).
+(sorry to disappoint).
 
 Meteor truly has changed my life and despite all difficulties with the
 product or the company, it will remain a big part of who I am. So far,
