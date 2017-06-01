@@ -87,36 +87,36 @@ Checkout <a href="https://github.com/laverdet/node-fibers">the repo on Github</a
 <p>The second reason could be a reasonable substitution for threads. Fibers can give you some sort of multitasking in single-threaded Javascript.</p>
 <h2>How</h2>
 <p>After you get <code>Fibers</code> npm module you can start:</p>
-<div class="highlight"><pre><span class="nv">$ </span>npm install fibers
+<div class="highlight"><pre><span></span>$ npm install fibers
 </pre></div>
 
 
 <p>Require fibers library like anything else:</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">Fiber</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fibers&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">Fiber</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fibers&#39;</span><span class="p">);</span>
 </pre></div>
 
 
 <p>To create a fiber just pass any function:</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">fiber</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">fiber</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;I am inside fibers&#39;</span><span class="p">);</span>
 <span class="p">});</span>
 </pre></div>
 
 
 <p>You can run it invoking the <code>run</code> method:</p>
-<div class="highlight"><pre><span class="nx">fiber</span><span class="p">.</span><span class="nx">run</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><span class="nx">fiber</span><span class="p">.</span><span class="nx">run</span><span class="p">();</span>
 </pre></div>
 
 
 <p>You can get the instance of fiber you are running in object <code>Fiber.current</code> and get the number of running fibers by accessing <code>Fiber.fibersCreated</code>.</p>
 <p>There is the third member available: <code>yield</code>. That is where magic happens. It gives control to the caller of fiber. Everything you had in stack on fiber will be remain untouched and accessible when you will run the fiber next time. Once fiber function returns it will roll back to its original state - empty stack.</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
-    <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
+    <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
     <span class="nx">n</span><span class="o">++</span><span class="p">;</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
-    <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
+    <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
     <span class="nx">n</span><span class="o">++</span><span class="p">;</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
 <span class="p">});</span>
@@ -129,32 +129,32 @@ Checkout <a href="https://github.com/laverdet/node-fibers">the repo on Github</a
 
 
 <p>Running this code will give you following output:</p>
-<div class="highlight"><pre><span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">0</span>
-<span class="mi">0</span>
-<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">1</span>
-<span class="mi">1</span>
-<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">2</span>
-<span class="mi">2</span>
-<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">3</span>
-<span class="mi">0</span>
-<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">4</span>
-<span class="mi">1</span>
+<div class="highlight"><pre><span></span>Will run the fiber: 0
+0
+Will run the fiber: 1
+1
+Will run the fiber: 2
+2
+Will run the fiber: 3
+0
+Will run the fiber: 4
+1
 </pre></div>
 
 
 <p>You can see how the fiber preserves the stack vars and starts over when it returns. We could show a bit more complicated example to prove that the whole stack is preserved.</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">ff</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
         <span class="kd">var</span> <span class="nx">m</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="nx">m</span><span class="p">);</span>
-        <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
+        <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
         <span class="nx">m</span><span class="o">--</span><span class="p">;</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="nx">m</span><span class="p">);</span>
     <span class="p">};</span>
 
     <span class="nx">ff</span><span class="p">();</span>
-    <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
+    <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
     <span class="nx">n</span><span class="o">++</span><span class="p">;</span>
     <span class="nx">ff</span><span class="p">();</span>
 <span class="p">});</span>
@@ -166,23 +166,23 @@ Checkout <a href="https://github.com/laverdet/node-fibers">the repo on Github</a
 </pre></div>
 
 
-<div class="highlight"><pre><span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">0</span>
-<span class="mi">0</span> <span class="mi">0</span>
-<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">1</span>
-<span class="mi">0</span> <span class="o">-</span><span class="mi">1</span>
-<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">2</span>
-<span class="mi">1</span> <span class="mi">0</span>
-<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">3</span>
-<span class="mi">1</span> <span class="o">-</span><span class="mi">1</span>
-<span class="n">Will</span> <span class="n">run</span> <span class="n">the</span> <span class="n">fiber</span><span class="o">:</span> <span class="mi">4</span>
-<span class="mi">0</span> <span class="mi">0</span>
+<div class="highlight"><pre><span></span>Will run the fiber: 0
+0 0
+Will run the fiber: 1
+0 -1
+Will run the fiber: 2
+1 0
+Will run the fiber: 3
+1 -1
+Will run the fiber: 4
+0 0
 </pre></div>
 
 
 <p>The next thing to learn is how to pass new values inside fiber: you can invoke the <code>run</code> method with an argument. This argument will be returned by <code>yield</code>.</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;passed %s, get something new&#39;</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
-    <span class="nx">s</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">();</span>
+    <span class="nx">s</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">();</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;now it is %s!&#39;</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
 <span class="p">});</span>
 
@@ -192,16 +192,16 @@ Checkout <a href="https://github.com/laverdet/node-fibers">the repo on Github</a
 </pre></div>
 
 
-<div class="highlight"><pre><span class="n">passed</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">0</span><span class="p">,</span> <span class="n">get</span> <span class="n">something</span> <span class="n">new</span>
-<span class="n">now</span> <span class="n">it</span> <span class="n">is</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">1</span><span class="o">!</span>
-<span class="n">passed</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">2</span><span class="p">,</span> <span class="n">get</span> <span class="n">something</span> <span class="n">new</span>
-<span class="n">now</span> <span class="n">it</span> <span class="n">is</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">3</span><span class="o">!</span>
-<span class="n">passed</span> <span class="n">string</span> <span class="n">number</span> <span class="mi">4</span><span class="p">,</span> <span class="n">get</span> <span class="n">something</span> <span class="n">new</span>
+<div class="highlight"><pre><span></span>passed string number 0, get something new
+now it is string number 1!
+passed string number 2, get something new
+now it is string number 3!
+passed string number 4, get something new
 </pre></div>
 
 
 <p>Similarly you can pass some argument to <code>yield</code> and it will be returned by <code>run</code> command. Now we can create a generator:</p>
-<div class="highlight"><pre><span class="c1">// next - how many jumps further we want to make</span>
+<div class="highlight"><pre><span></span><span class="c1">// next - how many jumps further we want to make</span>
 <span class="kd">var</span> <span class="nx">factorialGenerator</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">factorial</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
     <span class="k">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
@@ -213,7 +213,7 @@ Checkout <a href="https://github.com/laverdet/node-fibers">the repo on Github</a
             <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
         <span class="p">}</span>
 
-        <span class="nx">next</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">.</span><span class="nx">yield</span><span class="p">(</span><span class="nx">factorial</span><span class="p">);</span>
+        <span class="nx">next</span> <span class="o">=</span> <span class="nx">Fiber</span><span class="p">.</span><span class="k">yield</span><span class="p">(</span><span class="nx">factorial</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">});</span>
 
@@ -224,7 +224,7 @@ Checkout <a href="https://github.com/laverdet/node-fibers">the repo on Github</a
 </pre></div>
 
 
-<div class="highlight"><pre><span class="mi">6</span> <span class="mi">5040</span>
+<div class="highlight"><pre><span></span>6 5040
 </pre></div>
 
 

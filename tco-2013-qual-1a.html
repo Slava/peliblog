@@ -87,7 +87,7 @@ TCO 2013 Qual 1A  </title>
 <p>Solution: we need to construct directed graph which has only simple cycles. It means every vertix in graph has one incomming and one outcomming edge. We can construct bipartite graph. For outcomming edges count on the left and incomming ones on the right. As total number of vertixes in table with $R$ rows and $C$ columns will not be very big, we can use $O(N^3)$ algorithm (actually it is $O(MN)$ algo but it is bipartite graph). $$R \times C \times 2 \le 512$$</p>
 <h3>Code</h3>
 <p>250 - HouseBuilding</p>
-<div class="highlight"><pre><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">a</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">a</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">go</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -100,7 +100,7 @@ TCO 2013 Qual 1A  </title>
 
 <span class="kt">int</span> <span class="n">res</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">HouseBuilding</span> <span class="p">{</span>
-<span class="nl">public:</span>
+<span class="k">public</span><span class="o">:</span>
     <span class="kt">int</span> <span class="n">getMinimum</span><span class="p">(</span><span class="n">vector</span> <span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">area</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">res</span> <span class="o">=</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">30</span><span class="p">;</span>
         <span class="n">a</span><span class="o">=</span>  <span class="n">area</span><span class="p">;</span>
@@ -116,21 +116,21 @@ TCO 2013 Qual 1A  </title>
 
 
 <p>1000 - DirectionBoard</p>
-<div class="highlight"><pre><span class="kt">int</span> <span class="n">N</span><span class="p">,</span> <span class="n">M</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">N</span><span class="p">,</span> <span class="n">M</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">to</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="kt">char</span> <span class="n">d</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">switch</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">case</span> <span class="sc">&#39;U&#39;</span>: <span class="n">x</span><span class="o">--</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="n">x</span> <span class="o">=</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="sc">&#39;D&#39;</span>: <span class="n">x</span><span class="o">++</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="n">N</span><span class="p">)</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="sc">&#39;L&#39;</span>: <span class="n">y</span><span class="o">--</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="n">y</span> <span class="o">=</span> <span class="n">M</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="sc">&#39;R&#39;</span>: <span class="n">y</span><span class="o">++</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">==</span> <span class="n">M</span><span class="p">)</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="sc">&#39;U&#39;</span><span class="o">:</span> <span class="n">x</span><span class="o">--</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="n">x</span> <span class="o">=</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="sc">&#39;D&#39;</span><span class="o">:</span> <span class="n">x</span><span class="o">++</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="n">N</span><span class="p">)</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="sc">&#39;L&#39;</span><span class="o">:</span> <span class="n">y</span><span class="o">--</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="n">y</span> <span class="o">=</span> <span class="n">M</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="sc">&#39;R&#39;</span><span class="o">:</span> <span class="n">y</span><span class="o">++</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">==</span> <span class="n">M</span><span class="p">)</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">M</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">int</span> <span class="n">res</span><span class="p">;</span>
 <span class="k">class</span> <span class="nc">DirectionBoard</span> <span class="p">{</span>
-<span class="nl">public:</span>
+<span class="k">public</span><span class="o">:</span>
     <span class="kt">int</span> <span class="n">getMinimum</span><span class="p">(</span><span class="n">vector</span> <span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">board</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">N</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">board</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
         <span class="n">M</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">size</span><span class="p">();</span>

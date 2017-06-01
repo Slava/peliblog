@@ -84,10 +84,10 @@ Good grid view for Cocoa app  </title>
 <p>The only worry is custom <code>OEGridViewCell</code> subclass, which is subclass of <code>CALayer</code>. Visual representation can be achieved with bunch of sublayers arranged in correct order.</p>
 <p>Issue you can meet after implementing fency cell layer: renaming of title in <code>OEGridView</code> is hoping that title is actually a subclass of <code>CATextLayer</code> and is easily accessible with mouse double click. So placing title layer in unusual place can block the renaming feature.</p>
 <p>Another issue I ran into was the fact that grid view reuses cell instances. <code>- (OEGridViewCell *)gridView:cellForItemAtIndex:</code> should be implemented in the way similar to this:</p>
-<div class="highlight"><pre><span class="k">-</span> <span class="p">(</span><span class="n">OEGridViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">gridView:</span><span class="p">(</span><span class="n">OEGridView</span> <span class="o">*</span><span class="p">)</span><span class="nv">gridView</span> <span class="nf">cellForItemAtIndex:</span><span class="p">(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">index</span>
+<div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="n">OEGridViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">gridView:</span><span class="p">(</span><span class="n">OEGridView</span> <span class="o">*</span><span class="p">)</span><span class="nv">gridView</span> <span class="nf">cellForItemAtIndex:</span><span class="p">(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">index</span>
 <span class="p">{</span>
     <span class="c1">// Maybe cell on such position already exists?</span>
-    <span class="n">MYCustomGridViewCell</span> <span class="o">*</span><span class="n">item</span> <span class="o">=</span> <span class="p">(</span><span class="n">MYCustomGridViewCell</span> <span class="o">*</span><span class="p">)[</span><span class="n">gridView</span> <span class="n">cellForItemAtIndex</span><span class="o">:</span><span class="n">index</span> <span class="n">makeIfNecessary</span><span class="o">:</span><span class="nb">NO</span><span class="p">];</span>
+    <span class="n">MYCustomGridViewCell</span> <span class="o">*</span><span class="n">item</span> <span class="o">=</span> <span class="p">(</span><span class="n">MYCustomGridViewCell</span> <span class="o">*</span><span class="p">)[</span><span class="n">gridView</span> <span class="nl">cellForItemAtIndex</span><span class="p">:</span><span class="n">index</span> <span class="nl">makeIfNecessary</span><span class="p">:</span><span class="nb">NO</span><span class="p">];</span>
 
     <span class="c1">// If not, maybe there are cell instance we can reuse</span>
     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">item</span><span class="p">)</span>
@@ -98,7 +98,7 @@ Good grid view for Cocoa app  </title>
         <span class="n">item</span> <span class="o">=</span> <span class="p">[[</span><span class="n">MYCustomGridViewCell</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
 
     <span class="c1">// Set the binding</span>
-    <span class="kt">id</span> <span class="n">object</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">contents</span> <span class="n">objectAtIndex</span><span class="o">:</span><span class="n">index</span><span class="p">];</span>
+    <span class="kt">id</span> <span class="n">object</span> <span class="o">=</span> <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">contents</span> <span class="nl">objectAtIndex</span><span class="p">:</span><span class="n">index</span><span class="p">];</span>
     <span class="n">item</span><span class="p">.</span><span class="n">objectBinding</span> <span class="o">=</span> <span class="n">object</span><span class="p">;</span>
 
     <span class="k">return</span> <span class="n">item</span><span class="p">;</span>

@@ -94,7 +94,7 @@ SRM 571  </title>
 <p>A lot of people from KZ participated today. Even guys from Palo Alto. Even from Kharkov. Keep it up, guys!</p>
 <h3>Code</h3>
 <p>250 - FoxAndMp3</p>
-<div class="highlight"><pre><span class="n">string</span> <span class="nf">toStr</span><span class="p">(</span><span class="n">Int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="n">string</span> <span class="nf">toStr</span><span class="p">(</span><span class="n">Int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">stringstream</span> <span class="n">strm</span><span class="p">;</span>
   <span class="n">strm</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;.mp3&quot;</span><span class="p">;</span>
   <span class="k">return</span> <span class="n">strm</span><span class="p">.</span><span class="n">str</span><span class="p">();</span>
@@ -117,7 +117,7 @@ SRM 571  </title>
 <span class="p">}</span>
 
 <span class="k">class</span> <span class="nc">FoxAndMp3</span> <span class="p">{</span>
-<span class="nl">public:</span>
+<span class="k">public</span><span class="o">:</span>
   <span class="n">vector</span> <span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">playList</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
     <span class="o">::</span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
@@ -141,7 +141,7 @@ SRM 571  </title>
 
 
 <p>500 - MagicMolecule</p>
-<div class="highlight"><pre><span class="kt">int</span> <span class="n">res</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">need</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">res</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">need</span><span class="p">;</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">magicPower</span><span class="p">;</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">magicBond</span><span class="p">;</span>
 <span class="n">map</span><span class="o">&lt;</span><span class="n">Int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">memo</span><span class="p">;</span>
@@ -179,7 +179,7 @@ SRM 571  </title>
 <span class="p">}</span>
 
 <span class="k">class</span> <span class="nc">MagicMolecule</span> <span class="p">{</span>
-<span class="nl">public:</span>
+<span class="k">public</span><span class="o">:</span>
   <span class="kt">int</span> <span class="n">maxMagicPower</span><span class="p">(</span><span class="n">vector</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">magicPower</span><span class="p">,</span> <span class="n">vector</span> <span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">magicBond</span><span class="p">)</span> <span class="p">{</span>
     <span class="o">::</span><span class="n">magicBond</span> <span class="o">=</span> <span class="n">magicBond</span><span class="p">;</span>
     <span class="o">::</span><span class="n">magicPower</span> <span class="o">=</span> <span class="n">magicPower</span><span class="p">;</span>

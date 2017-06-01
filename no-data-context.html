@@ -76,7 +76,7 @@ Handlebars without data context  </title>
     <h1><a href="http://devblog.me/no-data-context.html">Handlebars without data context</a></h1>
   </div>
   <div class="article_text">
-    <p><img alt="Handlebars" src="/images/handlebars.png" /></p>
+    <p><img alt="Handlebars" src="/images/handlebars.png"></p>
 <p>In this post I am proposing a better way to write your Meteor templates. The
 goal is to have more explicit variables and a scope similar to what you can see
 in a regular JavaScript code. We are going to talk about data contexts, dynamic
@@ -118,32 +118,32 @@ is the only way to pass data from template to template. "Data context" can be
 accessed with <a href="http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/">troublesome <code>this</code> keyword</a>. It is inherited by default on
 templates inclusions, so it sneaks into everything; It is silent and the only
 argument, it is also implicit.</p>
-<div class="highlight"><pre><span class="nt">&lt;template</span> <span class="na">name=</span><span class="s">&quot;people&quot;</span><span class="nt">&gt;</span>
-  {{!-- the data context here is { people: <span class="cp">[</span><span class="nx">...</span><span class="cp">]</span> } --}}
-  {{#each people}}
-    {{!-- the data context here is changed by #each and it is { name: ... } --}}
-    {{&gt; person}}
-  {{/each}}
-<span class="nt">&lt;/template&gt;</span>
+<div class="highlight"><pre><span></span><span class="x">&lt;template name=&quot;people&quot;&gt;</span>
+<span class="x">  </span><span class="c">{{!-- the data context here is { people: [...] } --}}</span><span class="x"></span>
+<span class="x">  </span><span class="cp">{{</span><span class="k">#each</span> <span class="nv">people</span><span class="cp">}}</span><span class="x"></span>
+<span class="x">    </span><span class="c">{{!-- the data context here is changed by #each and it is { name: ... } --}}</span><span class="x"></span>
+<span class="x">    </span><span class="cp">{{</span><span class="k">&gt;</span> <span class="nv">person</span><span class="cp">}}</span><span class="x"></span>
+<span class="x">  </span><span class="cp">{{</span><span class="k">/each</span><span class="cp">}}</span><span class="x"></span>
+<span class="x">&lt;/template&gt;</span>
 
-<span class="nt">&lt;template</span> <span class="na">name=</span><span class="s">&quot;person&quot;</span><span class="nt">&gt;</span>
-  {{!-- the data context here is expected to be an object --}}
-  {{!-- with fields &#39;name&#39; and &#39;age&#39; --}}
-  <span class="nt">&lt;span&gt;</span>{{name}}: {{age}}<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/template&gt;</span>
+<span class="x">&lt;template name=&quot;person&quot;&gt;</span>
+<span class="x">  </span><span class="c">{{!-- the data context here is expected to be an object --}}</span><span class="x"></span>
+<span class="x">  </span><span class="c">{{!-- with fields &#39;name&#39; and &#39;age&#39; --}}</span><span class="x"></span>
+<span class="x">  &lt;span&gt;</span><span class="cp">{{</span><span class="nv">name</span><span class="cp">}}</span><span class="x">: </span><span class="cp">{{</span><span class="nv">age</span><span class="cp">}}</span><span class="x">&lt;/span&gt;</span>
+<span class="x">&lt;/template&gt;</span>
 </pre></div>
 
 
 <p>As always, the confusion happens when the data context changes. Constructs like
 <code>#each</code> and <code>#with</code> change the data context and often do it in such a way, that
 you can't access the parent data unless you reside to a weird dotted syntax.</p>
-<div class="highlight"><pre><span class="p">{{</span><span class="vi">#each</span> <span class="nx">people</span><span class="p">}}</span>
-  <span class="p">{{</span><span class="vi">#each</span> <span class="nx">favoriteFruits</span><span class="p">}}</span>
-    <span class="p">{{</span><span class="o">!--</span> <span class="nx">accessing</span> <span class="nx">the</span> <span class="k">parent</span> <span class="kd">data</span> <span class="k">with</span> <span class="nx">a</span> <span class="nx">weird</span> <span class="nx">..</span><span class="o">/</span> <span class="nx">syntax</span> <span class="o">--</span><span class="p">}}</span>
-    <span class="p">{{</span><span class="o">!--</span> <span class="nx">also</span> <span class="nx">using</span> <span class="p">{{</span><span class="nx">this</span><span class="p">}}</span> <span class="k">to</span> <span class="nx">refer</span> <span class="k">to</span> <span class="nx">the</span> <span class="nx">current</span> <span class="kd">data</span> <span class="o">--</span><span class="p">}}</span>
-    <span class="o">&lt;</span><span class="nx">span</span><span class="o">&gt;</span><span class="nx">The</span> <span class="nx">favorite</span> <span class="nx">fruit</span> <span class="nx">of</span> <span class="p">{{</span><span class="nx">..</span><span class="p">/</span><span class="nb">name</span><span class="p">}}</span> <span class="nx">is</span> <span class="p">{{</span><span class="nx">this</span><span class="p">}}</span><span class="o">&lt;/</span><span class="nx">span</span><span class="o">&gt;</span>
-  <span class="p">{{/</span><span class="nb">each</span><span class="p">}}</span>
-<span class="p">{{/</span><span class="nb">each</span><span class="p">}}</span>
+<div class="highlight"><pre><span></span><span class="cp">{{</span><span class="k">#each</span> <span class="nv">people</span><span class="cp">}}</span><span class="x"></span>
+<span class="x">  </span><span class="cp">{{</span><span class="k">#each</span> <span class="nv">favoriteFruits</span><span class="cp">}}</span><span class="x"></span>
+<span class="x">    </span><span class="c">{{!-- accessing the parent data with a weird ../ syntax --}}</span><span class="x"></span>
+<span class="x">    </span><span class="c">{{!-- also using {{this}} to refer to the current data --}}</span><span class="x"></span>
+<span class="x">    &lt;span&gt;The favorite fruit of </span><span class="cp">{{</span><span class="nv">../name</span><span class="cp">}}</span><span class="x"> is </span><span class="cp">{{</span><span class="nv">this</span><span class="cp">}}</span><span class="x">&lt;/span&gt;</span>
+<span class="x">  </span><span class="cp">{{</span><span class="k">/each</span><span class="cp">}}</span><span class="x"></span>
+<span class="cp">{{</span><span class="k">/each</span><span class="cp">}}</span><span class="x"></span>
 </pre></div>
 
 
@@ -183,15 +183,15 @@ meteor/meteor</a>.</p>
 <p>First, let's introduce the notion of scope and tools to manipulate it. I thought
 that the <code>let</code> keyword would be appropriate here. It would be familiar to people
 who have seen the <code>let</code> form in Scheme and the <code>let .. in ..</code> construct in ML.</p>
-<div class="highlight"><pre><span class="p">{{</span><span class="vi">#let</span> <span class="n">city</span><span class="o">=</span><span class="nx">person.bio.homeTown</span> <span class="n">name</span><span class="o">=</span><span class="nx">person.name</span><span class="p">}}</span>
-  <span class="o">&lt;</span><span class="nb">div</span><span class="o">&gt;</span>
-    <span class="p">{{</span><span class="o">!--</span> <span class="nx">access</span> <span class="nx">newly</span> <span class="nx">introduced</span> <span class="nb">variables</span> <span class="nx">city</span> <span class="ow">and</span> <span class="n">name</span> <span class="k">in</span> <span class="nx">this</span> <span class="k">let</span> <span class="n">block</span> <span class="o">--</span><span class="p">}}</span>
-    <span class="p">{{</span><span class="nb">name</span><span class="p">}}</span> <span class="nx">is</span> <span class="nb">from</span> <span class="p">{{</span><span class="nx">city</span><span class="p">}}</span><span class="o">!</span>
+<div class="highlight"><pre><span></span><span class="cp">{{</span><span class="nf">#let</span> <span class="na">city</span><span class="o">=</span><span class="nv">person.bio.homeTown</span> <span class="na">name</span><span class="o">=</span><span class="nv">person.name</span><span class="cp">}}</span><span class="x"></span>
+<span class="x">  &lt;div&gt;</span>
+<span class="x">    </span><span class="c">{{!-- access newly introduced variables city and name in this let block --}}</span><span class="x"></span>
+<span class="x">    </span><span class="cp">{{</span><span class="nv">name</span><span class="cp">}}</span><span class="x"> is from </span><span class="cp">{{</span><span class="nv">city</span><span class="cp">}}</span><span class="x">!</span>
 
-    <span class="p">{{</span><span class="o">!--</span> <span class="nx">still</span> <span class="nx">can</span> <span class="nx">access</span> <span class="nx">person</span> <span class="nb">from</span> <span class="nx">the</span> <span class="nx">scope</span> <span class="nx">above</span> <span class="o">--</span><span class="p">}}</span>
-    <span class="nb">Get</span> <span class="k">to</span> <span class="nx">know</span> <span class="p">{{</span><span class="nx">person.name</span><span class="p">}}</span><span class="nx">.</span>
-  <span class="o">&lt;/</span><span class="nb">div</span><span class="o">&gt;</span>
-<span class="p">{{/</span><span class="k">let</span><span class="p">}}</span>
+<span class="x">    </span><span class="c">{{!-- still can access person from the scope above --}}</span><span class="x"></span>
+<span class="x">    Get to know </span><span class="cp">{{</span><span class="nv">person.name</span><span class="cp">}}</span><span class="x">.</span>
+<span class="x">  &lt;/div&gt;</span>
+<span class="cp">{{</span><span class="nf">/let</span><span class="cp">}}</span><span class="x"></span>
 </pre></div>
 
 
@@ -204,15 +204,15 @@ other templates included within their block.</p>
 <p>Now let's fix the most commonly used construct that relies on the dynamic data
 context: <code>{{#each}}</code>. The new <code>{{#each}}</code> plays the game of lexical scoping and
 introduces a new variable within its body representing the iteration variable:</p>
-<div class="highlight"><pre><span class="p">{{</span><span class="vi">#each</span> <span class="n">person</span> <span class="k">in</span> <span class="nx">people</span><span class="p">}}</span>
-  <span class="o">&lt;</span><span class="nb">div</span><span class="o">&gt;</span><span class="p">{{</span><span class="nx">person.name</span><span class="p">}}</span> <span class="nx">is</span> <span class="nb">from</span> <span class="p">{{</span><span class="nx">person.bio.homeTown</span><span class="p">}}</span><span class="nx">.</span><span class="o">&lt;/</span><span class="nb">div</span><span class="o">&gt;</span>
-<span class="p">{{/</span><span class="nb">each</span><span class="p">}}</span>
+<div class="highlight"><pre><span></span><span class="cp">{{</span><span class="k">#each</span> <span class="nv">person</span> <span class="k">in</span> <span class="nv">people</span><span class="cp">}}</span><span class="x"></span>
+<span class="x">  &lt;div&gt;</span><span class="cp">{{</span><span class="nv">person.name</span><span class="cp">}}</span><span class="x"> is from </span><span class="cp">{{</span><span class="nv">person.bio.homeTown</span><span class="cp">}}</span><span class="x">.&lt;/div&gt;</span>
+<span class="cp">{{</span><span class="k">/each</span><span class="cp">}}</span><span class="x"></span>
 </pre></div>
 
 
 <p><code>person</code> as a variable makes a lot more sense to the reader than an unnamed
 <code>this</code>. This is very similar to what you would do in JavaScript:</p>
-<div class="highlight"><pre><span class="nx">people</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">person</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="nx">people</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">person</span><span class="p">)</span> <span class="p">{</span>
   <span class="c1">// new scope, person is introduced</span>
 <span class="p">});</span>
 </pre></div>
@@ -220,17 +220,17 @@ introduces a new variable within its body representing the iteration variable:</
 
 <h3>Including templates with their scope as arguments</h3>
 <p>And lastly, let's make the template inclusion more descriptive to the reader:</p>
-<div class="highlight"><pre><span class="nt">&lt;template</span> <span class="na">name=</span><span class="s">&quot;person&quot;</span> <span class="na">args=</span><span class="s">&quot;name age city&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div&gt;</span>
-    Everyone, meet {{name}}.
-    {{name}} is {{age}} years old and is coming from {{city}}.
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/template&gt;</span>
+<div class="highlight"><pre><span></span><span class="x">&lt;template name=&quot;person&quot; args=&quot;name age city&quot;&gt;</span>
+<span class="x">  &lt;div&gt;</span>
+<span class="x">    Everyone, meet </span><span class="cp">{{</span><span class="nv">name</span><span class="cp">}}</span><span class="x">.</span>
+<span class="x">    </span><span class="cp">{{</span><span class="nv">name</span><span class="cp">}}</span><span class="x"> is </span><span class="cp">{{</span><span class="nv">age</span><span class="cp">}}</span><span class="x"> years old and is coming from </span><span class="cp">{{</span><span class="nv">city</span><span class="cp">}}</span><span class="x">.</span>
+<span class="x">  &lt;/div&gt;</span>
+<span class="x">&lt;/template&gt;</span>
 </pre></div>
 
 
 <p>Now the inclusion would look like this:</p>
-<div class="highlight"><pre><span class="p">{{</span><span class="o">&gt;</span> <span class="n">person</span> <span class="n">name</span><span class="o">=</span><span class="n">jack</span><span class="p">.</span><span class="n">name</span> <span class="n">age</span><span class="o">=</span><span class="n">jack</span><span class="p">.</span><span class="n">age</span> <span class="n">city</span><span class="o">=</span><span class="n">jack</span><span class="p">.</span><span class="n">bio</span><span class="p">.</span><span class="n">homeTown</span><span class="p">}}</span>
+<div class="highlight"><pre><span></span><span class="cp">{{</span><span class="k">&gt;</span> <span class="nv">person</span> <span class="na">name</span><span class="o">=</span><span class="nv">jack.name</span> <span class="na">age</span><span class="o">=</span><span class="nv">jack.age</span> <span class="na">city</span><span class="o">=</span><span class="nv">jack.bio.homeTown</span><span class="cp">}}</span><span class="x"></span>
 </pre></div>
 
 
@@ -238,7 +238,7 @@ introduces a new variable within its body representing the iteration variable:</
 named arguments. Included template gets its own scope set to the passed
 arguments, similar to a function in JavaScript that gets its own scope set to
 its positional arguments:</p>
-<div class="highlight"><pre><span class="kd">function</span> <span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">city</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">city</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">return</span> <span class="s2">&quot;Everyone, meet &quot;</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="s2">&quot;.\n&quot;</span> <span class="o">+</span>
     <span class="nx">name</span> <span class="o">+</span> <span class="s2">&quot; is &quot;</span> <span class="o">+</span> <span class="nx">age</span> <span class="o">+</span> <span class="s2">&quot; years old and is coming from &quot;</span> <span class="o">+</span> <span class="nx">city</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span>
 <span class="p">}</span>

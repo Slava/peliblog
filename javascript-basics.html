@@ -116,7 +116,7 @@ Javascript basics  </title>
 <p>Declare variable using <code>var</code> keyword. In JavaScript blocks do not have their scope. Only functions have their own scope.</p>
 <h4><code>+</code> operator</h4>
 <p>Sums numbers and concatenates strings. Concatenates with string.</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="s2">&quot;3&quot;</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">5</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="s2">&quot;3&quot;</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">5</span>
 <span class="mi">345</span>
 <span class="o">&gt;</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> <span class="s2">&quot;5&quot;</span>
 <span class="mi">75</span>
@@ -124,7 +124,7 @@ Javascript basics  </title>
 
 
 <h4>Comparisons</h4>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="s2">&quot;dog&quot;</span> <span class="o">==</span> <span class="s2">&quot;dog&quot;</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="s2">&quot;dog&quot;</span> <span class="o">==</span> <span class="s2">&quot;dog&quot;</span>
 <span class="kc">true</span>
 <span class="o">&gt;</span> <span class="mi">1</span> <span class="o">==</span> <span class="kc">true</span>
 <span class="kc">true</span>
@@ -132,7 +132,7 @@ Javascript basics  </title>
 
 
 <p>To avoid type coercion, use the triple-equals operator:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="mi">1</span> <span class="o">===</span> <span class="kc">true</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="mi">1</span> <span class="o">===</span> <span class="kc">true</span>
 <span class="kc">false</span>
 <span class="o">&gt;</span> <span class="kc">true</span> <span class="o">===</span> <span class="kc">true</span>
 <span class="kc">true</span>
@@ -145,25 +145,25 @@ Javascript basics  </title>
 <h3>Objects</h3>
 <p>Objects are key-value pairs collections. Similar to <code>dict</code> in Python.</p>
 <p>Create empty object:</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span> <span class="c1">// or</span>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span> <span class="c1">// or</span>
 <span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{};</span>
 </pre></div>
 
 
 <p>And there are two ways to access properties:</p>
-<div class="highlight"><pre><span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Name&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Name&#39;</span><span class="p">;</span>
 <span class="nx">obj</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Name again&#39;</span><span class="p">;</span>
 </pre></div>
 
 
 <p>Second way gives adventages for building property name in run-time or using reserved key-words as property name:</p>
-<div class="highlight"><pre><span class="nx">obj</span><span class="p">.</span><span class="k">for</span> <span class="o">=</span> <span class="s2">&quot;Simon&quot;</span><span class="p">;</span> <span class="c1">// Syntax error, because &#39;for&#39; is a reserved word</span>
+<div class="highlight"><pre><span></span><span class="nx">obj</span><span class="p">.</span><span class="k">for</span> <span class="o">=</span> <span class="s2">&quot;Simon&quot;</span><span class="p">;</span> <span class="c1">// Syntax error, because &#39;for&#39; is a reserved word</span>
 <span class="nx">obj</span><span class="p">[</span><span class="s2">&quot;for&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Simon&quot;</span><span class="p">;</span> <span class="c1">// works fine</span>
 </pre></div>
 
 
 <p>Object initialisation syntax:</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Carrot&quot;</span><span class="p">,</span>
     <span class="s2">&quot;for&quot;</span><span class="o">:</span> <span class="s2">&quot;Max&quot;</span><span class="p">,</span>
     <span class="nx">details</span><span class="o">:</span> <span class="p">{</span>
@@ -176,7 +176,7 @@ Javascript basics  </title>
 
 <h3>Arrays</h3>
 <p>Arrays are a spectial type type of object.</p>
-<div class="highlight"><pre><span class="c1">// old way</span>
+<div class="highlight"><pre><span></span><span class="c1">// old way</span>
 <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">();</span>
 <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;dog&quot;</span><span class="p">;</span>
 <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">23</span><span class="p">;</span>
@@ -192,26 +192,26 @@ Javascript basics  </title>
 
 
 <p>Looks like a.length is inefficient and instead of:</p>
-<div class="highlight"><pre><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
 <span class="p">}</span>
 </pre></div>
 
 
 <p>nicer is:</p>
-<div class="highlight"><pre><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
 <span class="p">}</span>
 </pre></div>
 
 
 <p>Another way to iterate though all items is:</p>
-<div class="highlight"><pre><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">a</span><span class="p">)</span> <span class="p">{}</span>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">a</span><span class="p">)</span> <span class="p">{}</span>
 </pre></div>
 
 
 <p>Some methods of arrays: <code>push(item[, itemN])</code>, <code>pop()</code>, <code>reverse()</code>, <code>shift()</code>, <code>join(sep)</code>, <code>toString()</code>, <code>concat(item[, itemN])</code>, <code>slice(start, end)</code>, <code>sort([compfn])</code>, <code>splice(start, delcount[, itemN])</code>, <code>unshift([item])</code></p>
 <h3>Functions</h3>
 <p>Function looks like this:</p>
-<div class="highlight"><pre><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
@@ -220,7 +220,7 @@ Javascript basics  </title>
 <p>Call <code>add()</code> will be equivalent to <code>add(undefined, undefined)</code></p>
 <p>Call <code>add(1,2,3)</code> to <code>add(1,2)</code>, so 3 is ignored.</p>
 <p>But function can access all arguments in <code>arguments</code> array passed to it.</p>
-<div class="highlight"><pre><span class="kd">function</span> <span class="nx">add</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">add</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">j</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
@@ -234,19 +234,19 @@ Javascript basics  </title>
 
 
 <p>So function is an object, we can assign it to anything and use anonymous functions.</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
 
 <p>Make call of anonymous function:</p>
-<div class="highlight"><pre><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span> <span class="p">})();</span>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span> <span class="p">})();</span>
 </pre></div>
 
 
 <h3>Custom objects</h3>
 <p>There is no <code>class</code> keyword, so people use bunch of different methods to create OO-classes. But simple classes are functions.</p>
 <p>Used inside a function, <code>this</code> refers to the current object. What that actually means is specified by the way in which you called that function. If you called it using dot notation or bracket notation on an object, that object becomes <code>this</code>. If dot notation wasn't used for the call, <code>this</code> refers to the global object. This is a frequent cause of mistakes.</p>
-<div class="highlight"><pre><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">first</span> <span class="o">=</span> <span class="nx">first</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">last</span> <span class="o">=</span> <span class="nx">last</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">fullName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -262,7 +262,7 @@ Javascript basics  </title>
 
 <p><code>new</code> is strongly related to <code>this</code>. What it does is it creates a brand new empty object, and then calls the function specified, with <code>this</code> set to that new object. Functions that are designed to be called by <code>new</code> are called constructor functions. Common practise is to capitalise these functions as a reminder to call them with <code>new</code>.</p>
 <p>Using function prototype:</p>
-<div class="highlight"><pre><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">first</span> <span class="o">=</span> <span class="nx">first</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">last</span> <span class="o">=</span> <span class="nx">last</span><span class="p">;</span>
 <span class="p">}</span>
@@ -276,7 +276,7 @@ Javascript basics  </title>
 
 
 <p>It means using <code>prototype</code> we can change classes on runtime.</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nb">String</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">reversed</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nb">String</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">reversed</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">r</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
     <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">r</span> <span class="o">+=</span> <span class="k">this</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
@@ -289,7 +289,7 @@ Javascript basics  </title>
 
 
 <p>The prototype forms part of a chain. The root of that chain is Object.prototype, whose methods include toString() — it is this method that is called when you try to represent an object as a string. This is useful for debugging our Person objects:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Simon&quot;</span><span class="p">,</span> <span class="s2">&quot;Willison&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Simon&quot;</span><span class="p">,</span> <span class="s2">&quot;Willison&quot;</span><span class="p">);</span>
 <span class="o">&gt;</span> <span class="nx">s</span>
 <span class="p">[</span><span class="nx">object</span> <span class="nb">Object</span><span class="p">]</span>
 <span class="o">&gt;</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -302,7 +302,7 @@ Javascript basics  </title>
 
 <h3>Inner functions</h3>
 <p>We can declare function inside function:</p>
-<div class="highlight"><pre><span class="kd">function</span> <span class="nx">first</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">first</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">function</span> <span class="nx">second</span><span class="p">(</span><span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
     <span class="p">}</span>
@@ -313,7 +313,7 @@ Javascript basics  </title>
 
 <p>Inner functions share namespace of parent function.</p>
 <h3>Closures</h3>
-<div class="highlight"><pre><span class="kd">function</span> <span class="nx">makeAdder</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">makeAdder</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="kd">function</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
     <span class="p">}</span>

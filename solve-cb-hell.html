@@ -76,7 +76,7 @@ Callbacks, Promises, Generators and Fibers  </title>
     <h1><a href="http://devblog.me/solve-cb-hell.html">Callbacks, Promises, Generators and Fibers</a></h1>
   </div>
   <div class="article_text">
-    <p><img alt="Promises" src="/images/promise.jpg" /></p>
+    <p><img alt="Promises" src="/images/promise.jpg"></p>
 <p>The topic of the use of callbacks vs the use of promises has been rocking
 through JavaScript community for several years now. Some people don't like
 callbacks, other people think that promises are even worse and since generators
@@ -107,7 +107,7 @@ action.</p>
 sometimes we would prefer having anonymous functions to predefined functions.
 We would surely balance between the two so our code doesn't become 10 layers
 indented.</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">saveBookAuthorDescription</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">bookId</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">saveBookAuthorDescription</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">bookId</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
@@ -160,7 +160,7 @@ not all Promises implementations are fully compatible with each other, but most
 of them implement the community defined spec
 <a href="http://promises-aplus.github.io/promises-spec/">Promises/A+</a>.</p>
 <p>Our simple example will now look something like this:</p>
-<div class="highlight"><pre><span class="c1">// Presumably you have converted your HTTP.get and database.insert functions to</span>
+<div class="highlight"><pre><span></span><span class="c1">// Presumably you have converted your HTTP.get and database.insert functions to</span>
 <span class="c1">// promises as well</span>
 <span class="kd">var</span> <span class="nx">saveBookAuthorDescription</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">bookId</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
@@ -237,25 +237,25 @@ generator functions and yielding. Rather then that, you would either write a
 set of helper functions or one of the written ones. After converting all async
 methods to support awaiting on, you would use the <code>yield</code> keyword to mark the
 awaiting.</p>
-<div class="highlight"><pre><span class="c1">// Presumably you have converted your HTTP.get and database.insert functions to</span>
+<div class="highlight"><pre><span></span><span class="c1">// Presumably you have converted your HTTP.get and database.insert functions to</span>
 <span class="c1">// generators. Use a helper library Q.</span>
 <span class="kd">var</span> <span class="nx">saveBookAuthorDescription</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">bookId</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">Q</span><span class="p">.</span><span class="nx">spawn</span><span class="p">(</span><span class="kd">function</span> <span class="o">*</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">try</span> <span class="p">{</span>
       <span class="c1">// get the book in the http request</span>
       <span class="kd">var</span> <span class="nx">bookResponse</span> <span class="o">=</span>
-        <span class="nx">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">);</span>
+        <span class="k">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://api.site.com/book/&quot;</span> <span class="o">+</span> <span class="nx">bookId</span><span class="p">);</span>
       <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">bookResponse</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
 
       <span class="c1">// get the author in http request</span>
       <span class="kd">var</span> <span class="nx">authorResponse</span> <span class="o">=</span>
-        <span class="nx">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://anothersite.com/api/v1/store/author/&quot;</span> <span class="o">+</span> <span class="nx">book</span><span class="p">.</span><span class="nx">author</span><span class="p">);</span>
+        <span class="k">yield</span> <span class="nx">HTTP</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://anothersite.com/api/v1/store/author/&quot;</span> <span class="o">+</span> <span class="nx">book</span><span class="p">.</span><span class="nx">author</span><span class="p">);</span>
       <span class="kd">var</span> <span class="nx">author</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">authorResponse</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
 
       <span class="nx">book</span><span class="p">.</span><span class="nx">author</span> <span class="o">=</span> <span class="nx">author</span><span class="p">;</span>
 
       <span class="c1">// insert into the database and wait for the result of the write</span>
-      <span class="nx">yield</span> <span class="nx">database</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">book</span><span class="p">);</span>
+      <span class="k">yield</span> <span class="nx">database</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">book</span><span class="p">);</span>
 
       <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>

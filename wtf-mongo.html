@@ -76,7 +76,7 @@ Top 5 syntactic weirdnesses to be aware of in MongoDB  </title>
     <h1><a href="http://devblog.me/wtf-mongo.html">Top 5 syntactic weirdnesses to be aware of in MongoDB</a></h1>
   </div>
   <div class="article_text">
-    <p><img alt="mongodb logo" src="http://fc01.deviantart.net/fs70/f/2010/168/e/1/Icon_MongoDB_by_xkneo.png" /></p>
+    <p><img alt="mongodb logo" src="http://fc01.deviantart.net/fs70/f/2010/168/e/1/Icon_MongoDB_by_xkneo.png"></p>
 <p>Rage posts about MongoDB are quite popular these days. Most of them are about
 poor performance on specific data sets, reliability and sharding issues. Some of
 those blog posts might be right, other are just saying that the most popular
@@ -93,10 +93,10 @@ pure-JavaScript clone of MongoDB API to work with in-memory caches. There is no
 reason for me to mock Mongo other than warning everyone about its sharp edges.
 Most of these gotchas are found by <a href="https://twitter.com/glasser">David Glasser</a>.
 This article assumes you are familiar with MongoDB's API.</p>
-<hr />
+<hr>
 <h1>1. Keys order in a hash object</h1>
 <p>Let's say you want to store a simple object literal:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="n">db</span><span class="p">.</span><span class="n">books</span><span class="p">.</span><span class="n">insert</span><span class="p">({</span> <span class="n">title</span><span class="o">:</span> <span class="s">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="p">{</span> <span class="n">author</span><span class="o">:</span> <span class="s">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="p">});</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nt">db</span><span class="p">.</span><span class="nc">books</span><span class="p">.</span><span class="nc">insert</span><span class="o">(</span><span class="p">{</span> <span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
 </pre></div>
 
 
@@ -104,15 +104,15 @@ This article assumes you are familiar with MongoDB's API.</p>
 books published in 1823, written by this author ("A. Griboyedov"). It is
 unlikely to return more than one result but at least it should return the "Woe
 from Wit" book as we just inserted it, right?</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="n">db</span><span class="p">.</span><span class="n">books</span><span class="p">.</span><span class="n">find</span><span class="p">({</span> <span class="n">meta</span><span class="o">:</span> <span class="p">{</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span><span class="p">,</span> <span class="n">author</span><span class="o">:</span> <span class="s">&quot;A. Griboyedov&quot;</span> <span class="p">}</span> <span class="p">});</span>
-<span class="o">&lt;</span> <span class="n">No</span> <span class="n">results</span> <span class="n">returned</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nt">db</span><span class="p">.</span><span class="nc">books</span><span class="p">.</span><span class="nc">find</span><span class="o">(</span><span class="p">{</span> <span class="n">meta</span><span class="p">:</span> <span class="err">{</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span><span class="p">,</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
+<span class="o">&lt;</span> <span class="nt">No</span> <span class="nt">results</span> <span class="nt">returned</span>
 </pre></div>
 
 
 <p>What happened? Didn't we just insert a book with such meta-data? Let's try
 flipping the order of keys in the meta object:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="n">db</span><span class="p">.</span><span class="n">books</span><span class="p">.</span><span class="n">find</span><span class="p">({</span> <span class="n">meta</span><span class="o">:</span> <span class="p">{</span> <span class="n">author</span><span class="o">:</span> <span class="s">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="p">});</span>
-<span class="o">&lt;</span> <span class="p">{</span> <span class="n">_id</span><span class="o">:</span> <span class="p">...,</span> <span class="n">title</span><span class="o">:</span> <span class="s">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span> <span class="p">}</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nt">db</span><span class="p">.</span><span class="nc">books</span><span class="p">.</span><span class="nc">find</span><span class="o">(</span><span class="p">{</span> <span class="n">meta</span><span class="p">:</span> <span class="err">{</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
+<span class="o">&lt;</span> <span class="p">{</span> <span class="n">_id</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="n">title</span><span class="o">:</span> <span class="s2">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="o">...</span> <span class="p">}</span> <span class="err">}</span>
 </pre></div>
 
 
@@ -132,7 +132,7 @@ blog</a>.</p>
 are sorted lexicographically) or just to be consistent across your code base.</p>
 <p>Another workaround would be to use a different selector, specifying certain
 key-paths rather than comparing to an object literal:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">books</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="s1">&#39;meta.year&#39;</span><span class="o">:</span> <span class="mi">1823</span><span class="p">,</span> <span class="s1">&#39;meta.author&#39;</span><span class="o">:</span> <span class="s1">&#39;A. Griboyedov&#39;</span> <span class="p">});</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">books</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="s1">&#39;meta.year&#39;</span><span class="o">:</span> <span class="mi">1823</span><span class="p">,</span> <span class="s1">&#39;meta.author&#39;</span><span class="o">:</span> <span class="s1">&#39;A. Griboyedov&#39;</span> <span class="p">});</span>
 </pre></div>
 
 
@@ -140,14 +140,14 @@ key-paths rather than comparing to an object literal:</p>
 is different.</p>
 <p><strong>The gotcha</strong>: this behavior can be dangerous whenever you want to build a
 multi-key index.</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">books</span><span class="p">.</span><span class="nx">ensureIndex</span><span class="p">({</span> <span class="nx">title</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;meta.year&#39;</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">});</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">books</span><span class="p">.</span><span class="nx">ensureIndex</span><span class="p">({</span> <span class="nx">title</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;meta.year&#39;</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">});</span>
 </pre></div>
 
 
 <p>In such command the priority of <code>title</code> would be higher than the priority of
 <code>meta.year</code> field. This is important to the way MongoDB will lay out your data:
 <a href="http://docs.mongodb.org/manual/core/index-multikey/">Read more in docs</a>.</p>
-<hr />
+<hr>
 <h1>2. undefined, null and undefined</h1>
 <p>Anyone remembers those times when the behavior of <code>undefined</code>, <code>null</code> and the
 relation was confusing? In JavaScript world those are two different values and
@@ -161,7 +161,7 @@ spec</a> defines <code>undefined</code> as "deprecated".</p>
 it</a> at all.</p>
 <p>In the current version (2.4.8) the behavior shows that <code>null</code> and <code>undefined</code>
 are treated as the same value.</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">1</span> <span class="p">});</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">1</span> <span class="p">});</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">2</span> <span class="p">});</span> <span class="c1">// the &#39;a&#39; is undefined implicitly</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="kc">null</span> <span class="p">});</span>
 <span class="o">&lt;</span> <span class="p">{</span> <span class="nx">a</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}</span>
@@ -172,7 +172,7 @@ are treated as the same value.</p>
 <p>I am not sure about the actual implementation, it looks like <code>undefined</code> is just
 converted to <code>null</code> by node driver but is restricted in mongo-shell.</p>
 <p>In the following code we will get the same result printed twice: all 3 objects.</p>
-<div class="highlight"><pre><span class="c1">// from node.js code with mongo/node-native-driver</span>
+<div class="highlight"><pre><span></span><span class="c1">// from node.js code with mongo/node-native-driver</span>
 <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">1</span> <span class="p">});</span>
 <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">2</span> <span class="p">});</span>
 <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="kc">undefined</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">3</span> <span class="p">});</span>
@@ -183,7 +183,7 @@ converted to <code>null</code> by node driver but is restricted in mongo-shell.<
 
 <p>However in mongo-shell you will be able to query only with <code>null</code> but we get all
 three objects as well.</p>
-<div class="highlight"><pre><span class="c1">// from mongo-shell</span>
+<div class="highlight"><pre><span></span><span class="c1">// from mongo-shell</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="kc">undefined</span><span class="p">});</span>
 <span class="o">&lt;</span> <span class="nx">error</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;$err&quot;</span> <span class="o">:</span> <span class="s2">&quot;can&#39;t have undefined in a query expression&quot;</span><span class="p">,</span> <span class="s2">&quot;code&quot;</span> <span class="o">:</span> <span class="mi">13629</span> <span class="p">}</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="kc">null</span><span class="p">});</span>
@@ -196,7 +196,7 @@ three objects as well.</p>
 <p>We can see that mongo/node-native-driver converted the explicit <code>undefined</code> to
 <code>null</code> but left the implicit one as is (which is expected really).</p>
 <p>The cool stuff happens when we insert an explicit <code>undefined</code> <em>from mongo-shell</em>:</p>
-<div class="highlight"><pre><span class="c1">// from mongo-shell</span>
+<div class="highlight"><pre><span></span><span class="c1">// from mongo-shell</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="kc">undefined</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">4</span> <span class="p">});</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="kc">null</span> <span class="p">})</span>
 <span class="o">&lt;</span> <span class="p">{</span> <span class="s2">&quot;a&quot;</span> <span class="o">:</span> <span class="kc">null</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;_id&quot;</span> <span class="o">:</span> <span class="s2">&quot;wMWNPm7zrYXTNJpiA&quot;</span> <span class="p">}</span>
@@ -207,7 +207,7 @@ three objects as well.</p>
 
 <p>We get the same three values and no new object with <code>b=4</code>. Shouldn't <code>undefined</code>
 match <code>null</code>? Let's look at the new object:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">4</span> <span class="p">});</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">things</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">4</span> <span class="p">});</span>
 <span class="o">&lt;</span> <span class="p">{</span> <span class="s2">&quot;_id&quot;</span> <span class="o">:</span> <span class="nx">ObjectId</span><span class="p">(</span><span class="s2">&quot;52ca134f3e47d3d91146f2b5&quot;</span><span class="p">),</span> <span class="s2">&quot;a&quot;</span> <span class="o">:</span> <span class="kc">null</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span> <span class="o">:</span> <span class="mi">4</span> <span class="p">}</span>
 </pre></div>
 
@@ -220,21 +220,21 @@ doesn't match the <code>null</code> from our selector.</p>
 (type number six). The last one doesn't match <code>null</code> from the selectors, first
 two match both <code>undefined</code> and <code>null</code>. The absence of value also matches both.</p>
 <p>Read the original <a href="https://github.com/meteor/meteor/issues/1646#issuecomment-29682964">GitHub issue</a>.</p>
-<hr />
+<hr>
 <h1>3. Soft limits, hard limits and no limits</h1>
 <p>Let's say you have a feed of items and you allow user to specify the number
 items to return. You would return the result of a query looking like this:</p>
-<div class="highlight"><pre><span class="n">db</span><span class="p">.</span><span class="n">items</span><span class="p">.</span><span class="n">find</span><span class="p">({</span> <span class="p">...</span> <span class="p">}).</span><span class="n">limit</span><span class="p">(</span><span class="n">N</span><span class="p">);</span>
+<div class="highlight"><pre><span></span>db.items.find({ ... }).limit(N);
 </pre></div>
 
 
 <p>Where <code>N</code> is supplied by user. Of course we want to be careful and restrict user
 up to 50 items, otherwise anyone in the Internet would be able to load our
 application server and the database simply by supplying a very large <code>N</code>:</p>
-<div class="highlight"><pre><span class="kd">function</span> <span class="nx">getItems</span> <span class="p">(</span><span class="nx">N</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">getItems</span> <span class="p">(</span><span class="nx">N</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">N</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">)</span>
     <span class="nx">N</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="nx">N</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">year</span>: <span class="kt">1</span> <span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="nx">N</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -246,10 +246,10 @@ the MongoDB would take it as "give me everything".</p>
 MongoDB. My guess is some code just treats all falsy values the same way:
 <code>undefined</code>, <code>null</code>, <code>0</code>, absence of value - everything means "no limit".</p>
 <p>That's OK, we can treat <code>0</code> as a special case:</p>
-<div class="highlight"><pre><span class="kd">function</span> <span class="nx">getItems</span> <span class="p">(</span><span class="nx">N</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">getItems</span> <span class="p">(</span><span class="nx">N</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">N</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="o">||</span> <span class="o">!</span><span class="nx">N</span><span class="p">)</span> <span class="c1">// check if N is falsy (&quot;no limit&quot;)</span>
     <span class="nx">N</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="nx">N</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">year</span>: <span class="kt">1</span> <span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="nx">N</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -261,21 +261,21 @@ bazillion of items. It is hard to find the documentation about it but several
 month ago I have seen the description of this behavior in node.js driver's docs,
 it talked about "soft" and "hard" limits. I have no idea what does it mean.</p>
 <p>So the final version of our server-side method would look like this:</p>
-<div class="highlight"><pre><span class="kd">function</span> <span class="nx">getItems</span> <span class="p">(</span><span class="nx">N</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">getItems</span> <span class="p">(</span><span class="nx">N</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">N</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">N</span> <span class="o">=</span> <span class="o">-</span><span class="nx">N</span><span class="p">;</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">N</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="o">||</span> <span class="o">!</span><span class="nx">N</span><span class="p">)</span> <span class="c1">// check if N is falsy (&quot;no limit&quot;)</span>
     <span class="nx">N</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="nx">N</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">year</span>: <span class="kt">1</span> <span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="nx">N</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 
 
 <p><strong>The gotcha</strong>: limit can be negative. It would mean the same as positive in the
 broader sense but the negative one is "soft".</p>
-<hr />
+<hr>
 <h1>4. Special treatment for arrays</h1>
 <p>A lot of people don't know this "feature" but arrays are treated specially.</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="p">[{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">3</span><span class="p">}],</span> <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;aaa&quot;</span><span class="p">})</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="p">[{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">3</span><span class="p">}],</span> <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;aaa&quot;</span><span class="p">})</span>
 
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s1">&#39;a.x&#39;</span><span class="o">:</span> <span class="p">{</span> <span class="nx">$gt</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}})</span>
 <span class="o">&lt;</span> <span class="p">{</span> <span class="s2">&quot;_id&quot;</span> <span class="o">:</span> <span class="s2">&quot;aaa&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span> <span class="o">:</span> <span class="p">[</span>  <span class="p">{</span>  <span class="s2">&quot;x&quot;</span> <span class="o">:</span> <span class="mi">2</span> <span class="p">},</span>  <span class="p">{</span>  <span class="s2">&quot;x&quot;</span> <span class="o">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">]</span> <span class="p">}</span>
@@ -292,7 +292,7 @@ broader sense but the negative one is "soft".</p>
 element and this acts like "if any of those match, then the whole document
 matches".</p>
 <p>Notably, it doesn't work for nested arrays:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">x</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;bbb&quot;</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="p">[</span> <span class="p">[{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">}],</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">1</span><span class="p">}</span> <span class="p">]</span> <span class="p">})</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">x</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;bbb&quot;</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="p">[</span> <span class="p">[{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">}],</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">1</span><span class="p">}</span> <span class="p">]</span> <span class="p">})</span>
 
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">x</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="s1">&#39;b.x&#39;</span><span class="o">:</span> <span class="mi">1</span> <span class="p">})</span>
 <span class="o">&lt;</span> <span class="p">{</span> <span class="s2">&quot;_id&quot;</span> <span class="o">:</span> <span class="s2">&quot;bbb&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span> <span class="o">:</span> <span class="p">[</span>  <span class="p">[</span>  <span class="p">{</span>  <span class="s2">&quot;x&quot;</span> <span class="o">:</span> <span class="mi">0</span> <span class="p">},</span>  <span class="p">{</span>  <span class="s2">&quot;x&quot;</span> <span class="o">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">}</span> <span class="p">],</span>  <span class="p">{</span>  <span class="s2">&quot;x&quot;</span> <span class="o">:</span> <span class="mi">1</span> <span class="p">}</span> <span class="p">]</span> <span class="p">}</span>
@@ -306,14 +306,14 @@ matches".</p>
 
 
 <p>Same feature applies to the fields projections:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">z</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span><span class="p">[[{</span><span class="nx">b</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="nx">c</span><span class="o">:</span><span class="mi">2</span><span class="p">},{</span><span class="nx">b</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span><span class="nx">c</span><span class="o">:</span><span class="mi">4</span><span class="p">}],{</span><span class="nx">b</span><span class="o">:</span><span class="mi">3</span><span class="p">,</span><span class="nx">c</span><span class="o">:</span><span class="mi">5</span><span class="p">},[{</span><span class="nx">b</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span> <span class="nx">c</span><span class="o">:</span><span class="mi">9</span><span class="p">}]]})</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">z</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span><span class="p">[[{</span><span class="nx">b</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="nx">c</span><span class="o">:</span><span class="mi">2</span><span class="p">},{</span><span class="nx">b</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span><span class="nx">c</span><span class="o">:</span><span class="mi">4</span><span class="p">}],{</span><span class="nx">b</span><span class="o">:</span><span class="mi">3</span><span class="p">,</span><span class="nx">c</span><span class="o">:</span><span class="mi">5</span><span class="p">},[{</span><span class="nx">b</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span> <span class="nx">c</span><span class="o">:</span><span class="mi">9</span><span class="p">}]]})</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">z</span><span class="p">.</span><span class="nx">find</span><span class="p">({},</span> <span class="p">{</span><span class="s1">&#39;a.b&#39;</span><span class="o">:</span> <span class="mi">1</span><span class="p">})</span>
 <span class="o">&lt;</span> <span class="p">{</span> <span class="s2">&quot;_id&quot;</span> <span class="o">:</span> <span class="nx">ObjectId</span><span class="p">(</span><span class="s2">&quot;52ca24073e47d3d91146f2b7&quot;</span><span class="p">),</span> <span class="s2">&quot;a&quot;</span> <span class="o">:</span> <span class="p">[</span>  <span class="p">[</span>  <span class="p">{</span>  <span class="s2">&quot;b&quot;</span> <span class="o">:</span> <span class="mi">1</span> <span class="p">},</span>  <span class="p">{</span>  <span class="s2">&quot;b&quot;</span> <span class="o">:</span> <span class="mi">2</span> <span class="p">}</span> <span class="p">],</span>  <span class="p">{</span>  <span class="s2">&quot;b&quot;</span> <span class="o">:</span> <span class="mi">3</span> <span class="p">},</span>  <span class="p">[</span>  <span class="p">{</span>  <span class="s2">&quot;b&quot;</span> <span class="o">:</span> <span class="mi">4</span> <span class="p">}</span> <span class="p">]</span> <span class="p">]</span> <span class="p">}</span>
 </pre></div>
 
 
 <p>If we play a bit more combining this feature with numeric keys in selectors the behavior becomes harder and harder to predict:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">z</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="p">[[{</span><span class="nx">x</span><span class="o">:</span> <span class="s2">&quot;00&quot;</span><span class="p">},</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="s2">&quot;01&quot;</span><span class="p">}],</span> <span class="p">[{</span><span class="nx">x</span><span class="o">:</span> <span class="s2">&quot;10&quot;</span><span class="p">},</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="s2">&quot;11&quot;</span><span class="p">}]],</span> <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;zzz&quot;</span><span class="p">})</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">z</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="p">[[{</span><span class="nx">x</span><span class="o">:</span> <span class="s2">&quot;00&quot;</span><span class="p">},</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="s2">&quot;01&quot;</span><span class="p">}],</span> <span class="p">[{</span><span class="nx">x</span><span class="o">:</span> <span class="s2">&quot;10&quot;</span><span class="p">},</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span> <span class="s2">&quot;11&quot;</span><span class="p">}]],</span> <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;zzz&quot;</span><span class="p">})</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">z</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s1">&#39;a.x&#39;</span><span class="o">:</span> <span class="s1">&#39;00&#39;</span><span class="p">})</span>
 <span class="o">&lt;</span> <span class="nx">Nothing</span> <span class="nx">found</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">z</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s1">&#39;a.x&#39;</span><span class="o">:</span> <span class="s1">&#39;01&#39;</span><span class="p">})</span>
@@ -355,7 +355,7 @@ matches".</p>
 <p>And later becomes just inconsistent. The difference between this and next
 examples is just the inner value: in the last example it is an object, in the
 following it is a number. It is enough for behavior to change:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">p</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">})</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">p</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">})</span>
 
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">p</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="o">:</span> <span class="mi">0</span><span class="p">})</span>
 <span class="o">&lt;</span> <span class="p">{</span> <span class="s2">&quot;_id&quot;</span> <span class="o">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span> <span class="o">:</span> <span class="p">[</span>  <span class="mi">0</span> <span class="p">]</span> <span class="p">}</span>
@@ -378,14 +378,14 @@ your documents queried by selectors with a usual intend to query one-to-one
 pairs. The combination with numeric keys (like <code>{ 'a.0.x': Y }</code> meaning the
 field <code>x</code> of the first element of field <code>a</code> must be <code>Y</code>) may become very
 confusing as it depends on your data.</p>
-<hr />
+<hr>
 <h1>5. $near geo-location operator</h1>
 <p>This one is simple. You have a collection of documents with a location field.
 Location field represents a geo-location. The trick is in two different types of
 locations MongoDB can index, each type has a slightly different API and a
 slightly different behavior.</p>
 <p>The first one looks like this:</p>
-<div class="highlight"><pre><span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
+<div class="highlight"><pre><span></span><span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
   <span class="nx">location</span><span class="o">:</span> <span class="p">{</span>
     <span class="nx">$near</span><span class="o">:</span> <span class="p">[</span><span class="mf">12.3</span><span class="p">,</span> <span class="mf">32.1</span><span class="p">],</span>
     <span class="nx">$maxDistance</span><span class="o">:</span> <span class="mi">777</span>
@@ -395,7 +395,7 @@ slightly different behavior.</p>
 
 
 <p>The second one looks like this:</p>
-<div class="highlight"><pre><span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
+<div class="highlight"><pre><span></span><span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
   <span class="nx">location</span><span class="o">:</span> <span class="p">{</span>
     <span class="nx">$near</span><span class="o">:</span> <span class="p">{</span>
       <span class="nx">$geometry</span><span class="o">:</span> <span class="p">{</span>
@@ -415,7 +415,7 @@ pairs and is a child in case of Geo-JSON.</p>
 <p>But there is more! Sometimes you can get the same point twice in the result set!
 To understand this we need to recall the previous gotcha about nested arrays.
 Consider this code:</p>
-<div class="highlight"><pre><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">location</span><span class="o">:</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span> <span class="p">});</span> <span class="c1">// inserting an array of two points</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span> <span class="nx">location</span><span class="o">:</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span> <span class="p">});</span> <span class="c1">// inserting an array of two points</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">ensureIndex</span><span class="p">({</span> <span class="nx">location</span><span class="o">:</span> <span class="s2">&quot;2d&quot;</span> <span class="p">});</span>
 <span class="o">&gt;</span> <span class="nx">db</span><span class="p">.</span><span class="nx">c</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="nx">location</span><span class="o">:</span> <span class="p">{</span> <span class="nx">$near</span><span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="nx">$maxDistance</span><span class="o">:</span> <span class="mi">500</span> <span class="p">}</span> <span class="p">});</span>
 <span class="o">&lt;</span> <span class="p">{</span> <span class="s2">&quot;_id&quot;</span> <span class="o">:</span> <span class="nx">ObjectId</span><span class="p">(</span><span class="s2">&quot;52ca30ec3e47d3d91146f2b8&quot;</span><span class="p">),</span> <span class="s2">&quot;location&quot;</span> <span class="o">:</span> <span class="p">[</span>  <span class="p">[</span>  <span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span> <span class="p">],</span>  <span class="p">[</span>  <span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span> <span class="p">]</span> <span class="p">]</span> <span class="p">}</span>
@@ -424,7 +424,7 @@ Consider this code:</p>
 
 
 <p>Same point is returned twice as both points from the array match the selector.</p>
-<hr />
+<hr>
 <p>All these gotchas remind me the days when I first started coding in JavaScript.
 There are several corner cases, some of them work inconsistently across browsers,
 some of the features you never want to use, somewhere you want to be extra
@@ -435,7 +435,7 @@ MongoDB in the project called
 <a href="https://github.com/meteor/meteor/tree/devel/packages/minimongo">Minimongo</a>,
 mostly by <a href="https://twitter.com/glasser">David Glasser</a>.</p>
 <p>This article will be updated as new weirdnesses come to mind.</p>
-<hr />
+<hr>
 <p>Update of 1 April 2014: I talked about some of these issues and some new gotchas
 on SF Meteor Devshop, the recording of the talk is below. "Don't get bitten by
 Mungos (or Mongos)":</p>
