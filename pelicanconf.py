@@ -3,9 +3,9 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Slava Kim'
-TAGLINE = u'Learning to code since 2008'
+TAGLINE = u'I am here to learn'
 SITENAME = u'Yet Another Dev Blog'
-SITEURL = 'http://devblog.me'
+SITEURL = '//devblog.me'
 
 TIMEZONE = 'America/Los_Angeles'
 
@@ -26,8 +26,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('My GitHub', 'https://github.com/slava'),
-          ('Me on Twitter', 'https://twitter.com/imslavko'),
+LINKS =  (('GitHub', 'https://github.com/slava'),
+          ('Twitter', 'https://twitter.com/imslavko'),
           ('More about me', 'http://slv.io/'),)
 
 # Social widget
