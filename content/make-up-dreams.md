@@ -22,18 +22,18 @@ Anyway, I showed this song to my mother in excitement maybe several years ago, a
     When you don’t know yet, what kind of man you want to become:
     Stern or cool, free or married
     Nimble or simple
-    And when you haven’t found yet your axis
+    And when you haven’t set your axis up yet
     When you don’t know, how to express everything
-    When you pretend to be someone else, and evade fares
+    When you pretend to be someone else, bust also evade the bus fares
     When you wear the clothes you don’t like
     But inside you want to be a little glamorous
     When you dream of the one love
-    And fall in love with everything you see
-    When you give up on friendships in heat but inside is pain
-    When didn’t figure it out yet, but are furious in a moment
-    When you are a dependant, no money, and you can see that day in dreams
-    When everything will be your way, but right now there is no other way
-    When on the sudden mood swings your body
+    And fall for anyone/anything you see
+    When you give up on friendships in a heat but inside feel pain
+    When didn’t figure it out yet, but become furious in a moment
+    When you are a dependant, no money, and you can dream of the day
+    When everything will be your way, but right now there is nothing you can do
+    When on sudden mood swings your body
     Needs to be anchored before it takes off
     
     That’s the time to make up dreams
@@ -47,20 +47,19 @@ Anyway, I showed this song to my mother in excitement maybe several years ago, a
     
     When you already know how to vow, when you can dream so big
     That your heart is shaking, when you love dancing
-    When punks just likes
+    When punks just like you would
     At night vandalize administrative buildings
     When it seems like in the entire God’s world
     You are the chosen one, and sure your friends are, too
     When “virgin” is a demeaning offense
     When you would take for a girl even a devilfish
     When you enrolled in a wrong major for some reason
-    When the parents authority starts to dwindle
+    When the parents' authority starts to dwindle
     When you make correct choices, but rather wrong ones
     When you believe any nonsense
-    
     When you are the most hyped up out of your friends
     When you are on a date, but the hotel has denied you an entrance
-    When picking up a new sport is just a couple of weeks
+    When picking up a new sport takes just a couple of weeks
     When you are looking for a purpose in your life
     
     That’s the time to make up dreams
@@ -78,7 +77,7 @@ Anyway, I showed this song to my mother in excitement maybe several years ago, a
     Suddenly you observe someone’s youthful drive with a heroic dash
     And you long for those times, in a nostalgy all of the sudden
     There are some things that cannot be not mourned when recalling
-    Your own ambitions that are further away
+    Your own ambitions that are further away by day
     And while comparing them with your reality
     
     *Always*, make up dreams
