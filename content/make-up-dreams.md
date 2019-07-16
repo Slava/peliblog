@@ -4,13 +4,14 @@ Date: 2019-07-17
 
 Russian pop music can be weird. Russian rap music sometimes is even worse. Like in any other country, the pop music industry in Russia is a strange product of talent, business, viral marketting and shock content intended to make headlines.
 
+<iframe src="https://www.youtube.com/embed/3c09THxNmKA" frameborder="0" allowfullscreen></iframe>
+
 What about the Russian rap? I have not been following it for too long but my impression is that there are two types of Russian rappers:
+
 - The ones who get inspired by the Western rap music, American rap music videos and hence immitate a lot of those motives
 - The ones who find their own style and their own topics to talk about
 
 I am more of a fan of the latter and there is this one song, that is getting old by the music standards but I still really enjoy listening to it now and then.
-
-<iframe src="https://www.youtube.com/embed/3c09THxNmKA" frameborder="0" allowfullscreen></iframe>
 
 The song is called "Make up Dreams" and is sang by Kasta (original: "Сочиняй Мечты" by Каста). This song stands out to me: it covers the topics of aspiration to life, achieving goals, dreaming of something better and moving towards it. This is unlike a common topic of corruption in the government, societal problems and if we are talking about the Western-immitating rap - girls and cars.
 
