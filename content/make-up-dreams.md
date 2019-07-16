@@ -4,7 +4,7 @@ Date: 2019-07-17
 
 Russian pop music can be weird. Russian rap music sometimes is even worse. Like in any other country, the pop music industry in Russia is a strange product of talent, business, viral marketting and shock content intended to make headlines.
 
-<iframe src="https://www.youtube.com/embed/3c09THxNmKA" frameborder="0" allowfullscreen></iframe>
+<iframe src="//www.youtube.com/embed/3c09THxNmKA" width="640" height="360"  frameborder="0" allowfullscreen></iframe>
 
 What about the Russian rap? I have not been following it for too long but my impression is that there are two types of Russian rappers:
 
