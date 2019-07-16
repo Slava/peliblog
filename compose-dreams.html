@@ -15,10 +15,28 @@
   <meta name="description" content="Posts and writings by Slava Kim">
 
 
+    
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript">
+       MathJax.Hub.Config({
+           config: ["MMLorHTML.js"],
+           jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+           TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
+           extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+           tex2jax: { 
+               inlineMath: [ ['$','$'] ],
+               displayMath: [ ['$$','$$'] ],
+               processEscapes: true },
+           "HTML-CSS": {
+               styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+           }
+       });
+    </script>
 
+
+<meta name="keywords" content="">
 
   <title>
-Tag: платформа  </title>
+Time to Compose Dreams  </title>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -50,45 +68,44 @@ Tag: платформа  </title>
 
   <main>
     <header>
-<p>Tag: платформа
-</p>
+<p>Posted on Mon 15 July 2019</p>
     </header>
 
 <article>
   <div class="article_title">
-    <h3><a href="//devblog.me/meteor-too-easy-ru.html">Meteor: Too Easy to Be Real</a></h3>
+    <h1><a href="//devblog.me/compose-dreams.html">Time to Compose Dreams</a></h1>
   </div>
   <div class="article_text">
-    <p>Многие считают, что простота в освноении <a href="https://www.meteor.com">Meteor</a> - это
-недостаток, все не должно быть так просто. На самом деле под капотом Meteor -
-самое что ни на есть чудо инженерской мысли. А технология любой сложности будет
-только лучше, если она будет доступна людям.</p>
-<p><img alt="Meteor splash image" src="/images/meteor-splash.png"></p>
-<h2>Meteor - прост для новичков</h2>
-<p>В официальном блоге Meteor уже …</p>
-    <a href="//devblog.me/meteor-too-easy-ru.html">continue reading</a>
+    
   </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h3><a href="//devblog.me/meteor-intro-ru.html">Meteor - по-русски</a></h3>
+  <div class="article_meta">
+    <p>Category: <a href="//devblog.me/category/misc.html">misc</a></p>
+    <p>Comments: <a href="#" onclick="javascript:toggleComments();return false;">toggle</a></p>
   </div>
-  <div class="article_text">
-    <p><img alt="Meteor splash image" src="/images/meteor-splash.png"></p>
-<p>С тех пор как я начал работать в <a href="https://www.meteor.com">Meteor Development
-Group</a> в мае 2013 года, друзья и знакомые, которые
-программируют, но не читают <a href="http://news.ycombinator.com">Hacker News</a>
-спрашивали меня: "Что же такое этот Метеор?". И мне всегда было сложно ответить
-в двух словах. Этим постом я хочу дать свой взгляд на этот …</p>
-    <a href="//devblog.me/meteor-intro-ru.html">continue reading</a>
-  </div>
+
+    <div id="article_comments" style="display:block">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+           var disqus_identifier = "compose-dreams.html";
+           (function() {
+           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+           dsq.src = 'http://zdeslavablog.disqus.com/embed.js';
+           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+    </div>
+
 </article>
 
     <footer>
-<div id="paginator">
-
-</div>
+<p><a href="//devblog.me/" class="button_accent">&larr; Back to Index</a></p>
+<script language="javascript">
+    function toggleComments() {
+        var commentDiv = document.getElementById("article_comments");
+        (commentDiv.style.display == "none") ? commentDiv.style.display = "block" : commentDiv.style.display = "none";
+        return false;
+    }
+</script>
     </footer>
 
     <div id="ending_message">

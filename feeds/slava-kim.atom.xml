@@ -1,5 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Yet Another Dev Blog - Slava Kim</title><link href="//devblog.me/" rel="alternate"></link><link href="//devblog.me/feeds/slava-kim.atom.xml" rel="self"></link><id>//devblog.me/</id><updated>2017-06-01T00:00:00-07:00</updated><entry><title>How I Went To College</title><link href="//devblog.me/college.html" rel="alternate"></link><published>2017-06-01T00:00:00-07:00</published><updated>2017-06-01T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2017-06-01:/college.html</id><summary type="html">&lt;p&gt;&lt;img alt="Posing in Boston" src="/images/boston.jpg"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Yet Another Dev Blog - Slava Kim</title><link href="//devblog.me/" rel="alternate"></link><link href="//devblog.me/feeds/slava-kim.atom.xml" rel="self"></link><id>//devblog.me/</id><updated>2019-07-17T00:00:00-07:00</updated><entry><title>Time To Make Up Dreams</title><link href="//devblog.me/make-up-dreams.html" rel="alternate"></link><published>2019-07-17T00:00:00-07:00</published><updated>2019-07-17T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2019-07-17:/make-up-dreams.html</id><summary type="html">&lt;p&gt;Russian pop music can be weird. Russian rap music sometimes is even worse. Like in any other country, the pop music industry in Russia is a strange product of talent, business, viral marketting and shock content intended to make headlines.&lt;/p&gt;
+&lt;p&gt;What about the Russian rap? I have not been following …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Russian pop music can be weird. Russian rap music sometimes is even worse. Like in any other country, the pop music industry in Russia is a strange product of talent, business, viral marketting and shock content intended to make headlines.&lt;/p&gt;
+&lt;p&gt;What about the Russian rap? I have not been following it for too long but my impression is that there are two types of Russian rappers:
+- The ones who get inspired by the Western rap music, American rap music videos and hence immitate a lot of those motives
+- The ones who find their own style and their own topics to talk about&lt;/p&gt;
+&lt;p&gt;I am more of a fan of the latter and there is this one song, that is getting old by the music standards but I still really enjoy listening to it now and then.&lt;/p&gt;
+&lt;iframe src="https://www.youtube.com/embed/3c09THxNmKA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The song is called "Make up Dreams" and is sang by Kasta (original: "Сочиняй Мечты" by Каста). This song stands out to me: it covers the topics of aspiration to life, achieving goals, dreaming of something better and moving towards it. This is unlike a common topic of corruption in the government, societal problems and if we are talking about the Western-immitating rap - girls and cars.&lt;/p&gt;
+&lt;p&gt;This song makes me inspired to go out and pursue my interest, forgo temporary struggles and think bigger, freely and without fear. The artists do something in this song really well - they try to relate to everyone in any age group and any place by mentioning the usual stages of being young and confused; the active ambitious years when everything seems to be within reach; and the later years when you might feel kinda settled and nothing seems to change as fast. Without mentioning the specific age or circumstance, they present us with the stages of life we all go through in some way. And once you are onboard and you can point at the verse and say "yes, this is about me right now", the song always follows up with the chorus unconditionally telling you "this is your time to make up new dreams".&lt;/p&gt;
+&lt;p&gt;Anyway, I showed this song to my mother in excitement maybe several years ago, and recently wanted to share it with a friend. Unfortunately I couldn't find a decent translation of the lyrics to English, so I thought it is worth doing it myself. By no means a professional translation, nevertheless:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;don&lt;/span&gt;’&lt;span class="nv"&gt;t&lt;/span&gt; &lt;span class="nv"&gt;know&lt;/span&gt; &lt;span class="nv"&gt;yet&lt;/span&gt;, &lt;span class="nv"&gt;what&lt;/span&gt; &lt;span class="nv"&gt;kind&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt; &lt;span class="nv"&gt;man&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;want&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;become&lt;/span&gt;:
+&lt;span class="nv"&gt;Stern&lt;/span&gt; &lt;span class="nv"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;cool&lt;/span&gt;, &lt;span class="nv"&gt;free&lt;/span&gt; &lt;span class="nv"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;married&lt;/span&gt;
+&lt;span class="nv"&gt;Nimble&lt;/span&gt; &lt;span class="nv"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;simple&lt;/span&gt;
+&lt;span class="nv"&gt;And&lt;/span&gt; &lt;span class="nv"&gt;when&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;haven&lt;/span&gt;’&lt;span class="nv"&gt;t&lt;/span&gt; &lt;span class="nv"&gt;found&lt;/span&gt; &lt;span class="nv"&gt;yet&lt;/span&gt; &lt;span class="nv"&gt;your&lt;/span&gt; &lt;span class="nv"&gt;axis&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;don&lt;/span&gt;’&lt;span class="nv"&gt;t&lt;/span&gt; &lt;span class="nv"&gt;know&lt;/span&gt;, &lt;span class="nv"&gt;how&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;express&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;pretend&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;be&lt;/span&gt; &lt;span class="nv"&gt;someone&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt;, &lt;span class="nv"&gt;and&lt;/span&gt; &lt;span class="nv"&gt;evade&lt;/span&gt; &lt;span class="nv"&gt;fares&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;wear&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;clothes&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;don&lt;/span&gt;’&lt;span class="nv"&gt;t&lt;/span&gt; &lt;span class="nv"&gt;like&lt;/span&gt;
+&lt;span class="nv"&gt;But&lt;/span&gt; &lt;span class="nv"&gt;inside&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;want&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;be&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;little&lt;/span&gt; &lt;span class="nv"&gt;glamorous&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;dream&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;one&lt;/span&gt; &lt;span class="nv"&gt;love&lt;/span&gt;
+&lt;span class="nv"&gt;And&lt;/span&gt; &lt;span class="nv"&gt;fall&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;love&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;see&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;give&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;on&lt;/span&gt; &lt;span class="nv"&gt;friendships&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;heat&lt;/span&gt; &lt;span class="nv"&gt;but&lt;/span&gt; &lt;span class="nv"&gt;inside&lt;/span&gt; &lt;span class="nv"&gt;is&lt;/span&gt; &lt;span class="nv"&gt;pain&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;didn&lt;/span&gt;’&lt;span class="nv"&gt;t&lt;/span&gt; &lt;span class="nv"&gt;figure&lt;/span&gt; &lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="nv"&gt;out&lt;/span&gt; &lt;span class="nv"&gt;yet&lt;/span&gt;, &lt;span class="nv"&gt;but&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;furious&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;moment&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;dependant&lt;/span&gt;, &lt;span class="nv"&gt;no&lt;/span&gt; &lt;span class="nv"&gt;money&lt;/span&gt;, &lt;span class="nv"&gt;and&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;can&lt;/span&gt; &lt;span class="nv"&gt;see&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;day&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;be&lt;/span&gt; &lt;span class="nv"&gt;your&lt;/span&gt; &lt;span class="nv"&gt;way&lt;/span&gt;, &lt;span class="nv"&gt;but&lt;/span&gt; &lt;span class="nv"&gt;right&lt;/span&gt; &lt;span class="nv"&gt;now&lt;/span&gt; &lt;span class="nv"&gt;there&lt;/span&gt; &lt;span class="nv"&gt;is&lt;/span&gt; &lt;span class="nv"&gt;no&lt;/span&gt; &lt;span class="nv"&gt;other&lt;/span&gt; &lt;span class="nv"&gt;way&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;on&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;sudden&lt;/span&gt; &lt;span class="nv"&gt;mood&lt;/span&gt; &lt;span class="nv"&gt;swings&lt;/span&gt; &lt;span class="nv"&gt;your&lt;/span&gt; &lt;span class="nv"&gt;body&lt;/span&gt;
+&lt;span class="nv"&gt;Needs&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;be&lt;/span&gt; &lt;span class="nv"&gt;anchored&lt;/span&gt; &lt;span class="nv"&gt;before&lt;/span&gt; &lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="nv"&gt;takes&lt;/span&gt; &lt;span class="nv"&gt;off&lt;/span&gt;
+
+&lt;span class="nv"&gt;That&lt;/span&gt;’&lt;span class="nv"&gt;s&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;time&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;span class="nv"&gt;Make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;new&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;span class="nv"&gt;That&lt;/span&gt;’&lt;span class="nv"&gt;s&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;time&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;span class="nv"&gt;Make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;new&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;already&lt;/span&gt; &lt;span class="nv"&gt;know&lt;/span&gt; &lt;span class="nv"&gt;how&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;vow&lt;/span&gt;, &lt;span class="nv"&gt;when&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;can&lt;/span&gt; &lt;span class="nv"&gt;dream&lt;/span&gt; &lt;span class="nv"&gt;so&lt;/span&gt; &lt;span class="nv"&gt;big&lt;/span&gt;
+&lt;span class="nv"&gt;That&lt;/span&gt; &lt;span class="nv"&gt;your&lt;/span&gt; &lt;span class="nv"&gt;heart&lt;/span&gt; &lt;span class="nv"&gt;is&lt;/span&gt; &lt;span class="nv"&gt;shaking&lt;/span&gt;, &lt;span class="nv"&gt;when&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;love&lt;/span&gt; &lt;span class="nv"&gt;dancing&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;punks&lt;/span&gt; &lt;span class="nv"&gt;just&lt;/span&gt; &lt;span class="nv"&gt;likes&lt;/span&gt;
+&lt;span class="nv"&gt;At&lt;/span&gt; &lt;span class="nv"&gt;night&lt;/span&gt; &lt;span class="nv"&gt;vandalize&lt;/span&gt; &lt;span class="nv"&gt;administrative&lt;/span&gt; &lt;span class="nv"&gt;buildings&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="nv"&gt;seems&lt;/span&gt; &lt;span class="nv"&gt;like&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;entire&lt;/span&gt; &lt;span class="nv"&gt;God&lt;/span&gt;’&lt;span class="nv"&gt;s&lt;/span&gt; &lt;span class="nv"&gt;world&lt;/span&gt;
+&lt;span class="nv"&gt;You&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;chosen&lt;/span&gt; &lt;span class="nv"&gt;one&lt;/span&gt;, &lt;span class="nv"&gt;and&lt;/span&gt; &lt;span class="nv"&gt;sure&lt;/span&gt; &lt;span class="nv"&gt;your&lt;/span&gt; &lt;span class="nv"&gt;friends&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt;, &lt;span class="nv"&gt;too&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; “&lt;span class="nv"&gt;virgin&lt;/span&gt;” &lt;span class="nv"&gt;is&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;demeaning&lt;/span&gt; &lt;span class="nv"&gt;offense&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;would&lt;/span&gt; &lt;span class="nv"&gt;take&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;girl&lt;/span&gt; &lt;span class="nv"&gt;even&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;devilfish&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;enrolled&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;wrong&lt;/span&gt; &lt;span class="nv"&gt;major&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;some&lt;/span&gt; &lt;span class="nv"&gt;reason&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;parents&lt;/span&gt; &lt;span class="nv"&gt;authority&lt;/span&gt; &lt;span class="nv"&gt;starts&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;dwindle&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;make&lt;/span&gt; &lt;span class="nv"&gt;correct&lt;/span&gt; &lt;span class="nv"&gt;choices&lt;/span&gt;, &lt;span class="nv"&gt;but&lt;/span&gt; &lt;span class="nv"&gt;rather&lt;/span&gt; &lt;span class="nv"&gt;wrong&lt;/span&gt; &lt;span class="nv"&gt;ones&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;believe&lt;/span&gt; &lt;span class="nv"&gt;any&lt;/span&gt; &lt;span class="nv"&gt;nonsense&lt;/span&gt;
+
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;most&lt;/span&gt; &lt;span class="nv"&gt;hyped&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;out&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt; &lt;span class="nv"&gt;your&lt;/span&gt; &lt;span class="nv"&gt;friends&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;on&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;date&lt;/span&gt;, &lt;span class="nv"&gt;but&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;hotel&lt;/span&gt; &lt;span class="nv"&gt;has&lt;/span&gt; &lt;span class="nv"&gt;denied&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;an&lt;/span&gt; &lt;span class="nv"&gt;entrance&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;picking&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;new&lt;/span&gt; &lt;span class="nv"&gt;sport&lt;/span&gt; &lt;span class="nv"&gt;is&lt;/span&gt; &lt;span class="nv"&gt;just&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;couple&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt; &lt;span class="nv"&gt;weeks&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;looking&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;purpose&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;your&lt;/span&gt; &lt;span class="nv"&gt;life&lt;/span&gt;
+
+&lt;span class="nv"&gt;That&lt;/span&gt;’&lt;span class="nv"&gt;s&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;time&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;span class="nv"&gt;Make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;new&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;span class="nv"&gt;That&lt;/span&gt;’&lt;span class="nv"&gt;s&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;time&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;span class="nv"&gt;Make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;new&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;live&lt;/span&gt; &lt;span class="nv"&gt;by&lt;/span&gt; &lt;span class="nv"&gt;your&lt;/span&gt; &lt;span class="nv"&gt;values&lt;/span&gt;, &lt;span class="nv"&gt;and&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;familiar&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;world&lt;/span&gt;
+&lt;span class="nv"&gt;You&lt;/span&gt; &lt;span class="nv"&gt;have&lt;/span&gt; &lt;span class="nv"&gt;what&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;have&lt;/span&gt;, &lt;span class="nv"&gt;and&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;don&lt;/span&gt;’&lt;span class="nv"&gt;t&lt;/span&gt; &lt;span class="nv"&gt;need&lt;/span&gt; &lt;span class="nv"&gt;any&lt;/span&gt; &lt;span class="nv"&gt;more&lt;/span&gt;
+&lt;span class="nv"&gt;When&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;tired&lt;/span&gt;, &lt;span class="nv"&gt;there&lt;/span&gt; &lt;span class="nv"&gt;is&lt;/span&gt; &lt;span class="nv"&gt;nothing&lt;/span&gt; &lt;span class="nv"&gt;novel&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;anyone&lt;/span&gt; &lt;span class="nv"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;anything&lt;/span&gt;
+&lt;span class="nv"&gt;Suddenly&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;observe&lt;/span&gt; &lt;span class="nv"&gt;someone&lt;/span&gt;’&lt;span class="nv"&gt;s&lt;/span&gt; &lt;span class="nv"&gt;youthful&lt;/span&gt; &lt;span class="nv"&gt;drive&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;heroic&lt;/span&gt; &lt;span class="nv"&gt;dash&lt;/span&gt;
+&lt;span class="nv"&gt;And&lt;/span&gt; &lt;span class="nv"&gt;you&lt;/span&gt; &lt;span class="nv"&gt;long&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;those&lt;/span&gt; &lt;span class="nv"&gt;times&lt;/span&gt;, &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;nostalgy&lt;/span&gt; &lt;span class="nv"&gt;all&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;sudden&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;some&lt;/span&gt; &lt;span class="nv"&gt;things&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;cannot&lt;/span&gt; &lt;span class="nv"&gt;be&lt;/span&gt; &lt;span class="nv"&gt;not&lt;/span&gt; &lt;span class="nv"&gt;mourned&lt;/span&gt; &lt;span class="nv"&gt;when&lt;/span&gt; &lt;span class="nv"&gt;recalling&lt;/span&gt;
+&lt;span class="nv"&gt;Your&lt;/span&gt; &lt;span class="nv"&gt;own&lt;/span&gt; &lt;span class="nv"&gt;ambitions&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;further&lt;/span&gt; &lt;span class="nv"&gt;away&lt;/span&gt;
+&lt;span class="nv"&gt;And&lt;/span&gt; &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="nv"&gt;comparing&lt;/span&gt; &lt;span class="nv"&gt;them&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt; &lt;span class="nv"&gt;your&lt;/span&gt; &lt;span class="nv"&gt;reality&lt;/span&gt;
+
+&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nv"&gt;Always&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;, &lt;span class="nv"&gt;make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;span class="nv"&gt;Make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;new&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nv"&gt;Always&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;, &lt;span class="nv"&gt;make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;span class="nv"&gt;Make&lt;/span&gt; &lt;span class="nv"&gt;up&lt;/span&gt; &lt;span class="nv"&gt;new&lt;/span&gt; &lt;span class="nv"&gt;dreams&lt;/span&gt;
+&lt;span class="nv"&gt;There&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;million&lt;/span&gt; &lt;span class="nv"&gt;chances&lt;/span&gt; &lt;span class="nv"&gt;that&lt;/span&gt; &lt;span class="nv"&gt;everything&lt;/span&gt; &lt;span class="nv"&gt;will&lt;/span&gt; &lt;span class="nv"&gt;happen&lt;/span&gt; &lt;span class="nv"&gt;soon&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>Time to Compose Dreams</title><link href="//devblog.me/compose-dreams.html" rel="alternate"></link><published>2019-07-15T00:00:00-07:00</published><updated>2019-07-15T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2019-07-15:/compose-dreams.html</id><content type="html"></content></entry><entry><title>How I Went To College</title><link href="//devblog.me/college.html" rel="alternate"></link><published>2017-06-01T00:00:00-07:00</published><updated>2017-06-01T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2017-06-01:/college.html</id><summary type="html">&lt;p&gt;&lt;img alt="Posing in Boston" src="/images/boston.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Some my friends know that I went to college 3 years later than my peers.
 Naturally a lot of people found it unusual or even interesting. I told different
 parts of this story to different friends and thought that now, as I finished two
@@ -475,234 +556,7 @@ weekend as I did a lot of other things as well outside on a lake.&lt;/p&gt;
 &lt;p&gt;You can check it out &lt;a href="http://talk-player.meteor.com/"&gt;live&lt;/a&gt; or on
 &lt;a href="https://github.com/Slava/talk-player"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I want to thank Tim Nguyen who has built the original Heavybit Library, great
-work!&lt;/p&gt;</content></entry><entry><title>Callbacks, Promises, Generators and Fibers</title><link href="//devblog.me/solve-cb-hell.html" rel="alternate"></link><published>2014-04-27T00:00:00-07:00</published><updated>2014-04-27T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2014-04-27:/solve-cb-hell.html</id><summary type="html">&lt;p&gt;&lt;img alt="Promises" src="/images/promise.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;The topic of the use of callbacks vs the use of promises has been rocking
-through JavaScript community for several years now. Some people don't like
-callbacks, other people think that promises are even worse and since generators
-(a new feature of ES6) became available on Google Chrome and node …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Promises" src="/images/promise.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;The topic of the use of callbacks vs the use of promises has been rocking
-through JavaScript community for several years now. Some people don't like
-callbacks, other people think that promises are even worse and since generators
-(a new feature of ES6) became available on Google Chrome and node.js (behind
-experimental features flags) the battle became 3-sided: callbacks vs promises vs
-promises via generators.&lt;/p&gt;
-&lt;p&gt;There is another approach to the "callbacks hell" problem available on all major
-versions of node.js - the fibers npm package.&lt;/p&gt;
-&lt;p&gt;Each approach to the problem (if you accept the "callbacks hell" as a legitimate
-problem) has multiple drawbacks. In this post I want to list several concerns I
-have learnt about in the order of decreasing importance to me:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;JS novice friendliness (how quickly a person coming from Java or Python can
-  learn it?)&lt;/li&gt;
-&lt;li&gt;Platform availability and the distribution (Will your solution work on all
-  browsers? Do you need to ship a library with your code or recompile your
-  code?)&lt;/li&gt;
-&lt;li&gt;Development scalability (in a project bigger than 5 files and 2 layers of
-  abstractions/indirection will this approach bring more harm than good?)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Callbacks&lt;/h2&gt;
-&lt;p&gt;Callbacks - provide an anonymous function for every async call or pass a
-function that was defined somewhere else as the callback argument.&lt;/p&gt;
-&lt;p&gt;Here is a fictional example of a very common task: make two sequential http
-requests, insert a computed result to the database and move on with some other
-action.&lt;/p&gt;
-&lt;p&gt;In a simplest example we would not have a complex error handling logic and
-sometimes we would prefer having anonymous functions to predefined functions.
-We would surely balance between the two so our code doesn't become 10 layers
-indented.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;saveBookAuthorDescription&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;bookId&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nx"&gt;HTTP&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://api.site.com/book/&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;bookId&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;book&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;JSON&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="nx"&gt;HTTP&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://anothersite.com/api/v1/store/author/&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;author&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-      &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-        &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;JSON&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-        &lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;author&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nx"&gt;database&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-          &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-          &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-        &lt;span class="p"&gt;});&lt;/span&gt;
-      &lt;span class="p"&gt;});&lt;/span&gt;
-  &lt;span class="p"&gt;});&lt;/span&gt;
-&lt;span class="p"&gt;};&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Even omiting complex error handling and avoiding a more complicated concurrent
-examples - it still would look weird and alien to someone who is used to a
-different imperative language.&lt;/p&gt;
-&lt;p&gt;Although code like this might look familiar to someone who worked with C# and
-.NET framework where you can make an http request in a background thread from a
-thread-pool or to someone who worked with Cocoa framework in Objective-C - there
-is often a need to pass a block function (a slightly different anonymous
-function) to the Grand Central Dispatcher (GCD).&lt;/p&gt;
-&lt;p&gt;It can definitely become one of the many JS/node confusions to a complete newbie
-who just wants to build websites in the same fashion he was taught to add
-numbers together.&lt;/p&gt;
-&lt;p&gt;From the availability prospective it is raw-perfect: you can write something
-similar on node.js talking to other services or databases or reading files and
-in your browser handling user actions, driving animations and making network
-requests. No compilation, no problems in distribution.&lt;/p&gt;
-&lt;p&gt;From the middle to bigger projects prospective it can become hairy over time:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;indentation levels will become deeper, the number of named functions scattered
-across the file will only grow, making reading and following the code harder&lt;/li&gt;
-&lt;li&gt;error handling will be tricker as usual try-catch blocks will be worthless,
-  stacktraces shorter, uninformative&lt;/li&gt;
-&lt;li&gt;handling parallel async operations will require a non-trivial amount of
-  additional variables, counters and confusion&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Promises&lt;/h2&gt;
-&lt;p&gt;Promise is an object that represents a "promised result" of an async
-computation. Promises can be deferred, combined into series of consecutive or
-parallel computations.&lt;/p&gt;
-&lt;p&gt;There exist a wild variety of the Promises libraries. Some libraries even
-based all their async APIs on Promises (ex.: jQuery, Ember.js). Unfortunately,
-not all Promises implementations are fully compatible with each other, but most
-of them implement the community defined spec
-&lt;a href="http://promises-aplus.github.io/promises-spec/"&gt;Promises/A+&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Our simple example will now look something like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Presumably you have converted your HTTP.get and database.insert functions to&lt;/span&gt;
-&lt;span class="c1"&gt;// promises as well&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;saveBookAuthorDescription&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;bookId&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nx"&gt;HTTP&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://api.site.com/book/&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;bookId&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;book&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;JSON&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="c1"&gt;// cannot chain this call as it depends on the result of previous operation&lt;/span&gt;
-    &lt;span class="nx"&gt;HTTP&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://anothersite.com/api/v1/store/author/&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;author&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;JSON&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;author&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;database&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// success&lt;/span&gt;
-    &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// failure&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// failure&lt;/span&gt;
-&lt;span class="p"&gt;};&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;We have converted our example to a function with the same interface but all
-computations are based on Promises. It looks a bit cleaner, the level of
-indentation clearly can be reduced.&lt;/p&gt;
-&lt;p&gt;But it still does look different to someone who has never used a promises
-library before:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;code still has a lot of anonymous functions&lt;/li&gt;
-&lt;li&gt;since closures don't share the scope, some of the calls are still required to
-  be nested (or other library APIs need to be learnt and used)&lt;/li&gt;
-&lt;li&gt;now you need to learn a new syntax of Promises, learn how to transform
-existing methods to promises-based methods&lt;/li&gt;
-&lt;li&gt;need to learn another way of error handling: usual try/catch/finally wouldn't
-work&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;From the availability and distribution point of view:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;there are a lot of libraries to pick from&lt;/li&gt;
-&lt;li&gt;some libraries use Promises with slightly different behavior (like jQuery) you
-would need to interoperate with&lt;/li&gt;
-&lt;li&gt;if your application depends on other libraries those use different promises
-  libraries, you would need to load all of them even though they implement the
-  same functionality. Probably not a big problem considering their code sizes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Lastly, complex parallel or racy operations are probably easier as a lot of
-common functionality is already baked into the libraries. With time and practice
-these tasks would be trivial to write. However:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;you would need to convert all callbacks-based APIs to Promises when external
-libraries are used (or find an equivalent already converted to Promises)&lt;/li&gt;
-&lt;li&gt;the code still can be difficult to read as every other line is wrapped into a
-callback for promises&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Generators&lt;/h2&gt;
-&lt;p&gt;You might have heard of them already. Generators is a concept successfully
-implemented and used in many programming languages (Generators in Python 3, lazy
-sequences in Clojure, etc). ES6 standard defines Generators as a part of the
-standard but it is yet to be implemented and fully supported in major JS
-engines.&lt;/p&gt;
-&lt;p&gt;From the name, you can guess, that Generators are somehow related to the process
-of generating some values. You can read more about their syntax and primary use
-&lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*"&gt;here on MDN&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Generators are interesting in the context of the callbacks because using them in
-an interesting way we can recreate the concept of
-&lt;a href="http://en.wikipedia.org/wiki/Coroutine"&gt;coroutines&lt;/a&gt; or rather
-&lt;a href="http://en.wikipedia.org/wiki/Coroutine#Comparison_with_generators"&gt;semicoroutines&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Coroutines aren't new either. They were used sucessfully in a lot of popular
-programming languages and frameworks. I first met them in Python
-&lt;a href="http://tornado.readthedocs.org/en/latest/gen.html"&gt;Tornado&lt;/a&gt; and Python
-&lt;a href="http://greenlet.readthedocs.org/en/latest/"&gt;Greenlets&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;There has been enough excitement in the node community about generators and how
-they can solve the callbacks hell, reading
-&lt;a href="http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators"&gt;this&lt;/a&gt;
-and &lt;a href="https://medium.com/code-adventures/174f1fe66127"&gt;this&lt;/a&gt; pieces might be
-enough for you to recover your faith into ECMA-262 committee.&lt;/p&gt;
-&lt;p&gt;If you decide to use the generators approach, then you wouldn't use raw
-generator functions and yielding. Rather then that, you would either write a
-set of helper functions or one of the written ones. After converting all async
-methods to support awaiting on, you would use the &lt;code&gt;yield&lt;/code&gt; keyword to mark the
-awaiting.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Presumably you have converted your HTTP.get and database.insert functions to&lt;/span&gt;
-&lt;span class="c1"&gt;// generators. Use a helper library Q.&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;saveBookAuthorDescription&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;bookId&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nx"&gt;Q&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;spawn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;try&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="c1"&gt;// get the book in the http request&lt;/span&gt;
-      &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;bookResponse&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
-        &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nx"&gt;HTTP&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://api.site.com/book/&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;bookId&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;book&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;JSON&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;bookResponse&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-      &lt;span class="c1"&gt;// get the author in http request&lt;/span&gt;
-      &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;authorResponse&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
-        &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nx"&gt;HTTP&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://anothersite.com/api/v1/store/author/&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;author&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;JSON&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;authorResponse&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-      &lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;author&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-
-      &lt;span class="c1"&gt;// insert into the database and wait for the result of the write&lt;/span&gt;
-      &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="nx"&gt;database&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;book&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-      &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;catch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="c1"&gt;// failure handling&lt;/span&gt;
-      &lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="p"&gt;});&lt;/span&gt;
-&lt;span class="p"&gt;};&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;We have a clear improvement: the indentation doesn't change as we use async
-methods. We now can put everything into a native try-catch block. The
-readability of code improved as we can keep the same scope w/o passing all
-necessary variables down the async operation, i.e. the stack is preserved.&lt;/p&gt;
-&lt;p&gt;There are some disadvantages for someone who is not super-familiar with
-coroutines or generators:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the &lt;code&gt;function*&lt;/code&gt; and &lt;code&gt;yield&lt;/code&gt; syntax might be confusing&lt;/li&gt;
-&lt;li&gt;since &lt;code&gt;yield&lt;/code&gt; doesn't suspend the whole stack, programmer needs to manually
-  &lt;code&gt;yield&lt;/code&gt; on every level or use a callbacks and generators mixed approach as
-  shown above&lt;/li&gt;
-&lt;li&gt;there is a big chance that almost every function will be a generator in your
-  code-base as everything uses the async methods in your app's business logic
-  (on the bright side: it is very easy to tell which method yields)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;From the distribution standpoint there are these issues you would need to face:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;isn't implemented by browsers, only available in node behind a flag&lt;/li&gt;
-&lt;li&gt;you can transpile the generators code to a regular es5 code but then there is
-  a need to support compilation, source-maps and long stack-traces correctly&lt;/li&gt;
-&lt;li&gt;even if you use native generators, there is a possibility they are not
-  optimized by the V8 engine or are not as optimized as a regular
-  generators-free code&lt;/li&gt;
-&lt;li&gt;tooling such as autocompletion plugins (ex.: tern.js) or IDEs didn't catch up
-  on new ES6 features yet&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Finally, from the code-base scalability point of view:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;you would need to convert all 3rd party code to generators or use the mixed
-  approach which may require some discipline&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Fibers&lt;/h2&gt;
-&lt;p&gt;TODO&lt;/p&gt;</content></entry><entry><title>XP: RPG vs Real Life</title><link href="//devblog.me/xp.html" rel="alternate"></link><published>2014-04-17T00:00:00-07:00</published><updated>2014-04-17T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2014-04-17:/xp.html</id><summary type="html">&lt;p&gt;&lt;img alt="Level Up!" src="/images/level-up.jpg"&gt;&lt;/p&gt;
+work!&lt;/p&gt;</content></entry><entry><title>XP: RPG vs Real Life</title><link href="//devblog.me/xp.html" rel="alternate"></link><published>2014-04-17T00:00:00-07:00</published><updated>2014-04-17T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2014-04-17:/xp.html</id><summary type="html">&lt;p&gt;&lt;img alt="Level Up!" src="/images/level-up.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;If you played RPGs, you probably have heard of the term "XP", which means
 "experience". Experience is a big part of RPGs: your character accomplishes
 tasks, fights monsters, gets more experience and progresses gaining new
@@ -773,134 +627,7 @@ block-helpers, fix auto-indenter (by borrowing some code from
 tags.&lt;/p&gt;
 &lt;p&gt;The result can be seen on &lt;a href="https://github.com/Slava/vim-spacebars"&gt;Slava/vim-spacebars&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;P.S.: the theme is Tomorrow and you can get my fork of it for Vim on
-&lt;a href="https://github.com/Slava/vim-colors-tomorrow"&gt;Slava/vim-colors-tomorrow&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>Meteor: Too Easy to Be Real</title><link href="//devblog.me/meteor-too-easy-ru.html" rel="alternate"></link><published>2014-03-11T00:00:00-07:00</published><updated>2014-03-11T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2014-03-11:/meteor-too-easy-ru.html</id><summary type="html">&lt;p&gt;Многие считают, что простота в освноении &lt;a href="https://www.meteor.com"&gt;Meteor&lt;/a&gt; - это
-недостаток, все не должно быть так просто. На самом деле под капотом Meteor -
-самое что ни на есть чудо инженерской мысли. А технология любой сложности будет
-только лучше, если она будет доступна людям.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Meteor splash image" src="/images/meteor-splash.png"&gt;&lt;/p&gt;
-&lt;h2&gt;Meteor - прост для новичков&lt;/h2&gt;
-&lt;p&gt;В официальном блоге Meteor уже …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Многие считают, что простота в освноении &lt;a href="https://www.meteor.com"&gt;Meteor&lt;/a&gt; - это
-недостаток, все не должно быть так просто. На самом деле под капотом Meteor -
-самое что ни на есть чудо инженерской мысли. А технология любой сложности будет
-только лучше, если она будет доступна людям.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Meteor splash image" src="/images/meteor-splash.png"&gt;&lt;/p&gt;
-&lt;h2&gt;Meteor - прост для новичков&lt;/h2&gt;
-&lt;p&gt;В официальном блоге Meteor уже есть &lt;a href="https://www.meteor.com/blog/2013/12/13/why-web-beginners-should-start-with-meteor"&gt;статья от Alice
-Yu&lt;/a&gt;
-о том как Meteor помогает новичкам в веб-разработке и программировании сделать
-первые шаги осознанными, простыми и тем не менее эффективными.&lt;/p&gt;
-&lt;p&gt;Об этом можно писать очень много. У меня лично есть много знакомых
-физиков-теоретиков, нейробиологов, начинающих интернет-предпренимателей,
-студентов и просто начинающих в веб-разработке, которым Meteor не просто
-упростил жизнь, а позволил сделать то, чего они не могли сделать до этого -
-начать и закончить проект в одиночку, от начала и до конца. Получить результат,
-не тратить время на то, что им не нужно. Ведь не все приходят в веб-разработку
-чтобы творить чудеса инженерии.&lt;/p&gt;
-&lt;p&gt;К сожалению в профессиональных кругах программистов не все так просто. Не все
-части сообщества приняли Meteor с распростертыми объятиями. Особенно это хорошо
-видно на популярном сайте Hacker News, где Meteor запустился в первые в 2012
-году и до сих пор считается одним из самых успешных YC запусков в истории сайта,
-набрав более 1300 очков (что по меркам 2012 года было неимоверно много).&lt;/p&gt;
-&lt;h2&gt;"Too easy to be real"&lt;/h2&gt;
-&lt;p&gt;Критика нужна и полезна, но иногда она доходит до абсурда. В этом посте мы
-рассмотрим критику в отношении одного из самого большего плюса Meteor: простота
-в освоении.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is the future of hackathons, free code days and weekend dev marathons.
-Yet I'm not sure how soon any serious company will trust it with serious applications.
-I'm not putting it down, this is incredible progress, the money (x millions in
-funding) behind it will give it a good amount of momentum, but it just seems a
-bit too easy, a bit too gimmicky to be taken seriously. I hope I'm wrong.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;-- источник: &lt;a href="https://news.ycombinator.com/item?id=4119786"&gt;Hacker News comment by daulex&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Пользователь Hacker News daulex видит Meteor как будущее для Hackathon'ов,
-проектов на выходных, но не как главную технологию для серьезной компании и
-серьезного приложения.  Потому что Meteor слишком легок, слишком подозрительно
-легок, чтобы воспринимать его всерьез.&lt;/p&gt;
-&lt;p&gt;Другой комментарий от более популярного человека - Азата Марданова:&lt;/p&gt;
-&lt;blockquote class="twitter-tweet" data-conversation="none" lang="en"&gt;&lt;p&gt;I don&amp;#39;t like MeteorJS very much because it&amp;#39;s too easy and make devs&amp;#39; brains weak&lt;/p&gt;&amp;mdash; Azat Mardanov (@azat_co) &lt;a href="https://twitter.com/azat_co/statuses/403976930300420096"&gt;November 22, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Азат на полном серьезе говорит, что Meteor слишком легок и делает мозги
-разработчиков слабыми. Хотя позиция Азата не до конца понятна, вот здесь в
-&lt;a href="http://webapplog.com/node-js-frameworks/"&gt;одном из своих постов&lt;/a&gt; он говорит:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Meteor is more of a platform with its own packages and services. Its very
-opinionated and has a steep learning curve.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;"Steep learning curve" - крутая кривая обучения.&lt;/p&gt;
-&lt;p&gt;Это лишь пара примеров, но если поискать получше, то станет понятно -
-большинство согласно, что Meteor очень прост в освоении и использовании. Не все
-согласны на том, хорошо это или плохо.&lt;/p&gt;
-&lt;h2&gt;Религия не позволяет&lt;/h2&gt;
-&lt;p&gt;Самый распространенный пример нелюбви - это религиозная злость.
-Нелюбить Meteor можно по многим религиозным причинам: JavaScript, web vs native,
-поддержка NoSQL DBs, реактивность... Зацепиться можно за любую часть. Нелюбить
-простоту решений Meteor можно хотя бы потому что "в моем любимом фреймворке X
-это делается не так, там нужно сделать Y, а вы сделали Z" приправленное "и
-вообще, у вас все как-то сликом просто, настоящие мужики просто так не
-обходятся".&lt;/p&gt;
-&lt;h2&gt;Ни себе, ни людям&lt;/h2&gt;
-&lt;p&gt;Другой распространенный вид ненависти - это зависть. Зависть, что пару лет
-назад, все не было так просто. "Мы в твое время работали за копейки на заводах,
-а ты бездельничаешь целыми днями". Почему эти люди не могут порадоваться за
-прогресс человечества и за всех новых людей, у которых будет больший выбор
-инструментов, стилей разработки и больше простых для работы решений - мне пока
-не понятно.&lt;/p&gt;
-&lt;h2&gt;Есть, что терять&lt;/h2&gt;
-&lt;p&gt;В мире веб-разработки тренды меняются очень часто и планка качества сайтов и
-приложений поднимается все выше и выше. Это произошло и в мире веб-страничек -
-они стали толще, интерактивнее и быстрее, спасибо высоким стандартам
-поставленным такими сайтами как Facebook, Twitter, Quora.&lt;/p&gt;
-&lt;p&gt;Некоторые люди успели построить свою успешную карьеру на том, что какой-то
-аспект нашей жизни сложен и не доступен всем. На сложности интеграции 5-10
-различных технологий для разработки современного веб-приложения можно написать
-много книг, записать видео-курсов, продать треннингов, консультировать команды,
-проводить курсы для новичков и просто прослыть гуру в своих кругах.&lt;/p&gt;
-&lt;p&gt;Как только эти знания и возможности становятся проще и доступными массам,
-начинаются сложности. Кто-то подстраивается под динамику мира и продолжает
-работу с новыми технологиями, принимая прогресс и движется дальше. Кто-то другой
-начинает искать аргументы против прогресса, боясь, что он скоро останется никому
-не нужным.&lt;/p&gt;
-&lt;h2&gt;Диванная аналитика&lt;/h2&gt;
-&lt;p&gt;Для каждой технологии найдется человек, который скажет: "А что в этом такого? Я
-и сам такое сделаю на раз-два, если захочу и вообще ничего выдающегося!".
-Простота в использовании и доступность создает ложную иллюзию, что и построить
-такую систему также легко как и ею пользоваться.&lt;/p&gt;
-&lt;p&gt;Зачастую люди думают о неоптимальном и упрощенном решении задачи, которую решили
-авторы того или иного проекта, не принимая во внимание широкий круг проблем для
-достижения хорошей системы: возможность расширения системы, модулярность,
-правильные абстракции и разрезы системы на интерфесы, хорошая документация и
-доступность в использовании с первого дня.&lt;/p&gt;
-&lt;p&gt;Иногда люди и вовсе не понимают всего масштаба системы, не вдаваясь в
-подробности они бросаются словами и просто остаются со своим невежеством. (Это
-хорошо видно в &lt;a href="https://news.ycombinator.com/item?id=7294475"&gt;этой ветке&lt;/a&gt;
-обсуждений на Hacker News, где обсуждающие могут в корне не понимают о чем идет
-речь.)&lt;/p&gt;
-&lt;h2&gt;Прагматичный скептицизм&lt;/h2&gt;
-&lt;p&gt;Самое рациональное объяснение - программист не верит, что новый инструмент решит
-его задачи, лучше чем он сам. Потому что он уже провел более тысячи часов строя
-эти системы и он понимает, что для каждого отдельного случая нужно разное и
-построить обобщенную систему, которая подходила бы как хорошее решение под
-большинство задач - очень сложно.&lt;/p&gt;
-&lt;p&gt;Это и есть люди, с которыми интересно работать. Если они начнут изучать Meteor в
-деталях и во всех технических подробностях, они найдут очень продуманную систему
-под капотом, полную хороших идей и инженерных решений. Правда, любая система
-может иметь недостатки, вот здесь и понадобиться помощь других профессионалов в
-развитии такого проекта как Meteor.&lt;/p&gt;
-&lt;h2&gt;"Если все будет так просто, люди перестанут думать"&lt;/h2&gt;
-&lt;p&gt;Это очень популярный аргумент, который существует с момента появления
-программирования. Когда был придуман Assembly, "настоящим программированием"
-признавалось только программирование бинарным кодом. Позже, с появлением
-Fortran, история повторилась. История повторяется с каждым новым шагом.&lt;/p&gt;
-&lt;p&gt;Assembly до сих используется в современном мире, но только там, где его
-преимущества перед языками более высокого уровня критически важны.
-Нужна ли нам такая сложность дня веб-приложений сегодня?&lt;/p&gt;
-&lt;p&gt;Используете ли вы языки с ручной управлением памяти (без сборки мусора или
-автоматического подсчета ссылок) для написания своих веб-приложений? Сделали ли
-сборка мусора, динамическая типизация и ООП-абстракции всех слишком глупыми?&lt;/p&gt;
-&lt;p&gt;В конце концов, простота нужна людям. В мире, где тяжело разобраться в своих
-правах, системе образования и здравоохранения, кто-то оценит наши усилия сделать
-мир технологий проще и доступнее.&lt;/p&gt;</content><category term="Meteor"></category><category term="Метеор"></category><category term="русский"></category><category term="веб-разработка"></category><category term="платформа"></category><category term="фреймворк"></category></entry><entry><title>Meteor meets your text editor</title><link href="//devblog.me/meteor-plus-text-editor.html" rel="alternate"></link><published>2014-02-04T00:00:00-08:00</published><updated>2014-02-04T00:00:00-08:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2014-02-04:/meteor-plus-text-editor.html</id><summary type="html">&lt;iframe width="640" height="360" src="//www.youtube.com/embed/CcPZ56t8x4I" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;a href="https://github.com/Slava/vim-colors-tomorrow"&gt;Slava/vim-colors-tomorrow&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>Meteor meets your text editor</title><link href="//devblog.me/meteor-plus-text-editor.html" rel="alternate"></link><published>2014-02-04T00:00:00-08:00</published><updated>2014-02-04T00:00:00-08:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2014-02-04:/meteor-plus-text-editor.html</id><summary type="html">&lt;iframe width="640" height="360" src="//www.youtube.com/embed/CcPZ56t8x4I" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;More than a month ago I started working on JavaScript IntelliSense for
 &lt;a href="https://www.meteor.com"&gt;Meteor&lt;/a&gt;. Several days ago I presented it in my
@@ -984,88 +711,7 @@ documentation support and bringing the tooling for definitions generation for
 newer Meteor versions and Atmosphere packages.&lt;/p&gt;
 &lt;p&gt;Hopefully, this little side project will make a lot more people happier working
 with Meteor. Alright, folks, I going back to oplog work. Will work on this
-during next weekend!&lt;/p&gt;</content></entry><entry><title>Meteor - по-русски</title><link href="//devblog.me/meteor-intro-ru.html" rel="alternate"></link><published>2014-01-25T00:00:00-08:00</published><updated>2014-01-25T00:00:00-08:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2014-01-25:/meteor-intro-ru.html</id><summary type="html">&lt;p&gt;&lt;img alt="Meteor splash image" src="/images/meteor-splash.png"&gt;&lt;/p&gt;
-&lt;p&gt;С тех пор как я начал работать в &lt;a href="https://www.meteor.com"&gt;Meteor Development
-Group&lt;/a&gt; в мае 2013 года, друзья и знакомые, которые
-программируют, но не читают &lt;a href="http://news.ycombinator.com"&gt;Hacker News&lt;/a&gt;
-спрашивали меня: "Что же такое этот Метеор?". И мне всегда было сложно ответить
-в двух словах. Этим постом я хочу дать свой взгляд на этот …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Meteor splash image" src="/images/meteor-splash.png"&gt;&lt;/p&gt;
-&lt;p&gt;С тех пор как я начал работать в &lt;a href="https://www.meteor.com"&gt;Meteor Development
-Group&lt;/a&gt; в мае 2013 года, друзья и знакомые, которые
-программируют, но не читают &lt;a href="http://news.ycombinator.com"&gt;Hacker News&lt;/a&gt;
-спрашивали меня: "Что же такое этот Метеор?". И мне всегда было сложно ответить
-в двух словах. Этим постом я хочу дать свой взгляд на этот труд в индустрии
-программного обеспечения.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;h1&gt;Meteor - лучший способ построить веб-приложение&lt;/h1&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Именно так - лучший. По крайней мере, очень сильно пытается быть лучшим и много
-людей, которые хорошо познокомились с Meteor, согласятся: проект движется в этом
-направлении и уже на шаг впереди многих.&lt;/p&gt;
-&lt;h3&gt;Что такое "лучший"&lt;/h3&gt;
-&lt;p&gt;"Лучший" в данном контексте означает многое:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;легко и просто научиться с ним работать&lt;/li&gt;
-&lt;li&gt;строить приложение с нуля или добавлять новый функционал можно очень быстро&lt;/li&gt;
-&lt;li&gt;несмотря на простоту разработки, Meteor не ограничевает разработчика ни в
-  ширину, ни в глубину: вы сможете построить сложные и много-функциональные
-  проекты&lt;/li&gt;
-&lt;li&gt;от разработчика не требуются знания областей не связанных с приложениями на
-  прямую: &lt;a href="http://sleekd.com/general/configuring-nginx-and-unicorn/"&gt;настройка
-  серверов&lt;/a&gt;,
-  &lt;a href="https://www.google.com/search?q=reverse+proxy+sticky+sessions&amp;amp;oq=reverse+proxy+stick"&gt;масштабирование&lt;/a&gt;,
-  &lt;a href="http://en.wikipedia.org/wiki/List_of_build_automation_software"&gt;процесс сборки
-  проектов&lt;/a&gt;,
-  &lt;a href="http://en.wikipedia.org/wiki/Configuration_management"&gt;управление
-  конфиграциями&lt;/a&gt; и др.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Этот список кажется простым и коротким, но за ним скрываются сотни деталей,
-которые не поймешь, пока не столкнешься и с "плохим", и с "хорошим" исполнением.&lt;/p&gt;
-&lt;h3&gt;Что такое "веб-приложение"&lt;/h3&gt;
-&lt;p&gt;Это очень интерактивный веб-сайт. Веб-сайт, который представляет собой большее,
-чем сборище веб-страничек с простым текстом. На современном сайте пользователь
-увидит куда большее.&lt;/p&gt;
-&lt;p&gt;Например: под каждой записью в чьем-то блоге вы можете
-оставить комментарий зайдя со своим аккаунтом Твиттер или ВКонтакте; в новостной
-ленте вы видите новые истории, которые попадают в поток, как только они
-становятся доступны; на вашем любимом сайте с музыкой для пользователей доступны
-плейлисты, поиск по жанрам и даже подборка под ваш персональный вкус.&lt;/p&gt;
-&lt;p&gt;Современные веб-приложения являются намного более сложными и богатыми на
-функционал. Разрабатывать такие приложения - все сложнее.&lt;/p&gt;
-&lt;h3&gt;"Способ"?&lt;/h3&gt;
-&lt;p&gt;Я использовал слово "способ" и избежал популярных существительных, которыми
-характеризуют Meteor: framework, platform. Потому что никто не может дать точное
-определние этим заморским словам. Под "способом" я подразумеваю следущее:&lt;/p&gt;
-&lt;p&gt;Совокупность из кода, методологии и идей, которые помогут и при надобности
-покажут, как построить приложение: от вашей первой строчки кода, сборки проекта
-и развертывания на серверах с масштабированием.&lt;/p&gt;
-&lt;p&gt;Код, который написан для Meteor позволяет вам пользоваться сложным
-функционалам без глубоких знаний и опыта в различных сферах.&lt;/p&gt;
-&lt;p&gt;Методология Meteor поможет вам не потеряться в огромном выборе различных хороших
-и не очень инструментов, процессов и практик для достижения результата.&lt;/p&gt;
-&lt;p&gt;Идеи. Вы найдете в Meteor много инновационных идей, которые не были
-распространенны в веб-разработке пару лет назад. Они вдохновляют и сподвигают на
-лучшие способы выполнять ту или иную работу.&lt;/p&gt;
-&lt;h3&gt;Он поймет и простит&lt;/h3&gt;
-&lt;p&gt;Meteor - инструмент разработчика для web. Он не придумает за вас идею, не
-позволит вам сделать что-то дельное без единой строки кода. Но он освободит от
-ненужной работы - рутинного повторения одного и того же раз за разом, настройки
-сотни ненужных систем и возни с конфигурациями. Помимо этого Meteor даст новые
-идеи и способы создавать. Meteor не создавался для людей с 10-летним опытом
-работы в web, потому что все может быть намного проще.&lt;/p&gt;
-&lt;p&gt;На сегодня все, спасибо, если дочитали. В этой статье специально нет ни единой
-технической детали, а только общее видение Meteor. В следующих статьях мы
-посмотрим на все по-ближе, обещаю.&lt;/p&gt;
-&lt;p&gt;Больше официальной информации о Meteor:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.meteor.com"&gt;Cайт Meteor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/meteor/meteor"&gt;Проект на GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://twitter.com/meteorjs"&gt;Twitter аккаунт&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://videos.meteor.com"&gt;Youtube канал&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://groups.google.com/forum/#!forum/meteor-talk"&gt;Форум обсуждения пользования&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://groups.google.com/forum/#!forum/meteor-core"&gt;Форум обсуждения предложений&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Русское сообщество на Хабрахабре: &lt;a href="http://habrahabr.ru/hub/meteorjs/"&gt;MeteorJS Hub&lt;/a&gt;&lt;/p&gt;</content><category term="Meteor"></category><category term="Метеор"></category><category term="русский"></category><category term="веб-разработка"></category><category term="платформа"></category><category term="фреймворк"></category></entry><entry><title>Top 5 syntactic weirdnesses to be aware of in MongoDB</title><link href="//devblog.me/wtf-mongo.html" rel="alternate"></link><published>2014-01-05T00:00:00-08:00</published><updated>2014-01-05T00:00:00-08:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2014-01-05:/wtf-mongo.html</id><summary type="html">&lt;p&gt;&lt;img alt="mongodb logo" src="http://fc01.deviantart.net/fs70/f/2010/168/e/1/Icon_MongoDB_by_xkneo.png"&gt;&lt;/p&gt;
+during next weekend!&lt;/p&gt;</content></entry><entry><title>Top 5 syntactic weirdnesses to be aware of in MongoDB</title><link href="//devblog.me/wtf-mongo.html" rel="alternate"></link><published>2014-01-05T00:00:00-08:00</published><updated>2014-01-05T00:00:00-08:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2014-01-05:/wtf-mongo.html</id><summary type="html">&lt;p&gt;&lt;img alt="mongodb logo" src="http://fc01.deviantart.net/fs70/f/2010/168/e/1/Icon_MongoDB_by_xkneo.png"&gt;&lt;/p&gt;
 &lt;p&gt;Rage posts about MongoDB are quite popular these days. Most of them are about
 poor performance on specific data sets, reliability and sharding issues. Some of
 those blog posts might be right, other are just saying that the most popular
@@ -1090,7 +736,7 @@ This article assumes you are familiar with MongoDB's API.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1&gt;1. Keys order in a hash object&lt;/h1&gt;
 &lt;p&gt;Let's say you want to store a simple object literal:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nt"&gt;gt&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;books&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;insert&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Woe from Wit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;meta&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt; &lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;A. Griboyedov&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1823&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;books&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;insert&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Woe from Wit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;meta&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt; &lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;A. Griboyedov&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1823&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1098,15 +744,15 @@ This article assumes you are familiar with MongoDB's API.&lt;/p&gt;
 books published in 1823, written by this author ("A. Griboyedov"). It is
 unlikely to return more than one result but at least it should return the "Woe
 from Wit" book as we just inserted it, right?&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nt"&gt;gt&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;books&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;find&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;meta&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1823&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;A. Griboyedov&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nt"&gt;lt&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;No&lt;/span&gt; &lt;span class="nt"&gt;results&lt;/span&gt; &lt;span class="nt"&gt;returned&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;books&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;find&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;meta&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1823&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;A. Griboyedov&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nt"&gt;No&lt;/span&gt; &lt;span class="nt"&gt;results&lt;/span&gt; &lt;span class="nt"&gt;returned&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;What happened? Didn't we just insert a book with such meta-data? Let's try
 flipping the order of keys in the meta object:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nt"&gt;gt&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;books&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;find&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;meta&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt; &lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;A. Griboyedov&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1823&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nt"&gt;lt&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;_id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Woe from Wit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;meta&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="err"&gt;}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;books&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;find&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;meta&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt; &lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;A. Griboyedov&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1823&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;_id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Woe from Wit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;meta&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="err"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1218,18 +864,18 @@ two match both &lt;code&gt;undefined&lt;/code&gt; and &lt;code&gt;null&lt;/code&
 &lt;h1&gt;3. Soft limits, hard limits and no limits&lt;/h1&gt;
 &lt;p&gt;Let's say you have a feed of items and you allow user to specify the number
 items to return. You would return the result of a query looking like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;db.items.find({ ... }).limit(N);
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;{&lt;/span&gt; &lt;span class="p"&gt;...&lt;/span&gt; &lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="k"&gt;limit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Where &lt;code&gt;N&lt;/code&gt; is supplied by user. Of course we want to be careful and restrict user
 up to 50 items, otherwise anyone in the Internet would be able to load our
 application server and the database simply by supplying a very large &lt;code&gt;N&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;getItems&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="nx"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;items&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;find&lt;/span&gt;&lt;span class="p"&gt;({}).&lt;/span&gt;&lt;span class="nx"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt; &lt;span class="nx"&gt;year&lt;/span&gt;: &lt;span class="kt"&gt;1&lt;/span&gt; &lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;limit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;function&lt;/span&gt; &lt;span class="nv"&gt;getItems&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt; {
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;
+    &lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nv"&gt;db&lt;/span&gt;.&lt;span class="nv"&gt;items&lt;/span&gt;.&lt;span class="nv"&gt;find&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;{}&lt;span class="ss"&gt;)&lt;/span&gt;.&lt;span class="nv"&gt;sort&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;{ &lt;span class="nv"&gt;year&lt;/span&gt;: &lt;span class="mi"&gt;1&lt;/span&gt; }&lt;span class="ss"&gt;)&lt;/span&gt;.&lt;span class="nv"&gt;limit&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1240,11 +886,11 @@ the MongoDB would take it as "give me everything".&lt;/p&gt;
 MongoDB. My guess is some code just treats all falsy values the same way:
 &lt;code&gt;undefined&lt;/code&gt;, &lt;code&gt;null&lt;/code&gt;, &lt;code&gt;0&lt;/code&gt;, absence of value - everything means "no limit".&lt;/p&gt;
 &lt;p&gt;That's OK, we can treat &lt;code&gt;0&lt;/code&gt; as a special case:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;getItems&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;// check if N is falsy (&amp;quot;no limit&amp;quot;)&lt;/span&gt;
-    &lt;span class="nx"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;items&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;find&lt;/span&gt;&lt;span class="p"&gt;({}).&lt;/span&gt;&lt;span class="nx"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt; &lt;span class="nx"&gt;year&lt;/span&gt;: &lt;span class="kt"&gt;1&lt;/span&gt; &lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;limit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;function&lt;/span&gt; &lt;span class="nv"&gt;getItems&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt; {
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt; &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nv"&gt;check&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="nv"&gt;is&lt;/span&gt; &lt;span class="nv"&gt;falsy&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;no limit&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;
+    &lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nv"&gt;db&lt;/span&gt;.&lt;span class="nv"&gt;items&lt;/span&gt;.&lt;span class="nv"&gt;find&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;{}&lt;span class="ss"&gt;)&lt;/span&gt;.&lt;span class="nv"&gt;sort&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;{ &lt;span class="nv"&gt;year&lt;/span&gt;: &lt;span class="mi"&gt;1&lt;/span&gt; }&lt;span class="ss"&gt;)&lt;/span&gt;.&lt;span class="nv"&gt;limit&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1255,12 +901,12 @@ bazillion of items. It is hard to find the documentation about it but several
 month ago I have seen the description of this behavior in node.js driver's docs,
 it talked about "soft" and "hard" limits. I have no idea what does it mean.&lt;/p&gt;
 &lt;p&gt;So the final version of our server-side method would look like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;getItems&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nx"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;// check if N is falsy (&amp;quot;no limit&amp;quot;)&lt;/span&gt;
-    &lt;span class="nx"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;db&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;items&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;find&lt;/span&gt;&lt;span class="p"&gt;({}).&lt;/span&gt;&lt;span class="nx"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt; &lt;span class="nx"&gt;year&lt;/span&gt;: &lt;span class="kt"&gt;1&lt;/span&gt; &lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;limit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;N&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;function&lt;/span&gt; &lt;span class="nv"&gt;getItems&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt; {
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt; &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nv"&gt;check&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="nv"&gt;is&lt;/span&gt; &lt;span class="nv"&gt;falsy&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;no limit&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;
+    &lt;span class="nv"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nv"&gt;db&lt;/span&gt;.&lt;span class="nv"&gt;items&lt;/span&gt;.&lt;span class="nv"&gt;find&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;{}&lt;span class="ss"&gt;)&lt;/span&gt;.&lt;span class="nv"&gt;sort&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;{ &lt;span class="nv"&gt;year&lt;/span&gt;: &lt;span class="mi"&gt;1&lt;/span&gt; }&lt;span class="ss"&gt;)&lt;/span&gt;.&lt;span class="nv"&gt;limit&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;N&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1520,22 +1166,22 @@ Mungos (or Mongos)":&lt;/p&gt;
 &lt;p&gt;I don't mean to dig textbooks all day, see, I actually encourage you do go and build things with your new knowledge.&lt;/p&gt;</content></entry><entry><title>How JavaScript Hoisting can be dangerous</title><link href="//devblog.me/js-hoisting.html" rel="alternate"></link><published>2013-06-26T00:00:00-07:00</published><updated>2013-06-26T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2013-06-26:/js-hoisting.html</id><summary type="html">&lt;p&gt;I learnt the way scoping and hoisting work in JS early enough so I didn't get
 into these pitfalls. My thinking was, hoisting is so innocuous, it can't be
 tricky once you know it exists. Today I randomly came up with this example:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Global object, window in browser or global …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;I learnt the way scoping and hoisting work in JS early enough so I didn't get
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nv"&gt;Global&lt;/span&gt; &lt;span class="nv"&gt;object&lt;/span&gt;, &lt;span class="nv"&gt;window&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;browser&lt;/span&gt; &lt;span class="nv"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;global …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;I learnt the way scoping and hoisting work in JS early enough so I didn't get
 into these pitfalls. My thinking was, hoisting is so innocuous, it can't be
 tricky once you know it exists. Today I randomly came up with this example:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Global object, window in browser or global in node&lt;/span&gt;
-&lt;span class="nx"&gt;G&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;hoistingExample() {&lt;/span&gt;
-  &lt;span class="c1"&gt;// this is global for sure&lt;/span&gt;
-  &lt;span class="nx"&gt;G&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;answer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;global answer&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="c1"&gt;// looks like we are modifying global var&lt;/span&gt;
-  &lt;span class="nx"&gt;answer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;42&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="c1"&gt;// create new local var&lt;/span&gt;
-  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;answer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;33&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;answer&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;G&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;answer&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nv"&gt;Global&lt;/span&gt; &lt;span class="nv"&gt;object&lt;/span&gt;, &lt;span class="nv"&gt;window&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;browser&lt;/span&gt; &lt;span class="nv"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;global&lt;/span&gt; &lt;span class="nv"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;node&lt;/span&gt;
+&lt;span class="nv"&gt;G&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nv"&gt;this&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+&lt;span class="nv"&gt;function&lt;/span&gt; &lt;span class="nv"&gt;hoistingExample&lt;/span&gt;&lt;span class="ss"&gt;()&lt;/span&gt; {
+  &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nv"&gt;this&lt;/span&gt; &lt;span class="nv"&gt;is&lt;/span&gt; &lt;span class="nv"&gt;global&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;sure&lt;/span&gt;
+  &lt;span class="nv"&gt;G&lt;/span&gt;.&lt;span class="nv"&gt;answer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;global answer&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+  &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nv"&gt;looks&lt;/span&gt; &lt;span class="nv"&gt;like&lt;/span&gt; &lt;span class="nv"&gt;we&lt;/span&gt; &lt;span class="nv"&gt;are&lt;/span&gt; &lt;span class="nv"&gt;modifying&lt;/span&gt; &lt;span class="nv"&gt;global&lt;/span&gt; &lt;span class="nv"&gt;var&lt;/span&gt;
+  &lt;span class="nv"&gt;answer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;42&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+  &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nv"&gt;create&lt;/span&gt; &lt;span class="nv"&gt;new&lt;/span&gt; &lt;span class="nv"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;var&lt;/span&gt;
+  &lt;span class="nv"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;answer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;33&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+  &lt;span class="nv"&gt;console&lt;/span&gt;.&lt;span class="nv"&gt;log&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;answer&lt;/span&gt;, &lt;span class="nv"&gt;G&lt;/span&gt;.&lt;span class="nv"&gt;answer&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+}
 
-&lt;span class="nx"&gt;hoistingExample&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="nv"&gt;hoistingExample&lt;/span&gt;&lt;span class="ss"&gt;()&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1641,16 +1287,16 @@ Checkout &lt;a href="https://github.com/laverdet/node-fibers"&gt;the repo on Git
 
 
 &lt;p&gt;Running this code will give you following output:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Will run the fiber: 0
-0
-Will run the fiber: 1
-1
-Will run the fiber: 2
-2
-Will run the fiber: 3
-0
-Will run the fiber: 4
-1
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;
+&lt;span class="mi"&gt;1&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1678,16 +1324,16 @@ Will run the fiber: 4
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Will run the fiber: 0
-0 0
-Will run the fiber: 1
-0 -1
-Will run the fiber: 2
-1 0
-Will run the fiber: 3
-1 -1
-Will run the fiber: 4
-0 0
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="n"&gt;Will&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;fiber&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;
+&lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1704,11 +1350,11 @@ Will run the fiber: 4
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;passed string number 0, get something new
-now it is string number 1!
-passed string number 2, get something new
-now it is string number 3!
-passed string number 4, get something new
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;passed&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="nb"&gt;number&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;get&lt;/span&gt; &lt;span class="n"&gt;something&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt;
+&lt;span class="n"&gt;now&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="nb"&gt;number&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;
+&lt;span class="n"&gt;passed&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="nb"&gt;number&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;get&lt;/span&gt; &lt;span class="n"&gt;something&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt;
+&lt;span class="n"&gt;now&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="nb"&gt;number&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;
+&lt;span class="n"&gt;passed&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="nb"&gt;number&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;get&lt;/span&gt; &lt;span class="n"&gt;something&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1736,7 +1382,7 @@ passed string number 4, get something new
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;6 5040
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt; &lt;span class="mi"&gt;5040&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1756,15 +1402,7 @@ passed string number 4, get something new
 &lt;p&gt;It is fun to see how I had written such stuff long time ago and made a 'full circle' in this sense. I like this feeling, I like programming :).&lt;/p&gt;
 &lt;p&gt;my 3 years old code: http://pastebin.com/JUeXLeea 
 debug version of this code: http://pastebin.com/JYUaibem
-online judge with unit tests: http://acmp.ru/index.asp?main=task&amp;amp;id_task=451 (in Russian)&lt;/p&gt;</content></entry><entry><title>When single paged apps suck</title><link href="//devblog.me/when-single-paged-apps-suck.html" rel="alternate"></link><published>2013-05-02T00:00:00-07:00</published><updated>2013-05-02T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2013-05-02:/when-single-paged-apps-suck.html</id><summary type="html">&lt;p&gt;Today was a very hot day and it was clear: it's not the day you want to spend sitting in front of Starbucks on Castro street. We took an approach of changing environment and moved to Mountain View public library. It is where we were caught by.&lt;/p&gt;
-&lt;p&gt;Library is an …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today was a very hot day and it was clear: it's not the day you want to spend sitting in front of Starbucks on Castro street. We took an approach of changing environment and moved to Mountain View public library. It is where we were caught by.&lt;/p&gt;
-&lt;p&gt;Library is an excellent place for focused work. It is quite, clean, still not home and people around increase your productivity. There is good coverage of Google Wifi and couple of fairly good desks.&lt;/p&gt;
-&lt;p&gt;Unexpectedly Google Wifi acted a bit weird. Some pages did not load properly, some others were rendered with corrupted characters and made an impression of movies talking about government collusions, hackers, aliens trying to intercept into our Facebook feed.&lt;/p&gt;
-&lt;p&gt;I don't know if it is intended behavior of Internet connection in public libraries but there is no single page loaded without being corrupted. It was fine with good-old HTML pages - browser is clever enough to render half-broken styles and layouts and show something readable.&lt;/p&gt;
-&lt;p&gt;The problem was in single-paged apps: Quora, Instagram and Twitter. With all these fancy ajax requests they could not read corrupted JSON-encoded data received from server and refused to show anything meaningful with lots of errors in js-console.&lt;/p&gt;
-&lt;p&gt;That's how library increases your productivity. Read plain HTML-pages, read Wikis, use Google.&lt;/p&gt;
-&lt;p&gt;Looks like excellent place for couple of hours of focused work but you can not download PDFs, send big files or work with any documents with complicated schemas.&lt;/p&gt;
-&lt;p&gt;It was my first time when single-paged apps sucked so much.&lt;/p&gt;</content></entry><entry><title>TCO 2013 2A</title><link href="//devblog.me/tco-2013-2a.html" rel="alternate"></link><published>2013-03-31T00:00:00-07:00</published><updated>2013-03-31T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2013-03-31:/tco-2013-2a.html</id><summary type="html">&lt;p&gt;This round was spent in agony, as any other round I participate after several months of inactivity.&lt;/p&gt;
+online judge with unit tests: http://acmp.ru/index.asp?main=task&amp;amp;id_task=451 (in Russian)&lt;/p&gt;</content></entry><entry><title>TCO 2013 2A</title><link href="//devblog.me/tco-2013-2a.html" rel="alternate"></link><published>2013-03-31T00:00:00-07:00</published><updated>2013-03-31T00:00:00-07:00</updated><author><name>Slava Kim</name></author><id>tag:devblog.me,2013-03-31:/tco-2013-2a.html</id><summary type="html">&lt;p&gt;This round was spent in agony, as any other round I participate after several months of inactivity.&lt;/p&gt;
 &lt;p&gt;My biggest mistake in this round was pretty silly: I expected 300 to be a standard math/greedy problem and couldn't realise it was the simplest dynamic programming problem ever met on Topcoder …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This round was spent in agony, as any other round I participate after several months of inactivity.&lt;/p&gt;
 &lt;p&gt;My biggest mistake in this round was pretty silly: I expected 300 to be a standard math/greedy problem and couldn't realise it was the simplest dynamic programming problem ever met on Topcoder.&lt;/p&gt;
 &lt;p&gt;After an hour of looking for "universal greedy" I gave up and prepared several test cases for challenge phase.&lt;/p&gt;

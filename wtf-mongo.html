@@ -96,7 +96,7 @@ This article assumes you are familiar with MongoDB's API.</p>
 <hr>
 <h1>1. Keys order in a hash object</h1>
 <p>Let's say you want to store a simple object literal:</p>
-<div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span> <span class="nt">db</span><span class="p">.</span><span class="nc">books</span><span class="p">.</span><span class="nc">insert</span><span class="o">(</span><span class="p">{</span> <span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nt">db</span><span class="p">.</span><span class="nc">books</span><span class="p">.</span><span class="nc">insert</span><span class="o">(</span><span class="p">{</span> <span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
 </pre></div>
 
 
@@ -104,15 +104,15 @@ This article assumes you are familiar with MongoDB's API.</p>
 books published in 1823, written by this author ("A. Griboyedov"). It is
 unlikely to return more than one result but at least it should return the "Woe
 from Wit" book as we just inserted it, right?</p>
-<div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span> <span class="nt">db</span><span class="p">.</span><span class="nc">books</span><span class="p">.</span><span class="nc">find</span><span class="o">(</span><span class="p">{</span> <span class="n">meta</span><span class="p">:</span> <span class="err">{</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span><span class="p">,</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
-<span class="o">&amp;</span><span class="nt">lt</span><span class="o">;</span> <span class="nt">No</span> <span class="nt">results</span> <span class="nt">returned</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nt">db</span><span class="p">.</span><span class="nc">books</span><span class="p">.</span><span class="nc">find</span><span class="o">(</span><span class="p">{</span> <span class="n">meta</span><span class="p">:</span> <span class="err">{</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span><span class="p">,</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
+<span class="o">&lt;</span> <span class="nt">No</span> <span class="nt">results</span> <span class="nt">returned</span>
 </pre></div>
 
 
 <p>What happened? Didn't we just insert a book with such meta-data? Let's try
 flipping the order of keys in the meta object:</p>
-<div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span> <span class="nt">db</span><span class="p">.</span><span class="nc">books</span><span class="p">.</span><span class="nc">find</span><span class="o">(</span><span class="p">{</span> <span class="n">meta</span><span class="p">:</span> <span class="err">{</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
-<span class="o">&amp;</span><span class="nt">lt</span><span class="o">;</span> <span class="p">{</span> <span class="n">_id</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="n">title</span><span class="o">:</span> <span class="s2">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="o">...</span> <span class="p">}</span> <span class="err">}</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="nt">db</span><span class="p">.</span><span class="nc">books</span><span class="p">.</span><span class="nc">find</span><span class="o">(</span><span class="p">{</span> <span class="n">meta</span><span class="p">:</span> <span class="err">{</span> <span class="n">author</span><span class="o">:</span> <span class="s2">&quot;A. Griboyedov&quot;</span><span class="p">,</span> <span class="n">year</span><span class="o">:</span> <span class="mi">1823</span> <span class="p">}</span> <span class="err">}</span><span class="o">);</span>
+<span class="o">&lt;</span> <span class="p">{</span> <span class="n">_id</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="n">title</span><span class="o">:</span> <span class="s2">&quot;Woe from Wit&quot;</span><span class="p">,</span> <span class="n">meta</span><span class="o">:</span> <span class="err">{</span> <span class="o">...</span> <span class="p">}</span> <span class="err">}</span>
 </pre></div>
 
 
@@ -224,18 +224,18 @@ two match both <code>undefined</code> and <code>null</code>. The absence of valu
 <h1>3. Soft limits, hard limits and no limits</h1>
 <p>Let's say you have a feed of items and you allow user to specify the number
 items to return. You would return the result of a query looking like this:</p>
-<div class="highlight"><pre><span></span>db.items.find({ ... }).limit(N);
+<div class="highlight"><pre><span></span><span class="n">db</span><span class="p">.</span><span class="n">items</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="err">{</span> <span class="p">...</span> <span class="err">}</span><span class="p">).</span><span class="k">limit</span><span class="p">(</span><span class="n">N</span><span class="p">);</span>
 </pre></div>
 
 
 <p>Where <code>N</code> is supplied by user. Of course we want to be careful and restrict user
 up to 50 items, otherwise anyone in the Internet would be able to load our
 application server and the database simply by supplying a very large <code>N</code>:</p>
-<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">getItems</span> <span class="p">(</span><span class="nx">N</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">N</span> <span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">50</span><span class="p">)</span>
-    <span class="nx">N</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">year</span>: <span class="kt">1</span> <span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="nx">N</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><span class="nv">function</span> <span class="nv">getItems</span> <span class="ss">(</span><span class="nv">N</span><span class="ss">)</span> {
+  <span class="k">if</span> <span class="ss">(</span><span class="nv">N</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="ss">)</span>
+    <span class="nv">N</span> <span class="o">=</span> <span class="mi">50</span><span class="c1">;</span>
+  <span class="k">return</span> <span class="nv">db</span>.<span class="nv">items</span>.<span class="nv">find</span><span class="ss">(</span>{}<span class="ss">)</span>.<span class="nv">sort</span><span class="ss">(</span>{ <span class="nv">year</span>: <span class="mi">1</span> }<span class="ss">)</span>.<span class="nv">limit</span><span class="ss">(</span><span class="nv">N</span><span class="ss">)</span><span class="c1">;</span>
+}
 </pre></div>
 
 
@@ -246,11 +246,11 @@ the MongoDB would take it as "give me everything".</p>
 MongoDB. My guess is some code just treats all falsy values the same way:
 <code>undefined</code>, <code>null</code>, <code>0</code>, absence of value - everything means "no limit".</p>
 <p>That's OK, we can treat <code>0</code> as a special case:</p>
-<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">getItems</span> <span class="p">(</span><span class="nx">N</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">N</span> <span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">50</span> <span class="o">||</span> <span class="o">!</span><span class="nx">N</span><span class="p">)</span> <span class="c1">// check if N is falsy (&quot;no limit&quot;)</span>
-    <span class="nx">N</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">year</span>: <span class="kt">1</span> <span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="nx">N</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><span class="nv">function</span> <span class="nv">getItems</span> <span class="ss">(</span><span class="nv">N</span><span class="ss">)</span> {
+  <span class="k">if</span> <span class="ss">(</span><span class="nv">N</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="o">||</span> <span class="o">!</span><span class="nv">N</span><span class="ss">)</span> <span class="o">//</span> <span class="nv">check</span> <span class="k">if</span> <span class="nv">N</span> <span class="nv">is</span> <span class="nv">falsy</span> <span class="ss">(</span><span class="s2">&quot;</span><span class="s">no limit</span><span class="s2">&quot;</span><span class="ss">)</span>
+    <span class="nv">N</span> <span class="o">=</span> <span class="mi">50</span><span class="c1">;</span>
+  <span class="k">return</span> <span class="nv">db</span>.<span class="nv">items</span>.<span class="nv">find</span><span class="ss">(</span>{}<span class="ss">)</span>.<span class="nv">sort</span><span class="ss">(</span>{ <span class="nv">year</span>: <span class="mi">1</span> }<span class="ss">)</span>.<span class="nv">limit</span><span class="ss">(</span><span class="nv">N</span><span class="ss">)</span><span class="c1">;</span>
+}
 </pre></div>
 
 
@@ -261,12 +261,12 @@ bazillion of items. It is hard to find the documentation about it but several
 month ago I have seen the description of this behavior in node.js driver's docs,
 it talked about "soft" and "hard" limits. I have no idea what does it mean.</p>
 <p>So the final version of our server-side method would look like this:</p>
-<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">getItems</span> <span class="p">(</span><span class="nx">N</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">N</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">N</span> <span class="o">=</span> <span class="o">-</span><span class="nx">N</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">N</span> <span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">50</span> <span class="o">||</span> <span class="o">!</span><span class="nx">N</span><span class="p">)</span> <span class="c1">// check if N is falsy (&quot;no limit&quot;)</span>
-    <span class="nx">N</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">year</span>: <span class="kt">1</span> <span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="nx">N</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><span class="nv">function</span> <span class="nv">getItems</span> <span class="ss">(</span><span class="nv">N</span><span class="ss">)</span> {
+  <span class="k">if</span> <span class="ss">(</span><span class="nv">N</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="ss">)</span> <span class="nv">N</span> <span class="o">=</span> <span class="o">-</span><span class="nv">N</span><span class="c1">;</span>
+  <span class="k">if</span> <span class="ss">(</span><span class="nv">N</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="o">||</span> <span class="o">!</span><span class="nv">N</span><span class="ss">)</span> <span class="o">//</span> <span class="nv">check</span> <span class="k">if</span> <span class="nv">N</span> <span class="nv">is</span> <span class="nv">falsy</span> <span class="ss">(</span><span class="s2">&quot;</span><span class="s">no limit</span><span class="s2">&quot;</span><span class="ss">)</span>
+    <span class="nv">N</span> <span class="o">=</span> <span class="mi">50</span><span class="c1">;</span>
+  <span class="k">return</span> <span class="nv">db</span>.<span class="nv">items</span>.<span class="nv">find</span><span class="ss">(</span>{}<span class="ss">)</span>.<span class="nv">sort</span><span class="ss">(</span>{ <span class="nv">year</span>: <span class="mi">1</span> }<span class="ss">)</span>.<span class="nv">limit</span><span class="ss">(</span><span class="nv">N</span><span class="ss">)</span><span class="c1">;</span>
+}
 </pre></div>
 
 
